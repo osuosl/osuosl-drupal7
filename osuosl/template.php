@@ -120,9 +120,7 @@ function osuosl_preprocess_page(&$vars, $hook) {
   $sitenames = array(
     "< open source lab >",
     "{ open source lab };",
-    "open source lab",
     "/* open source lab */",
-    "// open source lab //"
   );
   //$vars['site_name'] = $sitenames[array_rand($sitenames)];
 }

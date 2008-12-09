@@ -39,6 +39,7 @@
   #page
   {
     background-color: #fff;
+    font-size: 10pt;
   }
 
   #page-inner
@@ -56,6 +57,8 @@
 
   #logo-title /* Wrapper for logo, website name, and slogan */
   {
+    height: 175px;
+    margin-top: -2px;
   }
 
   #logo /* Wrapper for logo */
@@ -67,10 +70,10 @@
   #logo-image /* The actual logo image */
   {
   }
-
+  
   h1#site-name, div#site-name /* The name of the website */
   {
-    margin: 50px 0 0 20px;
+    padding: 50px 0 0 20px;
     font-size: 2.5em;
     line-height: 1.3em;
   }
@@ -113,6 +116,7 @@
 
   #content-inner
   {
+  margin-right: 2em;
   }
 
   #mission /* The mission statement of the site (displayed on homepage) */
@@ -130,6 +134,18 @@
   .breadcrumb /* The path to the current page in the form of a list of links */
   {
     padding-bottom: 0; /* Undo system.css */
+    padding-top: 35px;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+  .breadcrumb a {
+    color: #fff;
+  }
+  .breadcrumb a:hover {
+    color: #E0723E;
   }
 
   h1.title, /* The title of the page */
@@ -207,6 +223,24 @@
 
   #search-box /* Wrapper for the search form */
   {
+    position: relative;
+    left: 780px;
+    top: -90px;
+    width: 180px;
+    /*border: 1px solid red;*/
+  }
+  #edit-search-theme-form-1 /* search box input field */
+  {
+    width: 180px;
+  }
+  #search .form-submit
+  {
+    color: #fff;
+    font-size: 85%;
+    font-weight: bold;
+    border: 0px solid black;
+    background-color: transparent;
+    text-transform: uppercase;
   }
 
   #edit-search-theme-form-1-wrapper label /* Label that says "Search this site:" */
@@ -804,6 +838,10 @@ a
     text-decoration: none;
   }
 
+ul.menu
+  {
+    font-variant: small-caps;  
+  }
 .menu a
   {
     color: #808080;
@@ -841,3 +879,7 @@ a.advisory_company
     border: 0;
     clear: right;
   }
+
+#osu-identity {
+    /*border: 4px solid red;*/
+}
