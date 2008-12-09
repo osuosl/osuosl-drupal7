@@ -834,3 +834,10 @@ a.advisory_company
   {
     padding: 0 0 0 1em;
   }
+
+#content img.float-right {
+    float: Right;
+    margin: 4px 7px;
+    border: 0;
+    clear: right;
+  }
