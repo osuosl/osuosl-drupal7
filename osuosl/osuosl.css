@@ -887,3 +887,12 @@ a.advisory_company
   {
     margin-top: .1em;
   }
+
+blockquote
+  {
+    margin-left: 2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    border: 1px solid #999;
+    background-color: #ccc;
+  }
