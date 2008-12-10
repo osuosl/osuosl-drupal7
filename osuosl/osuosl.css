@@ -896,3 +896,26 @@ blockquote
     border: 1px solid #999;
     background-color: #ccc;
   }
+
+.profile-wrapper
+  {
+    background-color: #ffeec5;
+    border: 1px solid #565656;
+    color: #000;
+  }
+.profile-header
+  {
+    background-color: #565656;
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 0 2px 1em;
+  }
+.profile-pic
+  {
+    float: right;
+  }
+.profile-body
+  {
+    padding: 0 1em 1em 1em;
+    min-height: 160px;
+  }

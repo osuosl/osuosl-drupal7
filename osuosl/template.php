@@ -118,11 +118,13 @@ function osuosl_preprocess_page(&$vars, $hook) {
   //$vars['sample_variable'] = t('Lorem ipsum.');
   $vars['logo'] = base_path() . path_to_theme() . "/img/" . rand(1, 3) . ".png";
   $sitenames = array(
-    "< open source lab >",
-    "{ open source lab };",
+    "< open_source_lab />",
+    "{ open.source.lab };",
     "/* open source lab */",
+    "m/open source lab/;",
+    "/dev/open-source-lab",
   );
-  //$vars['site_name'] = $sitenames[array_rand($sitenames)];
+  $vars['site_name'] = $sitenames[array_rand($sitenames)];
 }
 
 /**
