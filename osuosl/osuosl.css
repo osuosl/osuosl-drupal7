@@ -899,9 +899,9 @@ blockquote
 
 .profile-wrapper
   {
-    background-color: #ffeec5;
     border: 1px solid #565656;
     color: #000;
+    margin-bottom: 1.5em;
   }
 .profile-header
   {
@@ -918,4 +918,18 @@ blockquote
   {
     padding: 0 1em 1em 1em;
     min-height: 160px;
+  }
+
+.node-type-staffprofile h2.title, .node-type-studentprofile h2.title
+  {
+    display: none;
+  }
+
+.staff-profile
+  {
+    background-color: #ffeec5;
+  }
+.student-profile
+  {
+    background-color: #fff;
   }
