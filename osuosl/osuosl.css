@@ -913,6 +913,8 @@ blockquote
 .profile-pic
   {
     float: right;
+    border: 1px solid gray;
+    margin-left: 1em;
   }
 .profile-body
   {
@@ -922,16 +924,17 @@ blockquote
 
 .node-type-staffprofile h2.title, .node-type-studentprofile h2.title
   {
-    display: none;
+    display: none;      /* Hide default "title" element on profile pages since it's already included in the template */
   }
 
 .staff-profile
   {
-    background-color: #ffeec5;
+    /*background-color: #ffeec5;*/
+    background-color: #ddd;
   }
 .student-profile
   {
-    background-color: #fff;
+    background-color: #aaa;
   }
 
 h3.block-title {
