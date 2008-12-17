@@ -998,3 +998,9 @@ li.leaf {
   /* list-style-image: url(/misc/menu-leaf.png);*/
   list-style: none;
 }
+
+/* leaf nodes should be bold if they are in the top level of the menu */
+div.content > ul.menu > li.leaf > a {
+    font-weight: bold;
+    color: #606060;
+}
