@@ -980,3 +980,14 @@ ul.community-list {
 #row-0 {
     margin-top: 1em;
 }
+
+/* Override activemeny +/- and go back to defaults */
+li.expanded, li.activemenu-processed.expanded {
+  list-style-image: url(/misc/menu-expanded.png);
+}
+li.collapsed, li.activemenu-processed.collapsed {
+  list-style-image: url(/misc/menu-collapsed.png); /* LTR */
+}
+li.leaf {
+  list-style-image: url(/misc/menu-leaf.png);
+}
