@@ -983,11 +983,18 @@ ul.community-list {
 
 /* Override activemeny +/- and go back to defaults */
 li.expanded, li.activemenu-processed.expanded {
-  list-style-image: url(/misc/menu-expanded.png);
+  list-style-image: url(menu-expanded.png);
 }
 li.collapsed, li.activemenu-processed.collapsed {
-  list-style-image: url(/misc/menu-collapsed.png); /* LTR */
+  list-style-image: url(menu-collapsed.png); /* LTR */
+}
+li.expanded, i.collapsed, li.activemenu-processed.expanded, li.activemenu-processed.collapsed {
+    /*filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;*/
 }
 li.leaf {
-  list-style-image: url(/misc/menu-leaf.png);
+  /* list-style-image: url(/misc/menu-leaf.png);*/
+  list-style: none;
 }
