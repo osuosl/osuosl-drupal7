@@ -1004,3 +1004,7 @@ div.content > ul.menu > li.leaf > a {
     font-weight: bold;
     color: #606060;
 }
+
+div.content > ul.menu > li.leaf > a.active, div.content > ul.menu > li.leaf > a:hover {
+    color: #e0723e;
+}
