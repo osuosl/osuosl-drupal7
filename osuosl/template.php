@@ -121,7 +121,6 @@ function osuosl_preprocess_page(&$vars, $hook) {
     "< open_source_lab />",
     "{ open.source.lab };",
     "/* open source lab */",
-    "m/open source lab/;",
     "/dev/open-source-lab",
     "// open source lab",
   );
