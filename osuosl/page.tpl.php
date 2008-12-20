@@ -111,6 +111,8 @@
         </div> <!-- /#logo-title -->
           <?php if ($search_box): ?>
             <div id="search-box">
+            <div id="donate"><a href="donate"><img src="/<?php print $directory; ?>/donate.png" /></a></div>
+            <div id="search-label">Search</div>
               <?php print $search_box; ?>
             </div> <!-- /#search-box -->
           <?php endif; ?>
