@@ -208,6 +208,19 @@
     margin: 1em 0;
   }
 
+  .feed-item {
+    background: url(separator.png) bottom no-repeat;
+    margin-bottom: 10px;
+  }
+
+  .feed-item-body {
+    padding-bottom: 40px;
+  }
+
+  .feed-item-categories {
+    display: none;
+  }
+
   #content-bottom /* Wrapper for any blocks placed in the "content bottom" region */
   {
   }
@@ -937,16 +950,20 @@ blockquote
 
 .profile-wrapper
   {
+/*
     border: 1px solid #565656;
     color: #000;
-    margin-bottom: 1.5em;
+*/
+    margin-bottom: 10px;
   }
 .profile-header
   {
+/*
     background-color: #565656;
     color: #fff;
-    font-weight: bold;
+*/
     padding: 2px 0 2px 1em;
+    font-weight: bold;
   }
 .profile-pic
   {
@@ -968,11 +985,11 @@ blockquote
 .staff-profile
   {
     /*background-color: #ffeec5;*/
-    background-color: #ddd;
+    background-color: #fff;
   }
 .student-profile
   {
-    background-color: #aaa;
+    background-color: #fff;
   }
 
 h3.block-title {
@@ -1039,10 +1056,17 @@ li.leaf {
 
 /* leaf nodes should be bold if they are in the top level of the menu */
 div.content > ul.menu > li.leaf > a {
-    font-weight: bold;
-    color: #606060;
+  font-weight: bold;
+  color: #606060;
 }
 
 div.content > ul.menu > li.leaf > a.active, div.content > ul.menu > li.leaf > a:hover {
-    color: #e0723e;
+  color: #e0723e;
+}
+
+/* separator image */
+div.separator {
+  background: url(separator.png) no-repeat;
+  height: 21px;
+  margin: 0 0 15px 100px;
 }
