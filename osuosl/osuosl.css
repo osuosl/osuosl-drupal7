@@ -956,7 +956,7 @@ blockquote
 */
     margin-bottom: 10px;
   }
-.profile-header
+.profile-header, .community-header
   {
 /*
     background-color: #565656;
@@ -964,8 +964,9 @@ blockquote
 */
     padding: 2px 0 2px 1em;
     font-weight: bold;
+    font-size: 1.5em;
   }
-.profile-pic
+.profile-pic, .community-pic
   {
     float: right;
     border: 1px solid gray;
@@ -977,7 +978,13 @@ blockquote
     min-height: 160px;
   }
 
-.node-type-staffprofile h2.title, .node-type-studentprofile h2.title
+.community-body
+  {
+    padding: 0 1em 1em 1em;
+    min-height: 50px;
+  }
+
+.node-type-staffprofile h2.title, .node-type-studentprofile h2.title, .node-type-community h2.title
   {
     display: none;      /* Hide default "title" element on profile pages since it's already included in the template */
   }
