@@ -129,6 +129,7 @@
 
   #content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */
   {
+    width: 500px;
   }
 
   .breadcrumb /* The path to the current page in the form of a list of links */
@@ -927,7 +928,8 @@ a.advisory_company
 
 #content img.float-right {
     float: Right;
-    margin: 4px 7px;
+    margin: 0.5em;
+    /*margin: 4px 7px;*/
     border: 0;
     clear: right;
   }
@@ -963,7 +965,7 @@ blockquote
     background-color: #565656;
     color: #fff;
 */
-    padding: 2px 0 2px 1em;
+    padding: 2px 0 2px 12px;
     font-weight: bold;
     font-size: 1.5em;
   }
@@ -1078,3 +1080,9 @@ div.separator {
   height: 21px;
   margin: 0 0 15px 100px;
 }
+
+img.home-story-img
+  {
+    margin: 1em;
+    border: 1px solid gray;
+  }
