@@ -1086,3 +1086,29 @@ img.home-story-img
     margin: 1em;
     border: 1px solid gray;
   }
+
+div.campaignWidget label {
+  display: block;
+  float: left;
+  width: 70px;
+  padding: 0;
+  margin: 5px 5px 0 0;
+  text-align: right;
+}
+
+div.campaignWidget input.radio {
+  margin: 0;
+  padding: 0;
+  width: 15px;
+}
+
+div.campaignWidget div.submit-img {
+  clear: both;
+  margin: 15px 0 0 18px;
+  padding: 15px 0 0 0;
+}
+
+div.campaignWidget div.foot {
+  margin: 5px 0 10px 0;
+  padding: 10px 0;
+}
