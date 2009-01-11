@@ -959,7 +959,7 @@ blockquote
 */
     margin-bottom: 10px;
   }
-.profile-header, .community-header
+.profile-header, .community-header, .sponsor-header, .news-header
   {
 /*
     background-color: #565656;
@@ -969,17 +969,24 @@ blockquote
     font-weight: bold;
     font-size: 1.5em;
   }
-.profile-pic, .community-pic
+.profile-pic, .community-pic, .sponsor-pic
   {
     float: right;
-    border: 1px solid gray;
     margin-left: 1em;
   }
-.profile-body
+.profile-pic, .community-pic
+  {
+    border: 1px solid gray;
+  }
+.profile-body, .sponsor-body, .news-teaser-body
   {
     padding: 0 1em 1em 1em;
     min-height: 160px;
   }
+
+div.community-header > a {
+    color: #000; /* community titles should be black */
+}
 
 .community-body
   {
@@ -987,7 +994,7 @@ blockquote
     min-height: 50px;
   }
 
-.node-type-staffprofile h2.title, .node-type-studentprofile h2.title, .node-type-community h2.title
+.node-type-staffprofile h2.title, .node-type-studentprofile h2.title, .node-type-community h2.title, .node-type-sponsor h2.title, .node-type-sponsor div.meta, .node-type-news h2.title, .node-type-news div.meta
   {
     display: none;      /* Hide default "title" element on profile pages since it's already included in the template */
   }
