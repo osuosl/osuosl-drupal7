@@ -934,8 +934,15 @@ a.advisory_company
 #content img.float-right {
     float: Right;
     margin: 0.5em;
-    /*margin: 4px 7px;*/
     border: 0;
+    clear: right;
+  }
+
+#content img.float-right-border {
+    float: Right;
+    margin: 0.5em;
+    /*margin: 4px 7px;*/
+    border: 1px solid gray;
     clear: right;
   }
 
@@ -1004,11 +1011,6 @@ blockquote
     padding: 2px 0 2px 15px;
   }
 
-.more-news
-  {
-    padding: 2px 0 2px 25px;
-  }
-
 div.community-header > a {
     color: #000; /* community titles should be black */
 }
@@ -1042,8 +1044,9 @@ h3.block-title {
     padding-top: 12px;
 }
 
-p#more-communities {
-    padding: 10px 5px 15px 5px;
+p.more-link {
+    padding: 5px 5px 15px 12px;
+    text-align: left;
 }
 
 ul.community-list, ul.headlines-list {
