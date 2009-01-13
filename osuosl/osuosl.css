@@ -941,7 +941,13 @@ a.advisory_company
 #content img.float-right-border {
     float: Right;
     margin: 0.5em;
-    /*margin: 4px 7px;*/
+    border: 1px solid gray;
+    clear: right;
+  }
+
+#content img.float-left-border {
+    float: left;
+    margin: 8px 15px 8px 10px;
     border: 1px solid gray;
     clear: right;
   }
