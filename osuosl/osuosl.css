@@ -1018,7 +1018,7 @@ div.community-header > a {
 .community-body
   {
     padding: 0 1em 1em 1em;
-    min-height: 50px;
+    min-height: 135px;
   }
 
 .node-type-staffprofile h2.title, .node-type-studentprofile h2.title, .node-type-community h2.title, .node-type-sponsor h2.title, .node-type-sponsor div.meta, .node-type-news h2.title, .node-type-news div.meta
