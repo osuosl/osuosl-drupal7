@@ -977,7 +977,7 @@ blockquote
 */
     margin-bottom: 10px;
   }
-.profile-header, .community-header, .sponsor-header, .news-header
+.profile-header, .community-header, .sponsor-header, .news-header, .donation-level-header
   {
 /*
     background-color: #565656;
@@ -1021,7 +1021,7 @@ div.community-header > a {
     color: #000; /* community titles should be black */
 }
 
-.community-body
+.community-body, .donation-level-body
   {
     padding: 0 1em 1em 1em;
     min-height: 135px;
@@ -1055,6 +1055,11 @@ p.more-link {
     text-align: left;
 }
 
+ul.donation-benefits {
+    list-style: none;
+    margin: 10px 0;
+}
+
 ul.community-list, ul.headlines-list {
     font-size: 14pt;
     text-indent: 0px;
@@ -1070,7 +1075,7 @@ ul.headlines-list > li > a {
     font-weight: bold;
 }
 
-.headlines-list li {
+.headlines-list li, .donation-benefits li {
     margin: 0 0 7px 8px;
 }
 
@@ -1078,6 +1083,8 @@ ul.headlines-list > li > a {
     margin: 10px 0;
 }
 
+
+/* on the community list, names get darker as you go to the middle of the list */
 #community0 a, #community6 a {
     color: #dadada;
 }
