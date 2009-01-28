@@ -977,7 +977,7 @@ blockquote
 */
     margin-bottom: 10px;
   }
-.profile-header, .community-header, .sponsor-header, .news-header, .donation-level-header
+.profile-header, .community-header, .member-header, .news-header, .donation-level-header
   {
 /*
     background-color: #565656;
@@ -992,7 +992,7 @@ blockquote
     font-size: 0.8em;
     padding: 8px 0 2px 12px;
   }
-.profile-pic, .community-pic, .sponsor-pic
+.profile-pic, .community-pic, .member-pic
   {
     float: right;
     margin-left: 1em;
@@ -1001,7 +1001,7 @@ blockquote
   {
     border: 1px solid gray;
   }
-.profile-body, .sponsor-body, .news-teaser-body
+.profile-body, .member-body, .news-teaser-body
   {
     padding: 0 1em 1em 1em;
     min-height: 160px;
@@ -1027,7 +1027,7 @@ div.community-header > a {
     min-height: 135px;
   }
 
-.node-type-staffprofile h2.title, .node-type-studentprofile h2.title, .node-type-community h2.title, .node-type-sponsor h2.title, .node-type-sponsor div.meta, .node-type-news h2.title, .node-type-news div.meta
+.node-type-staffprofile h2.title, .node-type-studentprofile h2.title, .node-type-community h2.title, .node-type-member h2.title, .node-type-member div.meta, .node-type-news h2.title, .node-type-news div.meta
   {
     display: none;      /* Hide default "title" element on profile pages since it's already included in the template */
   }
