@@ -116,7 +116,7 @@ function osuosl_preprocess(&$vars, $hook) {
  */
 function osuosl_preprocess_page(&$vars, $hook) {
   //$vars['sample_variable'] = t('Lorem ipsum.');
-  $vars['logo'] = base_path() . path_to_theme() . "/img/" . rand(1, 5) . ".png";
+  $vars['logo'] = base_path() . path_to_theme() . "/img/" . rand(1, 6) . ".png";
   $sitenames = array(
     "< open_source_lab />",
     "{ open.source.lab };",
