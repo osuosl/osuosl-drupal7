@@ -1171,3 +1171,9 @@ div.campaignWidget div.foot {
   margin: 5px 0 10px 0;
   padding: 10px 0;
 }
+
+/* titles shown for panel panes */
+div.panel-pane > h2.title {
+  margin: 10px 0;
+  font-size: 24px;
+}
