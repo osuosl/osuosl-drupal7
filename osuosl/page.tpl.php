@@ -97,6 +97,15 @@
   <div id="page"><div id="page-inner">
     <div id="header"><div id="header-inner" class="clear-block">
         <div id="logo-title" style="background-image:url(<?php print $logo; ?>);">
+          <?php if ($search_box): ?>
+            <!-- #search-box --><div id="search-box">
+            <div id="donate"><a href="/donate"><img src="/<?php print $directory; ?>/donate.png" /></a></div>
+              <div id="search-form-wrapper">
+                <div id="search-label">Search</div>
+                <?php print $search_box; ?>
+              </div>
+            </div> <!-- /#search-box -->
+          <?php endif; ?>
               <h1 id="site-name" class="">
                 <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home">
                 <?php print $site_name; ?>
@@ -109,13 +118,6 @@
             <div id="breadcrumb"><?php print $breadcrumb; ?></div>
           <?php endif; ?>
         </div> <!-- /#logo-title -->
-          <?php if ($search_box): ?>
-            <div id="search-box">
-            <div id="donate"><a href="/donate"><img src="/<?php print $directory; ?>/donate.png" /></a></div>
-            <div id="search-label">Search</div>
-              <?php print $search_box; ?>
-            </div> <!-- /#search-box -->
-          <?php endif; ?>
     </div></div> <!-- /#header-inner, /#header -->
 
     <div id="main"><div id="main-inner" class="clear-block<?php if ($search_box or $primary_links or $secondary_links or $navbar) { print ' with-navbar'; } ?>">
