@@ -1001,10 +1001,16 @@ blockquote
   {
     border: 1px solid gray;
   }
-.profile-body, .member-body, .news-teaser-body
+.profile-body, .news-teaser-body
   {
     padding: 0 1em 1em 1em;
     min-height: 160px;
+  }
+
+.member-body
+  {
+    padding: 0 1em 1em 1em;
+    min-height: 100px;
   }
 
 .node-type-news > .node-inner > ul.inline
