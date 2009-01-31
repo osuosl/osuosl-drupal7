@@ -152,7 +152,7 @@
         </div>
 
         <?php if ($feed_icons): ?>
-          <div class="feed-icons"><?php print $feed_icons; ?></div>
+          <!-- <div class="feed-icons"><?php print $feed_icons; ?></div> -->
         <?php endif; ?>
 
         <?php if ($content_bottom): ?>
