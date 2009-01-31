@@ -333,7 +333,7 @@
     margin-top: 50px;
   }
 
-.region-count-2 > .block-inner h3.block-title
+.region-count-2 > .block-inner h3.headlines-title
   {
     margin-top: 50px;
   }
@@ -1048,7 +1048,7 @@ div.community-header > a {
     background-color: #fff;
   }
 
-h3.block-title {
+h3.block-title, h3.headlines-title {
     font-size: 12pt;
     font-variant: small-caps;
     color: #606060;
@@ -1057,7 +1057,7 @@ h3.block-title {
 }
 
 p.more-link {
-    padding: 5px 5px 15px 12px;
+    padding: 5px 5px 10px 12px;
     text-align: left;
 }
 
