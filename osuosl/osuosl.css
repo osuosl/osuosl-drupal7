@@ -340,6 +340,10 @@
     width: 40px;
     left: 180px;
     height: 100%;
+    /* for IE */
+    filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.6;
   }
 
   .block-divider-top-right, .block-divider-bottom-right, .block-divider-top-left, .block-divider-bottom-left
@@ -391,6 +395,10 @@
     height: 100%;
     position: absolute;
     left: -40px;
+    /* for IE */
+    filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.6;
   }
 
   .block-divider-top-right {
