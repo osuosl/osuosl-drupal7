@@ -336,10 +336,10 @@
     background-repeat: repeat-y;
     background-position: right;
     position: absolute;
-    top: 0;
+    top: 20px;
+    bottom: 20px;
     width: 40px;
     left: 180px;
-    height: 100%;
     /* for IE */
     filter:alpha(opacity=60);
     /* CSS3 standard */
@@ -390,9 +390,9 @@
     background-image: url(img/separator-right.png);
     background-repeat: repeat-y;
     background-position: left;
-    top: 0;
+    top: 20px;
     width: 40px;
-    height: 100%;
+    bottom: 20px;
     position: absolute;
     left: 756px;
     /* for IE */

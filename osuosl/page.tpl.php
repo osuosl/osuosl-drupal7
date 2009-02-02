@@ -188,22 +188,22 @@
       <?php if ($left): ?>
         <div id="sidebar-left"><div id="sidebar-left-inner" class="region region-left">
           <?php print $left; ?>
-        </div><!-- /#sidebar-left-inner -->
         <div class="block-divider-left">
             <div class="block-divider-top-left"></div>
             <div class="block-divider-bottom-left"></div>
         </div><!-- /block-divider-left -->
+        </div><!-- /#sidebar-left-inner -->
         </div> <!-- /#sidebar-left -->
       <?php endif; ?>
 
       <?php if ($right): ?>
         <div id="sidebar-right"><div id="sidebar-right-inner" class="region region-right">
           <?php print $right; ?>
-        </div> <!-- /#sidebar-right-inner -->
         <div class="block-divider-right">
             <div class="block-divider-top-right"></div>
             <div class="block-divider-bottom-right"></div>
         </div><!-- /block-divider-right -->
+        </div> <!-- /#sidebar-right-inner -->
         </div> <!-- /#sidebar-right -->
       <?php endif; ?>
 
