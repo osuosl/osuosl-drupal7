@@ -325,9 +325,48 @@
 
   #sidebar-left-inner
   {
-    background-image: url(img/left_menu_grad.png);
+    background: transparent;
+    padding-right: 30px;
+  }
+
+  .block-divider-left
+  {
+    /*background-image: url(img/left_menu_grad.png);*/
+    background-image: url(img/separator-left.png);
     background-repeat: repeat-y;
     background-position: right;
+    position: absolute;
+    top: 0;
+    width: 40px;
+    left: 180px;
+    height: 100%;
+  }
+
+  .block-divider-top-right, .block-divider-bottom-right, .block-divider-top-left, .block-divider-bottom-left
+  {
+    height: 40px;
+  }
+
+  .block-divider-top-left {
+    background-image: url(img/separator-left-top.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: white;
+    top: 0;
+    right: 0px;
+    position: absolute;
+    width: 40px;
+    z-index: 1;
+  }
+  .block-divider-bottom-left {
+    background-image: url(img/separator-left-bottom.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: white;
+    bottom: 0;
+    right: 0px;
+    position: absolute;
+    width: 40px;
   }
 
 /** sidebar-right **/
@@ -338,10 +377,40 @@
 
   #sidebar-right-inner
   {
-    background-image: url(img/right_menu_grad.png);
+    background: transparent;
+    padding-left: 40px;
+  }
+  .block-divider-right 
+  {
+    /*background-image: url(img/right_menu_grad.png);*/
+    background-image: url(img/separator-right.png);
     background-repeat: repeat-y;
     background-position: left;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    left: -40px;
   }
+
+  .block-divider-top-right {
+    background-image: url(img/separator-right-top.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: white;
+    position: absolute;
+    width: 40px;
+  }
+  .block-divider-bottom-right {
+    background-image: url(img/separator-right-bottom.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: white;
+    bottom: 0;
+    position: absolute;
+    width: 40px;
+  }
+
 
 .region-count-2 > .block-inner h3.headlines-title
   {
