@@ -245,7 +245,8 @@
     top: -173px;*/
     /*top: -80px;*/
    /* width: 200px;*/
-    margin: 0px 4px 0px 4px;
+    /* margin: 0px 4px 0px 4px; */
+    margin: 12px 4px 0px 4px;
     /*left: -3px;*/
 
   }
@@ -273,10 +274,12 @@
     font-variant: small-caps;
     font-size: 85%;
     font-weight: bold;
+    letter-spacing: .3em;
     /*border: 1px solid red;*/
   }
   #search-form-wrapper {
-    margin: 85px 15px 3px 15px;
+    /* margin: 85px 15px 3px 15px; */
+    margin: 73px 15px 3px 15px;
   }
   #edit-search-theme-form-1 /* search box input field */
   {
