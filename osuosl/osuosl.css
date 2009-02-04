@@ -328,52 +328,10 @@
 
   #sidebar-left-inner
   {
-    background: transparent;
-    padding-right: 30px;
-  }
-
-  .block-divider-left
-  {
-    /*background-image: url(img/left_menu_grad.png);*/
-    background-image: url(img/separator-left.png);
+    background-image: url(img/sidebar-left.png);
+    background-position: right;
     background-repeat: repeat-y;
-    background-position: right;
-    position: absolute;
-    top: 20px;
-    bottom: 20px;
-    width: 40px;
-    left: 180px;
-    /* for IE 
-    filter:alpha(opacity=60);*/
-    /* CSS3 standard 
-    opacity:0.6;*/
-  }
-
-  .block-divider-top-right, .block-divider-bottom-right, .block-divider-top-left, .block-divider-bottom-left
-  {
-    height: 30px;
-  }
-
-  .block-divider-top-left {
-    background-image: url(img/separator-left-top.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-color: white;
-    top: 0;
-    right: 0px;
-    position: absolute;
-    width: 40px;
-    z-index: 1;
-  }
-  .block-divider-bottom-left {
-    background-image: url(img/separator-left-bottom.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-color: white;
-    bottom: 0;
-    right: 0px;
-    position: absolute;
-    width: 40px;
+    padding-right: 10px;
   }
 
 /** sidebar-right **/
@@ -384,42 +342,72 @@
 
   #sidebar-right-inner
   {
-    background: transparent;
+    background-image: url(img/sidebar-right.png);
+    background-position: left;
+    background-repeat: repeat-y;
     padding-left: 40px;
   }
-  .block-divider-right 
+
+/** sidebar dividers **/
+  .block-divider-left
   {
-    /*background-image: url(img/right_menu_grad.png);*/
-    background-image: url(img/separator-right.png);
-    background-repeat: repeat-y;
-    background-position: left;
-    top: 20px;
-    width: 40px;
-    bottom: 20px;
     position: absolute;
-    left: 756px;
-    /* for IE
-    filter:alpha(opacity=60);*/
-    /* CSS3 standard 
-    opacity:0.6;*/
+    left: 193px;
+    top: 10px;
+    height: 100%;
+    width: 37px;
   }
 
-  .block-divider-top-right {
-    background-image: url(img/separator-right-top.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-color: white;
+  .block-divider-right
+  {
     position: absolute;
-    width: 40px;
+    top: 10px;
+    left: 766px;
+    height: 100%;
+    width: 37px;
   }
-  .block-divider-bottom-right {
-    background-image: url(img/separator-right-bottom.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-color: white;
-    bottom: 0;
+
+  .block-divider-top-right, .block-divider-top-left
+  {
+    height: 50px;
+    width: 37px;
+    top: 0px;
     position: absolute;
-    width: 40px;
+    /*border: 1px solid red;*/
+  }
+
+  .block-divider-bottom-right, .block-divider-bottom-left
+  {
+    height: 50px;
+    width: 37px;
+    position: absolute;
+    border: 1px solid blue;
+    display: none;
+  }
+
+  .block-divider-top-right
+  {
+    background-image: url(img/sidebar-right-top.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+  }
+  .block-divider-top-left
+  {
+    background-image: url(img/sidebar-left-top.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  .block-divider-bottom-right
+  {
+    background-image: url(img/sidebar-right-bottom.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  .block-divider-bottom-left
+  {
+    background-image: url(img/sidebar-left-bottom.png);
+    background-position: right top;
+    background-repeat: no-repeat;
   }
 
 
