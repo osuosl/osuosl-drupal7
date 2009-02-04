@@ -91,7 +91,7 @@
       <img width="13" height="42" border="0" alt="skip page navigation" src="http://oregonstate.edu/u_central/images/blackHeight.gif"/>
     </a>
     <a target="_parent" href="http://oregonstate.edu">
-      <img width="262" height="42" border="0" alt="Oregon State University" src="http://oregonstate.edu/u_central/images/blackWordmark.gif"/>
+      <img id="osu-image" width="262" height="42" border="0" alt="Oregon State University" src="http://oregonstate.edu/u_central/images/blackWordmark.gif"/>
     </a>
   </div><!-- end OSU identity -->
   <div id="page"><div id="page-inner">
