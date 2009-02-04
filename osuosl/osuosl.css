@@ -33,7 +33,7 @@
   {
     margin: 0;
     /*padding: 10px;*/
-    background-color: #ccc; /* #888888 */
+    background-color: #888; /* #ccc */
   }
 
   #page
@@ -427,6 +427,7 @@
 
   #footer-inner
   {
+    padding-left: 20px;
   }
 
   #footer-message /* Wrapper for the footer message from Drupal's "Site information"
