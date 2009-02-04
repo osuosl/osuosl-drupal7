@@ -190,8 +190,8 @@
           <?php print $left; ?>
         <div class="block-divider-left">
             <div class="block-divider-top-left"></div>
-            <div class="block-divider-bottom-left"></div>
         </div><!-- /block-divider-left -->
+        <div class="block-divider-bottom-left"></div>
         </div><!-- /#sidebar-left-inner -->
         </div> <!-- /#sidebar-left -->
       <?php endif; ?>
@@ -201,8 +201,8 @@
           <?php print $right; ?>
         <div class="block-divider-right">
             <div class="block-divider-top-right"></div>
-            <div class="block-divider-bottom-right"></div>
         </div><!-- /block-divider-right -->
+        <div class="block-divider-bottom-right"></div>
         </div> <!-- /#sidebar-right-inner -->
         </div> <!-- /#sidebar-right -->
       <?php endif; ?>
