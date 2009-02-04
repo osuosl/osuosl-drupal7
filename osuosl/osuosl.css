@@ -1270,3 +1270,10 @@ div.panel-pane > h2.title {
 #osu-image {
   margin-left: 157px;
 }
+
+img.rackathon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
