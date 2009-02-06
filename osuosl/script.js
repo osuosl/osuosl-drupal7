@@ -7,7 +7,7 @@ Drupal.behaviors.osuosl = function (context) {
     var randSpace = Math.floor(Math.random() * spaceReplace.length);
 //    $newElement = '<h1 id="site-name"><a rel="home" title="Home" href="/">' + openBracket[randBracket] + 'open' + spaceReplace[randSpace] + 'source' + spaceReplace[randSpace] + 'lab' + closeBracket[randBracket] +'</a></h1>';
 //    $("#site-name").before($newElement).remove(); 
-$("#gift_btn input").hover(
+$(".submit-img input").hover(
  function()
   {
     this.src = this.src.replace("gift_btn.png","gift_btn-hover.png");
