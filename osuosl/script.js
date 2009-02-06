@@ -15,7 +15,6 @@ $(".submit-img input").hover(
  function()
   {
     this.src = this.src.replace("gift_btn-hover.png","gift_btn.png");
-    alert('hover');
   }
 );
 };
