@@ -296,7 +296,7 @@
     border: 0px solid black;
     background-color: transparent;
     text-transform: uppercase;
-    background: url("searchbutton.png") no-repeat top left;
+    background: url("searchbutton_off.png") no-repeat top left;
     width: 25px;
     height: 26px;
     margin: 0px;

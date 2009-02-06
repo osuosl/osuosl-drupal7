@@ -18,7 +18,7 @@ $(".submit-img input").hover(
     this.src = this.src.replace("_on","_off");
   }
 );
-$("#donate img").hover(
+$("img").hover(
  function()
   {
     this.src = this.src.replace("_off","_on");
@@ -26,6 +26,16 @@ $("#donate img").hover(
  function()
   {
     this.src = this.src.replace("_on","_off");
+  }
+);
+$("input").hover(
+ function()
+  {
+    this.css = this.css.replace("_off","_on");
+  },
+ function()
+  {
+    this.css = this.css.replace("_on","_off");
   }
 );
 //$("#search input").hover(
