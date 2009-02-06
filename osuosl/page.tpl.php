@@ -99,7 +99,7 @@
         <div id="logo-title" style="background-image:url(<?php print $logo; ?>);">
           <?php if ($search_box): ?>
             <!-- #search-box --><div id="search-box">
-            <div id="donate"><a href="/donate"><img src="/<?php print $directory; ?>/img/donate_200.png" /></a></div>
+            <div id="donate"><a href="/donate"><img src="/<?php print $directory; ?>/img/donate_200_off.png" /></a></div>
               <div id="search-form-wrapper">
                 <div id="search-label">Search</div>
                 <?php print $search_box; ?>
