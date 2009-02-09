@@ -39,7 +39,8 @@
   #page
   {
     background-color: #fff;
-    font-size: 10pt;
+    font-size: 11pt;
+    font-family: "Trebuchet MS",Geneva,Arial,Helvetica,SunSans-Regular,Verdana,sans-serif;
   }
 
   #page-inner
@@ -274,7 +275,7 @@
   #search-label
   {
     color: #fff;
-    font-variant: small-caps;
+    /*font-variant: small-caps;*/
     font-size: 85%;
     font-weight: bold;
     letter-spacing: .3em;
@@ -990,7 +991,7 @@ a
 
 ul.menu
   {
-    font-variant: small-caps;  
+    /*font-variant: small-caps;  */
   }
 .menu a
   {
@@ -1077,8 +1078,17 @@ blockquote
   }
 .news-header .news-date, .story-header .story-date
   {
-    font-size: 0.8em;
-    padding: 8px 0 2px 12px;
+    font-size: 0.6em;
+    padding: 8px 0 12px 12px;
+    font-weight: 400;
+    margin-top: -2em;
+    margin-right: 12px;
+    float: right;
+    color: #808080;
+  }
+.news-header .news-title, .story-header .story-title
+  {
+    width: 650px; 
   }
 .profile-pic, .community-pic, .member-pic
   {
@@ -1138,7 +1148,7 @@ div.community-header > a {
 
 h3.block-title, h3.headlines-title {
     font-size: 12pt;
-    font-variant: small-caps;
+    /*font-variant: small-caps;*/
     color: #606060;
     font-weight: bold;
     padding-top: 12px;
@@ -1165,7 +1175,7 @@ ul.community-list, ul.headlines-list {
 ul.headlines-list > li > a {
     color: #808080;
     font-size: 10pt;
-    font-variant: small-caps;
+    /*font-variant: small-caps;*/
     font-weight: bold;
 }
 
@@ -1277,4 +1287,9 @@ img.rackathon {
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
+}
+
+td
+{
+  font-family: "Trebuchet MS",Geneva,Arial,Helvetica,SunSans-Regular,Verdana,sans-serif;
 }
