@@ -246,7 +246,10 @@
     /*top: -80px;*/
    /* width: 200px;*/
     /* margin: 0px 4px 0px 4px; */
-    margin: 12px 4px 0px 4px;
+    margin-top: 12px;
+    margin-right: 14px;
+    margin-bottom: 0px;
+    margin-left: 14px;
     /*left: -3px;*/
 
   }
@@ -296,9 +299,9 @@
     border: 0px solid black;
     background-color: transparent;
     text-transform: uppercase;
-    background: url("searchbutton_off.png") no-repeat top left;
-    width: 25px;
-    height: 26px;
+    background: transparent url("img/searchbutton_off.png") no-repeat top left;
+    width: 27px;
+    height: 27px;
     margin: 0px;
     padding: 0px;
     vertical-align: middle;
@@ -542,6 +545,12 @@
   ul.links.inline
   {
     display: inline;
+  }
+
+  /* hide read more link for stories since we want to display it within our own block */
+  .node-type-project_story ul.links.inline, .node-type-student_story ul.links.inline
+  {
+    display: none;
   }
 
   ul.links li
@@ -1060,17 +1069,13 @@ blockquote
 */
     margin-bottom: 10px;
   }
-.profile-header, .community-header, .member-header, .news-header, .donation-level-header
+.profile-header, .community-header, .member-header, .news-header, .donation-level-header, .story-header
   {
-/*
-    background-color: #565656;
-    color: #fff;
-*/
     padding: 2px 0 2px 12px;
     font-weight: bold;
     font-size: 1.5em;
   }
-.news-header div.news-date
+.news-header .news-date, .story-header .story-date
   {
     font-size: 0.8em;
     padding: 8px 0 2px 12px;
@@ -1084,7 +1089,7 @@ blockquote
   {
     border: 1px solid gray;
   }
-.profile-body, .news-teaser-body
+.profile-body, .news-teaser-body, .story-teaser-body
   {
     padding: 0 1em 1em 1em;
     min-height: 160px;
@@ -1116,7 +1121,7 @@ div.community-header > a {
     min-height: 135px;
   }
 
-.node-type-staffprofile h2.title, .node-type-studentprofile h2.title, .node-type-community h2.title, .node-type-member h2.title, .node-type-member div.meta, .node-type-news h2.title, .node-type-news div.meta
+.node-type-staffprofile h2.title, .node-type-studentprofile h2.title, .node-type-community h2.title, .node-type-member h2.title, .node-type-member div.meta, .node-type-news h2.title, .node-type-news div.meta, .node-type-project_story h2.title, .node-type-student_story h2.title
   {
     display: none;      /* Hide default "title" element on profile pages since it's already included in the template */
   }

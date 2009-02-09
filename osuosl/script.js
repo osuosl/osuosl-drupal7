@@ -1,13 +1,27 @@
 Drupal.behaviors.osuosl = function (context) {
-    // Replace search engine-friendly site name with one with pseudocode elements
-    var openBracket = new Array("{ ","// ","/* ","< ","[ ","( ","s/","# ");
-    var closeBracket = new Array(" }"," //"," */"," >"," ]"," );","/"," ");
-    var spaceReplace = new Array(".","_"," ");
-    var randBracket = Math.floor(Math.random() * openBracket.length);
-    var randSpace = Math.floor(Math.random() * spaceReplace.length);
-//    $newElement = '<h1 id="site-name"><a rel="home" title="Home" href="/">' + openBracket[randBracket] + 'open' + spaceReplace[randSpace] + 'source' + spaceReplace[randSpace] + 'lab' + closeBracket[randBracket] +'</a></h1>';
-//    $("#site-name").before($newElement).remove(); 
+jQuery.preloadImages = function()
+{
+  for(var i = 0; i<arguments.length; i++)
+  {
+    jQuery("<img>").attr("src", arguments[i]);
+  }
+}
+imageList = new Array("/sites/d6.osuosl.org/themes/zen/osuosl/img/searchbutton_on.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/searchbutton_off.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/1.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/2.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/3.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/4.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/5.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/6.png");
+$.preloadImages(imageList);
+// Replace search form search button with image
+$("#search input").hover(
+  function()
+    {
+        this.src = "/sites/d6.osuosl.org/themes/zen/osuosl/img/searchbutton_on.png";
+        this.type = this.type.replace("submit","image");
+    },
+    function()
+    {
+        this.src = "/sites/d6.osuosl.org/themes/zen/osuosl/img/searchbutton_off.png";
+    }
+  );
 
+// Donation block rollover
 $(".submit-img input").hover(
  function()
   {
@@ -18,6 +32,8 @@ $(".submit-img input").hover(
     this.src = this.src.replace("_on","_off");
   }
 );
+
+// generic image rollover event
 $("img").hover(
  function()
   {
@@ -28,16 +44,16 @@ $("img").hover(
     this.src = this.src.replace("_on","_off");
   }
 );
-$("input").hover(
- function()
-  {
-    this.css = this.css.replace("_off","_on");
-  },
- function()
-  {
-    this.css = this.css.replace("_on","_off");
-  }
-);
+//$("input").hover(
+// function()
+//  {
+//    this.css = this.css.replace("_off","_on");
+//  },
+// function()
+//  {
+//    this.css = this.css.replace("_on","_off");
+//  }
+//);
 //$("#search input").hover(
 // function()
 //  {
