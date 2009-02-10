@@ -6,18 +6,18 @@ jQuery.preloadImages = function()
     jQuery("<img>").attr("src", arguments[i]);
   }
 }
-imageList = new Array("/sites/d6.osuosl.org/themes/zen/osuosl/img/searchbutton_on.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/searchbutton_off.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/1.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/2.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/3.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/4.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/5.png","/sites/d6.osuosl.org/themes/zen/osuosl/img/6.png");
+imageList = new Array("/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_on.png","/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_off.png","/sites/osuosl.org/themes/zen/osuosl/img/1.png","/sites/osuosl.org/themes/zen/osuosl/img/2.png","/sites/osuosl.org/themes/zen/osuosl/img/3.png","/sites/osuosl.org/themes/zen/osuosl/img/4.png","/sites/osuosl.org/themes/zen/osuosl/img/5.png","/sites/osuosl.org/themes/zen/osuosl/img/6.png");
 $.preloadImages(imageList);
 // Replace search form search button with image
 $("#search input").hover(
   function()
     {
-        this.src = "/sites/d6.osuosl.org/themes/zen/osuosl/img/searchbutton_on.png";
+        this.src = "/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_on.png";
         this.type = this.type.replace("submit","image");
     },
     function()
     {
-        this.src = "/sites/d6.osuosl.org/themes/zen/osuosl/img/searchbutton_off.png";
+        this.src = "/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_off.png";
     }
   );
 
@@ -58,11 +58,11 @@ $("img").hover(
 // function()
 //  {
 //    this.type = this.type.replace("submit","image");
-//    this.src = "/sites/d6.osuosl.org/themes/zen/osuosl/img/searchbutton_on.png";
+//    this.src = "/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_on.png";
 //  },
 //  function()
 //  {
-//    this.src = "/sites/d6.osuosl.org/themes/zen/osuosl/img/searchbutton_off.png";
+//    this.src = "/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_off.png";
 //  }
 //);
 };
