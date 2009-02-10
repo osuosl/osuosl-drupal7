@@ -287,7 +287,7 @@
   }
   #edit-search-theme-form-1 /* search box input field */
   {
-    width: 130px;
+    width: 120px;
     border: 1px solid gray;
     height: 22px;
     vertical-align: middle;
@@ -1070,13 +1070,13 @@ blockquote
 */
     margin-bottom: 10px;
   }
-.profile-header, .community-header, .member-header, .news-header, .donation-level-header, .story-header
+.profile-header, .community-header, .member-header, .news-header, .donation-level-header, .story-header, .news-link-header
   {
     padding: 2px 0 2px 12px;
     font-weight: bold;
     font-size: 1.5em;
   }
-.news-header .news-date, .story-header .story-date
+.news-header .news-date, .story-header .story-date, .news-link-date
   {
     font-size: 0.6em;
     padding: 8px 0 12px 12px;
@@ -1086,9 +1086,13 @@ blockquote
     float: right;
     color: #808080;
   }
-.news-header .news-title, .story-header .story-title
+.news-header .news-title, .story-header .story-title, .news-link-title
   {
     width: 650px; 
+  }
+.news-link
+  {
+    margin: 10px 5px 25px 13px;
   }
 .profile-pic, .community-pic, .member-pic
   {
