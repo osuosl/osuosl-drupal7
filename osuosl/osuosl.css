@@ -1252,7 +1252,6 @@ div.content > ul.menu > li.leaf > a.active, div.content > ul.menu > li.leaf > a:
 div.separator {
   /*background: url(separator.png) no-repeat;*/
   height: 21px;
-  width: 100%;
   margin: 0 0 15px 100px;
 }
 img.hseparator {
