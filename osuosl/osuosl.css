@@ -217,7 +217,10 @@
     background: url(separator.png) bottom no-repeat;
     margin-bottom: 10px;
   }
-
+  .browserIE .feed-item 
+  {
+    background: none transparent;
+  }
   .feed-item-body {
     padding-bottom: 40px;
   }
@@ -1090,6 +1093,10 @@ blockquote
   {
     width: 650px; 
   }
+.news-title, .story-title
+  {
+    line-height: 1.5em;
+  }
 .news-link
   {
     margin: 10px 5px 25px 13px;
@@ -1243,9 +1250,12 @@ div.content > ul.menu > li.leaf > a.active, div.content > ul.menu > li.leaf > a:
 
 /* separator image */
 div.separator {
-  background: url(separator.png) no-repeat;
+  /*background: url(separator.png) no-repeat;*/
   height: 21px;
+  width: 100%;
   margin: 0 0 15px 100px;
+}
+img.hseparator {
 }
 
 img.home-story-img

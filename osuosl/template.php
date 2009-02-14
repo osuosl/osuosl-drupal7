@@ -100,9 +100,11 @@ function osuosl_theme(&$existing, $type, $theme, $path) {
  * @param $hook
  *   The name of the template being rendered (name of the .tpl.php file.)
  */
-/* -- Delete this line if you want to use this function
 function osuosl_preprocess(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+  /**$vars['sample_variable'] = t('Lorem ipsum.');*/
+  // Insert PNG fix plugin
+  jquery_plugin_add('ifixpng');
+  jquery_plugin_add('browserDetect');
 }
 // */
 

@@ -44,25 +44,7 @@ $("img").hover(
     this.src = this.src.replace("_on","_off");
   }
 );
-//$("input").hover(
-// function()
-//  {
-//    this.css = this.css.replace("_off","_on");
-//  },
-// function()
-//  {
-//    this.css = this.css.replace("_on","_off");
-//  }
-//);
-//$("#search input").hover(
-// function()
-//  {
-//    this.type = this.type.replace("submit","image");
-//    this.src = "/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_on.png";
-//  },
-//  function()
-//  {
-//    this.src = "/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_off.png";
-//  }
-//);
+// apply PNG alpha fix to all png images 
+$.ifixpng('/sites/osuosl.org/files/pixel.gif');
+$('img[@src$=.png]').ifixpng(); 
 };
