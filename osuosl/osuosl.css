@@ -1302,6 +1302,19 @@ img.rackathon {
   margin-top: 25px;
 }
 
+div.badge-container {
+  margin: 20px 10px 20px 100px;
+}
+
+div.badge-spacer {
+  clear: both;
+}
+
+img.badge-image {
+  float: left;
+  margin: 10px 10px 10px 25px;
+}
+
 td
 {
   font-family: "Trebuchet MS",Geneva,Arial,Helvetica,SunSans-Regular,Verdana,sans-serif;
