@@ -1122,6 +1122,11 @@ blockquote
     min-height: 100px;
   }
 
+.friend-name
+  {
+    padding: 1em 1em;
+  }
+
 .node-type-news > .node-inner > ul.inline
   {
     display: none;
