@@ -6,8 +6,7 @@ jQuery.preloadImages = function()
     jQuery("<img>").attr("src", arguments[i]);
   }
 }
-imageList = new Array("/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_on.png","/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_off.png","/sites/osuosl.org/themes/zen/osuosl/img/1.png","/sites/osuosl.org/themes/zen/osuosl/img/2.png","/sites/osuosl.org/themes/zen/osuosl/img/3.png","/sites/osuosl.org/themes/zen/osuosl/img/4.png","/sites/osuosl.org/themes/zen/osuosl/img/5.png","/sites/osuosl.org/themes/zen/osuosl/img/6.png");
-$.preloadImages(imageList);
+$.preloadImages('/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_on.png','/sites/osuosl.org/themes/zen/osuosl/img/searchbutton_off.png','/sites/osuosl.org/themes/zen/osuosl/img/1.png','/sites/osuosl.org/themes/zen/osuosl/img/2.png','/sites/osuosl.org/themes/zen/osuosl/img/3.png','/sites/osuosl.org/themes/zen/osuosl/img/4.png','/sites/osuosl.org/themes/zen/osuosl/img/5.png');
 // Replace search form search button with image
 $("#search input").hover(
   function()

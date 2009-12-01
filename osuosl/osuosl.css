@@ -1324,3 +1324,7 @@ td
 {
   font-family: "Trebuchet MS",Geneva,Arial,Helvetica,SunSans-Regular,Verdana,sans-serif;
 }
+
+div.faq-question {
+    font-weight: bold;
+}
