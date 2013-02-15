@@ -1,0 +1,25 @@
+name = OSUOSL 2.0
+description = Drupal 7 theme for osuosl.org, by Mitchell Garcia. This one works.
+version = 2.0
+core = 7.x
+
+regions[header] = Header
+regions[featured] = Feature
+regions[search] = Search
+regions[content_header] = Content Header (Breadcrumb)
+regions[contact_block] = Contact Block
+regions[about_block] = About Block
+regions[sidebar_blog] = Blog Sidebar
+regions[sidebar_hosted] = Hosted Communities Sidebar
+regions[content] = Content
+regions[footer_column1] = Column 1 In Footer
+regions[footer_column2] = Column 2 In Footer
+regions[footer_column3] = Column 3 In Footer
+
+features[] = logo
+features[] = slogan
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+stylesheets[all][] = css/style.css

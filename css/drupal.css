@@ -1,0 +1,25 @@
+.byline {
+	display:inline;
+}
+
+.byline .field-label {
+	display:none;
+}
+
+.byline .field-item {
+	display:inline;
+	padding-right:5px;
+}
+
+.byline .field {
+}
+
+#node {padding:20px 0;}
+
+.tabs {
+	padding:0px 0px 5px 0;
+}
+
+.field-name-field-article-image {
+	margin:20px 0 0 0;
+}
