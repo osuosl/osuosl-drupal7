@@ -1,5 +1,3 @@
-
-
 <div id="header">
 <div id="header-container">
 	<div id="osu-tag">

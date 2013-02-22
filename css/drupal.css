@@ -17,9 +17,19 @@
 #node {padding:20px 0;}
 
 .tabs {
-	padding:0px 0px 5px 0;
+	padding: 0;
 }
 
 .field-name-field-article-image {
 	margin:20px 0 0 0;
+}
+
+.region-homepage-message {
+	padding:0px;
+	margin:0px;
+}
+
+.region-homepage-message .content {
+	padding:0px;
+	margin:0px;
 }

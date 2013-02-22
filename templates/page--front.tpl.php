@@ -90,35 +90,13 @@
 include("includes/header.php");
 ?>
 
-<div id="homepage-contentcontainer">
-
-	<div class="contact-block">
-
-    		<h4 class="darksidebar-header">Contact Us</h4>
-    		<hr class="decorative" />
-        
-        <p class="darksidebar-paragraph">support@osuosl.org</p>
-        	
-        <div class="vertical-padding">&nbsp;</div>
-        
-    			<h4 class="darksidebar-header">Address</h4>
-        		<hr class="decorative" />
-        
-        <p class="darksidebar-paragraph">
-        	<strong>OSU Open Source Lab</strong><br />
-        	Kerr Admin B211<br />
-        	Corvallis, OR 97331
-        </p>
-  </div>
-  
-	<div class="content-homepage">
+<div id="content-container">
+	<div class="page-content">
 	
 	<div class="contentheader">
 			<h1 class="small">Welcome to the Oregon State University Open Source Lab. <a href="http://osuosl.org/about">About Us</a></h1>
     		<div class="hr"></div>
     </div>
-		
-	<div class="blog-post">
       <a id="main-content"></a>
       <?php if ($tabs): ?>
         <div class="tabs">
@@ -129,13 +107,24 @@ include("includes/header.php");
         <ul class="action-links">
           <?php print render($action_links); ?>
         </ul>
-      <?php endif; ?> 
-      <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
-
-    </div>
-    
-    </div>
+      <?php endif; ?>
+      
+      <div id="feat-image">
+      	<?php print render($page['homepage_message']); ?>
+      </div>
+      
+      <div class="vertical-padding"></div>
+	    <div class="sidebar-left">
+			<?php print render($page['sidebar_homepage']); ?>
+		</div>
+	
+		<div class="blog-post">
+			<h4>Open Source Lab Blog</h4>
+    		<div class="hr"></div>
+	      <?php print render($page['content']); ?>
+	    </div>
+    	
+    	</div>
     
     <div class="right-block-container">
     	<a href="http://osuosl.org/donate">
@@ -144,9 +133,16 @@ include("includes/header.php");
     	</div>
     	</a>
     	
+    	<div class="contact-block">
+			<?php print render($page['contact_block']); ?>
+		</div>
+		
     	<div class="about-block">
-    	<?php print render($page['about_block']); ?>
+    		<?php print render($page['about_block']); ?>
     	</div>
+
+		
+  
     </div>
     
     <div class="clrfix"></div>

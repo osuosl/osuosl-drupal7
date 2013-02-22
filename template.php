@@ -14,3 +14,19 @@ function osuosl_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#attributes']['placeholder'] = t('Search');
   }
 }
+
+function _phptemplate_variables($hook, $vars = array())
+    {
+        switch ($hook)
+        {
+            case 'node':
+            
+                if(drupal_is_front_page())
+                {
+                    $vars['template_files'][] = 'node--front';
+                }
+            
+            break;
+        }
+    }
+?>

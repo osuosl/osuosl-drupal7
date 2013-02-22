@@ -11,10 +11,12 @@ regions[contact_block] = Contact Block
 regions[about_block] = About Block
 regions[sidebar_blog] = Blog Sidebar
 regions[sidebar_hosted] = Hosted Communities Sidebar
+regions[sidebar_homepage] = Homepage Sidebar
 regions[content] = Content
 regions[footer_column1] = Column 1 In Footer
 regions[footer_column2] = Column 2 In Footer
 regions[footer_column3] = Column 3 In Footer
+regions[homepage_message] = Homepage Message
 
 features[] = logo
 features[] = slogan

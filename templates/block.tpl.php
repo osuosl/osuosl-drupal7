@@ -49,6 +49,7 @@
   <?php print render($title_prefix); ?>
 <?php if ($block->subject): ?>
   <h4<?php print $title_attributes; ?>><?php print $block->subject ?></h4>
+  <hr class="decorative" />
 <?php endif;?>
   <?php print render($title_suffix); ?>
 

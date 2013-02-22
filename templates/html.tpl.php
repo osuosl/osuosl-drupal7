@@ -53,7 +53,7 @@
   <?php print $scripts; ?>
   
 	<!--Antic Slab font from Google Web Fonts-->
-	<link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'/>
 	
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
