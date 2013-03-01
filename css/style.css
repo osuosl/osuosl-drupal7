@@ -727,7 +727,3 @@ textarea::-webkit-input-placeholder {
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
-
-.form-submit {
-	display:none;
-}
