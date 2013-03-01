@@ -102,7 +102,7 @@ Navigation
 	color:#fff;
 	text-decoration:none;
 	text-transform:uppercase;
-	font-size:12px;	
+	font-size:11px;	
 }
 
 #navigation ul li.current a:link, 
@@ -118,7 +118,7 @@ Navigation
 	color:#fff;
 	text-decoration:underline;
 	text-transform:uppercase;
-	font-size:12px;	
+	font-size:11px;	
 }
 
 li.active a {
@@ -289,11 +289,8 @@ Blog Post Styles
 
 .page-content .sidebar-left {
 	float:left;
-	padding:0 20px 0 0px;
+	padding:0px 20px 0 0px;
 	width:170px;
-	position:static;
-	background:#fff;
-}
 }
 
 .page-content .sidebar-left h3 {
@@ -575,7 +572,7 @@ input[type="color"],
 input,
 textarea,
 .uneditable-input {
-  width: 206px;
+  width: 85%;
 }
 textarea {
   height: auto;

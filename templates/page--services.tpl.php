@@ -83,7 +83,6 @@ include("includes/header.php");
     		<div class="hr"></div>
         </div>
         
-	<div class="blog-post">
       <a id="main-content"></a>
       <?php if ($tabs): ?>
         <div class="tabs">
@@ -98,7 +97,6 @@ include("includes/header.php");
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
 
-    </div>
     
     <!-- Clear blog-post and sidebar-left to fix layout -->
     <div class="clrfix"></div>
@@ -112,9 +110,14 @@ include("includes/header.php");
     	</div>
     	</a>
     	
+    	<div class="contact-block">
+			<?php print render($page['contact_block']); ?>
+		</div>
+		
     	<div class="about-block">
-    	<?php print render($page['about_block']); ?>
+    		<?php print render($page['about_block']); ?>
     	</div>
+
     </div>
     
     <!--end #content-container below -->
