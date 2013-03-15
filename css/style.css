@@ -134,8 +134,7 @@ Content
 #content-container {
 	position:relative;
 	margin:0px auto;
-	width:100%;
-	max-width:1020px;
+	width:1020px;
 	margin-top:40px;
 }
 
