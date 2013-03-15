@@ -77,7 +77,8 @@ body {
 	width:100%;
 }
 
-#searchbar input {
+#searchbar submit {
+	display:none;
 }
 
 /*
