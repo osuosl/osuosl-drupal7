@@ -228,7 +228,7 @@ Content
 .right-block-container {
 	width:200px;
 	padding:0px;
-	margin:45px 0 0 0;
+	margin:55px 0 0 0;
 	float:left;
 }
 
@@ -248,6 +248,7 @@ Content
 	padding:20px 21px;
 	background:#385E86 url(../images/squaretexture.png) repeat;
 	margin-top:20px;
+	min-height:213px;
 }
 
 .about-block h4 {
