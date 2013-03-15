@@ -140,8 +140,9 @@ Content
 
 #feat-image {
 	width:780px;
-	height:437px;
+	height:482px;
 	overflow:hidden;
+	position:relative;
 }
 
 .content-homepage {
