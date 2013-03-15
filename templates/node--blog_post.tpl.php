@@ -37,6 +37,4 @@
     </div>
   <?php endif; ?>
 
-  <?php print render($content['comments']); ?>
-
 </div>
