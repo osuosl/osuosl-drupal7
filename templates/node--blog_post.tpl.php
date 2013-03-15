@@ -33,9 +33,7 @@
     if ($links):
   ?>
     <div class="link-wrapper">
-      <ul class="inline">
-      	<li><a href="<?php print $node_url; ?>" title="<?php print $title ?>">Read More</a></li>
-      </ul>
+      <?php print $links; ?>
     </div>
   <?php endif; ?>
 
