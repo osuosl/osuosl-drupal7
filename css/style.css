@@ -358,7 +358,9 @@ Hosted Communities
 /****
 Typography
 ****/
-p {
+p,
+ul,
+li {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	color:#000;
 	line-height:160%;
@@ -742,4 +744,20 @@ textarea::-webkit-input-placeholder {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+}
+
+/***
+CSS For Content Taken From Old Site
+***/
+.donation-level-header {
+  	font-family: Helvetica, Arial, sans-serif;
+  	font-size:18px;
+  	font-weight:bold;
+  	padding:5px 0 0 0;
+}
+  
+.donation-benefits li {
+	font-family: 'Georgia', Times New Roman, serif;
+	font-size:14px;
+	line-height:160%;
 }
