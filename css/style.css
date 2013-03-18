@@ -196,12 +196,12 @@ Content
 
 .sidebar-home {
 	width:297px;
-	float:left;
+	float:right;
 }
 
 .content-main-home {
-	width:471px;
-	float:right;
+	width:461px;
+	float:left;
 }
 
 /*Sidebars
