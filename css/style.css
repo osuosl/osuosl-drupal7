@@ -194,6 +194,16 @@ Content
 	color:#d85a1a;
 }
 
+.sidebar-home {
+	width:297px;
+	float:left;
+}
+
+.content-main-home {
+	width:493px;
+	float:right;
+}
+
 /*Sidebars
 ****/
 .contact-block {
@@ -751,7 +761,7 @@ Hosted Communities
 * Styles for Hosted Communities Page
 **/
 .community-container {
-	padding:0 0 10px 0px;
+	padding:0 0 26px 0px;
 }
 
 .node-picture {
