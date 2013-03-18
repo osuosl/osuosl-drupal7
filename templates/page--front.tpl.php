@@ -22,27 +22,15 @@ include("includes/header.php");
       <?php endif; ?>
       
       <div id="feat-image">
-      	<?php print render($page['homepage_message']); ?>
+      	<?php print render($page['homepage_image']); ?>
       </div>
       
       <div class="sidebar-home">
-		<?php print render($page['sidebar_homepage']); ?>
+		<?php print render($page['homepage_sidebar']); ?>
 	  </div>
 	
 	<div class="content-main-home">
-      <a id="main-content"></a>
-      <?php if ($tabs): ?>
-        <div class="tabs">
-          <?php print render($tabs); ?>
-        </div>
-      <?php endif; ?>
-      
-      <?php if ($action_links): ?>
-        <ul class="action-links">
-          <?php print render($action_links); ?>
-        </ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
+      <?php print render($page['homepage_message']); ?>
 
     </div>
     

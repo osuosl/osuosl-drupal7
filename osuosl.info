@@ -17,6 +17,8 @@ regions[footer_column1] = Column 1 In Footer
 regions[footer_column2] = Column 2 In Footer
 regions[footer_column3] = Column 3 In Footer
 regions[homepage_message] = Homepage Message
+regions[homepage_sidebar] = Homepage Sidebar
+regions[homepage_image] = Homepage Image
 
 features[] = logo
 features[] = slogan
