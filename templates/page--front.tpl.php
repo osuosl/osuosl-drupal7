@@ -31,6 +31,8 @@ include("includes/header.php");
 	
 	<div class="content-main-home">
       <?php print render($page['homepage_message']); ?>
+      
+	  <?php print render($page['content']); ?>
 
     </div>
     
