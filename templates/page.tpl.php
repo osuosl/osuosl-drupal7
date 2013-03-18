@@ -11,6 +11,11 @@ include("includes/header.php");
     		<div class="hr"></div>
         </div>
         
+	<div class="sidebar-left">
+		<?php print render($page['sidebar_blog']); ?>
+	</div>
+		
+	<div class="blog-post">
       <a id="main-content"></a>
       <?php if ($tabs): ?>
         <div class="tabs">
@@ -24,6 +29,11 @@ include("includes/header.php");
         </ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
+
+    </div>
+    
+    <!-- Clear blog-post and sidebar-left to fix layout -->
+    <div class="clrfix"></div>
     
     </div>
     
