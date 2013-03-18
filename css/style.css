@@ -747,6 +747,19 @@ textarea::-webkit-input-placeholder {
 }
 
 /***
+Hosted Communities
+* Styles for Hosted Communities Page
+**/
+.community-container {
+	padding:0 0 10px 0px;
+}
+
+.node-picture {
+	float:right;
+	margin:0 0 10px 10px;
+}
+
+/***
 CSS For Content Taken From Old Site
 ***/
 .donation-level-header {
