@@ -421,7 +421,7 @@ a.headline:hover {
 	font-size:10px;
 	text-transform:uppercase;
 	color:#666;
-	padding:0px;
+	padding:5px 0;
 	display:block;
 }
 
@@ -836,12 +836,25 @@ div.campaignWidget input.radio {
     padding: 0;
     width: 15px;
 }
+
 div.campaignWidget div.submit-img {
     clear: both;
     margin: 15px 0 0 18px;
     padding: 15px 0 0;
 }
+
 div.campaignWidget div.foot {
     margin: 5px 0 10px;
     padding: 10px 0;
+}
+
+div.badge-container {
+    margin: 20px 10px 20px 100px;
+}
+div.badge-spacer {
+    clear: both;
+}
+img.badge-image {
+    float: left;
+    margin: 10px 10px 10px 25px;
 }
