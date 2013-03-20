@@ -421,7 +421,7 @@ a.headline:hover {
 	font-size:10px;
 	text-transform:uppercase;
 	color:#666;
-	padding:15px 0 0 0;
+	padding:0px;
 	display:block;
 }
 
@@ -795,10 +795,6 @@ Hosted Communities
 /***
 CSS For Content Taken From Old Site
 ***/
-.content h2 {
-	padding:0 0 5px 0;
-}
-
 .contentheader {
   	font-family: Helvetica, Arial, sans-serif;
   	font-size:18px;
