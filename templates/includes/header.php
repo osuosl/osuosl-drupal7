@@ -5,7 +5,7 @@
     </div>
     
     <div id="osl-logo">
-    	<a href="http://osuosl.org"><img src="/<?php print $directory;?>/images/logo.png" alt="OSL Open Source Lab Logo" border="0" /></a>    
+    	<a href="http://osuosl.org"><img src="/<?php print $directory;?>/images/logo-full.png" alt="OSU Open Source Lab Logo" border="0" /></a>    
     </div>
     
   <div id="navigation">
