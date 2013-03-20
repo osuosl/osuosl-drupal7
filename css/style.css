@@ -541,6 +541,13 @@ h4.subtitle {
 	float:left;
 }
 
+#footer-container #column4 {
+	width:38%;
+	padding: 0 0 20px 0;
+	text-align:right;
+	float:right;
+}
+
 
 
 /****

@@ -12,6 +12,10 @@
 			<?php print render($page['footer_column3']); ?>
 		</div>
 		
+		<div id="column4">
+			<a href="http://osuosl.org"><img src="/sites/default/themes/osuosl-drupal7/images/logo-full.png" alt="Open Source Lab Logo" /></a>
+		</div>
+		
 		<div class="clrfix"></div>
 	</div>
 </div>
