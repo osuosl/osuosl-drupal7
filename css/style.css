@@ -57,7 +57,7 @@ body {
 	width:15%;
 	max-width:140px;
 	float:left;
-	padding: 27px 20px;
+	padding: 25px 20px;
 }
 
 #navigation {
@@ -563,6 +563,13 @@ hr.decorative {
 	height:0;
 }
 
+.hr-light {
+	width:100%;
+	margin:10px 0;
+	border-top:1px solid #eaeaea;
+	height:0;
+}
+
 label,
 input,
 button,
@@ -786,15 +793,29 @@ Hosted Communities
 /***
 CSS For Content Taken From Old Site
 ***/
-.donation-level-header {
+.contentheader {
   	font-family: Helvetica, Arial, sans-serif;
   	font-size:18px;
   	font-weight:bold;
   	padding:5px 0 0 0;
+  	color:#332E2C;
+}
+
+.sub-contentheader {
+  	font-family: Helvetica, Arial, sans-serif;
+  	font-size:16px;
+  	font-weight:normal;
+  	padding:5px 0 0 0;
+  	color:#998d88;
 }
   
 .donation-benefits li {
 	font-family: 'Georgia', Times New Roman, serif;
 	font-size:14px;
 	line-height:160%;
+}
+
+.float-left-donor {
+	float:left;
+	margin: 5px 10px 10px 0;
 }
