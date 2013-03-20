@@ -409,6 +409,7 @@ a.headline {
 	color:#000;
 	font-size:18px;
 	text-decoration:none;
+	padding:0px;
 }
 
 a.headline:hover {
@@ -439,6 +440,7 @@ h2.headline {
 	font-family: 'Antic Slab', serif;
 	font-size:24px;
 	font-weight:normal;
+	padding:0px;
 }
 
 ul.inline li {
