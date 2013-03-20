@@ -793,6 +793,10 @@ Hosted Communities
 /***
 CSS For Content Taken From Old Site
 ***/
+.content h2 {
+	padding:0 0 5px 0;
+}
+
 .contentheader {
   	font-family: Helvetica, Arial, sans-serif;
   	font-size:18px;
@@ -818,4 +822,28 @@ CSS For Content Taken From Old Site
 .float-left-donor {
 	float:left;
 	margin: 5px 10px 10px 0;
+}
+
+div.campaignWidget label {
+    display: block;
+    float: left;
+    margin: 5px 5px 0 0;
+    padding: 0;
+    text-align: right;
+    width: 70px;
+}
+
+div.campaignWidget input.radio {
+    margin: 0;
+    padding: 0;
+    width: 15px;
+}
+div.campaignWidget div.submit-img {
+    clear: both;
+    margin: 15px 0 0 18px;
+    padding: 15px 0 0;
+}
+div.campaignWidget div.foot {
+    margin: 5px 0 10px;
+    padding: 10px 0;
 }
