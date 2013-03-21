@@ -4,19 +4,20 @@ version = 2.0
 core = 7.x
 
 regions[header] = Header
-regions[search] = Search
-regions[content_header] = Content Header (Breadcrumb)
+regions[homepage_message] = Homepage Message
+regions[homepage_sidebar] = Homepage Sidebar
+regions[homepage_image] = Homepage Image
 regions[contact_block] = Contact Block
 regions[about_block] = About Block
 regions[sidebar_blog] = Blog Sidebar
 regions[sidebar_hosted] = Hosted Communities Sidebar
-regions[content] = Content
+regions[content_header] = Content Header (Breadcrumb)
 regions[footer_column1] = Column 1 In Footer
 regions[footer_column2] = Column 2 In Footer
 regions[footer_column3] = Column 3 In Footer
-regions[homepage_message] = Homepage Message
-regions[homepage_sidebar] = Homepage Sidebar
-regions[homepage_image] = Homepage Image
+regions[footer_column4] = Column 4 In Footer
+regions[search] = Search
+regions[content] = Content
 
 features[] = logo
 features[] = slogan
