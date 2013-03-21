@@ -327,13 +327,13 @@ Blog Post Styles
 	background:#fff;
 }
 
-.page-content .sidebar-left {
-	float:left;
-	padding:0px 20px 0 0px;
+.page-content .sidebar {
+	float:right;
+	padding:0px 0 0px 20px;
 	width:170px;
 }
 
-.page-content .sidebar-left h3 {
+.page-content .sidebar h3 {
 	font-weight:normal;
 	font-family: 'Antic Slab', serif;
 	font-size:16px;
@@ -342,20 +342,20 @@ Blog Post Styles
 	margin:0px;
 }
 
-.page-content .sidebar-left ul {
+.page-content .sidebar ul {
 	margin:0px;
 	padding:5px 0 0 0;
 }
 
-.page-content .sidebar-left li {
+.page-content .sidebar li {
 	color:#999;
 	font-size:12px;
 	margin:3px 20px;
 }
 
 .page-content .blog-post {
-	float:right;
-	width:75%;
+	float:left;
+	width:583px;
 }
 
 #gray-line {
@@ -550,7 +550,7 @@ h4.subtitle {
 }
 
 #footer-container #column4 {
-	width:35%;
+	width:25%;
 	padding: 20px 0;
 	text-align:right;
 	float:right;

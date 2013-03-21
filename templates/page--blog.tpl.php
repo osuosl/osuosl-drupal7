@@ -11,7 +11,7 @@ include("includes/header.php");
     		<div class="hr"></div>
         </div>
         
-	<div class="sidebar-left">
+	<div class="sidebar">
 		<?php print render($page['sidebar_blog']); ?>
 	</div>
 		
