@@ -50,3 +50,19 @@
 	font-weight:300;
 	font-family:Helvetica, arial, sans-serif;
 }
+
+ul li.expanded {
+	list-style-image:none;
+	list-style-type: circle;
+}
+
+ul li.leaf {
+	list-style-image:none;
+	list-style-type: circle;
+}
+
+li.expanded ul.menu .first.last.leaf {
+	list-style-image:none;
+	list-style-type:square;
+	color:#ddd;
+}
