@@ -61,13 +61,13 @@ body {
 }
 
 #navigation {
-	width:515px;
+	width:560px;
 	float:left;
 	padding:35px 0 0 0;
 }
 
 #searchbar {
-	width:195px;
+	width:165px;
 	float:right;
 	padding:25px 0;
 }
@@ -93,7 +93,7 @@ Navigation
 
 #navigation ul li {
 	display:inline;
-	margin:0 10px 0 0;
+	margin:0 8px 0 0;
 	padding:0px;
 }
 

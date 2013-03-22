@@ -61,8 +61,9 @@ ul li.leaf {
 	list-style-type: circle;
 }
 
-li.expanded ul.menu .first.last.leaf {
+li.expanded ul.menu .leaf{
 	list-style-image:none;
 	list-style-type:square;
 	color:#ddd;
+	margin-top:0px;
 }
