@@ -24,18 +24,18 @@ include("includes/header.php");
       <div id="feat-image">
       	<?php print render($page['homepage_image']); ?>
       </div>
-      
-      <div class="sidebar-home">
-		<?php print render($page['homepage_sidebar']); ?>
-	  </div>
 	
-	<div class="content-main-home">
+	<div class="blog-post">
       <?php print render($page['homepage_message']); ?>
       <div class="hr"></div>
       <a href="/blog"><span class="byline" style="font-weight:bold; font-size:10px;">OSU Open Source Lab Blog</span></blog>
 	  <?php print render($page['content']); ?>
 
     </div>
+      
+	<div class="sidebar">
+		<?php print render($page['sidebar_blog']); ?>
+	</div>
     
     <!-- Clear blog-post and sidebar-left to fix layout -->
     <div class="clrfix"></div>
