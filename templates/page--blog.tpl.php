@@ -10,10 +10,6 @@ include("includes/header.php");
 			<?php print render($page['content_header']); ?>
     		<div class="hr"></div>
         </div>
-        
-	<div class="sidebar">
-		<?php print render($page['sidebar_blog']); ?>
-	</div>
 		
 	<div class="blog-post">
       <a id="main-content"></a>
@@ -31,6 +27,10 @@ include("includes/header.php");
       <?php print $feed_icons; ?>
 
     </div>
+        
+	<div class="sidebar">
+		<?php print render($page['sidebar_blog']); ?>
+	</div>
     
     <!-- Clear blog-post and sidebar-left to fix layout -->
     <div class="clrfix"></div>
