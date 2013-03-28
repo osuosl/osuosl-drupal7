@@ -28,7 +28,7 @@ include("includes/header.php");
 	<div class="blog-post">
       <?php print render($page['homepage_message']); ?>
       <div class="hr"></div>
-      <a href="/blog"><span class="byline" style="font-weight:bold; font-size:10px;">OSU Open Source Lab Blog</span></blog>
+      <a href="/blog"><span class="byline" style="font-weight:bold; font-size:10px;">OSU Open Source Lab Blog</span></a>
 	  <?php print render($page['content']); ?>
 
     </div>
