@@ -308,6 +308,10 @@ p.lead {
 	max-width:100%;
 }
 
+.blog-post .field-item img {
+	margin:10px 0;
+}
+
 .content-padding {
 	padding:0px 0 20px 0;
 }
@@ -484,6 +488,7 @@ ul.inline li:hover {
 
 h4.subtitle {
 	color:#615042;
+	margin:0 0 10px 0;
 }
 
 
