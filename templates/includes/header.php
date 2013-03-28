@@ -1,11 +1,11 @@
 <div id="header">
 <div id="header-container">
 	<div id="osu-tag">
-    	<a href="http://oregonstate.edu"><img src="/<?php print $directory;?>/images/osu-tag.png" alt="OSU Tag" border="0" /></a>
+    	<a href="http://oregonstate.edu"><img src="/<?php print $directory;?>/images/osu-tag.png" alt="OSU Tag"/></a>
     </div>
     
     <div id="osl-logo">
-    	<a href="http://osuosl.org"><img src="/<?php print $directory;?>/images/logo-full.png" alt="OSU Open Source Lab Logo" border="0" /></a>    
+    	<a href="http://osuosl.org"><img src="/<?php print $directory;?>/images/logo-full.png" alt="OSU Open Source Lab Logo" /></a>    
     </div>
     
   <div id="navigation">

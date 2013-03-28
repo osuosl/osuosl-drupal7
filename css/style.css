@@ -43,6 +43,10 @@ body {
 	height:90px;
 }
 
+#header img {
+	border:0;
+}
+
 #osu-tag {
 	width:90px;
 	float:left;
