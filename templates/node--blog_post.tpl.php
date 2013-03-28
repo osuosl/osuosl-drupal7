@@ -2,6 +2,7 @@
 
       <h2 class="headline"><a href="<?php print $node_url; ?>" title="<?php print $title ?>"><?php print $title; ?></a>
       </a></h2>
+      <h4 class="subtitle"><?php print render($content['field_subtitle']); ?></h4>
 
   <?php if ($display_submitted): ?>
     <div class="submitted">
@@ -19,6 +20,7 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      hide($content['field_subtitle']);
       hide($content['field_article_image']);
       print render($content);
     ?>
