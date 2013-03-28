@@ -571,6 +571,28 @@ h4.subtitle {
 	float:right;
 }
 
+#footer-container .icons {
+	float:left;
+}
+
+#footer-container .icons .twitter {
+	background:#39A9e0;
+}
+
+#footer-container .icons .facebook {
+	background:#3B5998;
+}
+
+#footer-container .icons .github {
+	background:#4183C4;
+}
+
+#footer-container .icons .drupal {
+	background:#0077C0;
+}
+
+
+
 p.footer-type {	
 	font-size:12px;
 	font-family:Arial, Helvetica, sans-serif;
