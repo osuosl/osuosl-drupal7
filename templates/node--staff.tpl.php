@@ -1,4 +1,4 @@
-<div class="staff-profile">
+<div id="node-<?php print $node->nid; ?>" class="staff-profile <?php print $classes; ?> clearfix content-padding""<?php print $attributes; ?>>
       	
 		<div class="staff-picture">
 		<?php print render($content['field_picture']); ?>
@@ -11,5 +11,4 @@
       	hide($content['field_job_title']); 
       	
       	print render($content); ?>
-		
-	</div>
+</div>
