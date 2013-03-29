@@ -1,6 +1,5 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix content-padding""<?php print $attributes; ?>>
-      <h2 class="headline"><a href="<?php print $node_url; ?>" title="<?php print $title ?>"><?php print $title; ?></a>
-      </a></h2>
+      <h2 class="headline"><a href="<?php print $node_url; ?>" title="<?php print $title ?>"><?php print $title; ?></a></h2>
       <h4 class="subtitle"><?php print render($content['field_subtitle']); ?></h4>
 
   <?php if ($display_submitted): ?>
