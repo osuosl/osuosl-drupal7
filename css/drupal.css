@@ -62,6 +62,10 @@ ul li.leaf {
 	list-style-type: circle;
 }
 
+.sidebar .view-staff {
+	margin:0px;
+}
+
 li.expanded ul.menu .leaf{
 	list-style-image:none;
 	list-style-type:square;
