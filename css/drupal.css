@@ -1,3 +1,4 @@
+/*Styles to Override Drupal Defaults*/
 .byline {
 	display:inline;
 }
@@ -66,4 +67,8 @@ li.expanded ul.menu .leaf{
 	list-style-type:square;
 	color:#ddd;
 	margin-top:0px;
+}
+
+.field-type-taxonomy-term-reference .field-label {
+	font-weight:normal !important;
 }
