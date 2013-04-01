@@ -6,7 +6,7 @@ include("includes/header.php");
 	<div class="page-content">
 	
 	<div class="contentheader">
-			<h1 class="small">Welcome to the Oregon State University Open Source Lab. <a href="http://osuosl.org/about">About Us</a></h1>
+			<h1 class="small">Welcome to the Oregon State University Open Source Lab. <a href="/about">About Us</a></h1>
     		<div class="hr"></div>
     </div>
       <a id="main-content"></a>
