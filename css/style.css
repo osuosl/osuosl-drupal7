@@ -88,11 +88,13 @@ body {
 .more-link {
 	padding:5px;
 	border:1px solid #eaeaea;
+	float:right;
 }
 
 .more-link:hover {
 	padding:5px;
 	border:1px solid #ddd;
+	float:right;
 }
 
 img.float-right {
