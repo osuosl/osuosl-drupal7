@@ -23,5 +23,11 @@
       print render($content);
     ?>
     
+    <?php 
+if($teaser){
+      print l(t('Read more'), 'node/' . $nid, array('attributes' => array('class' => t('more-link')))); 
+  } 
+?>
+    
 
 </div>
