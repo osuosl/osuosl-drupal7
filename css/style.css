@@ -85,6 +85,21 @@ body {
 	display:none;
 }
 
+.more-link {
+	padding:5px;
+	border:1px solid #eaeaea;
+}
+
+.more-link:hover {
+	padding:5px;
+	border:1px solid #ddd;
+}
+
+img.float-right {
+	float:right;
+	margin:0 0 5px 10px;
+}
+
 /*
 Navigation
 ****/
