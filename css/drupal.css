@@ -81,3 +81,14 @@ li.expanded ul.menu .leaf{
 	color:#666;
 	font-size:.7em;
 }
+
+.faq-question {
+	font-family:'Antic Slab', Serif;
+	font-size:1.2em;
+	margin:10px 0 0;
+}
+
+.faq-answer {
+	padding:0 0 10px 0;
+	border-bottom:1px solid #ddd;
+}
