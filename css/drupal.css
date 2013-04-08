@@ -76,3 +76,8 @@ li.expanded ul.menu .leaf{
 .field-type-taxonomy-term-reference .field-label {
 	font-weight:normal !important;
 }
+
+.form-item .description {
+	color:#666;
+	font-size:.7em;
+}
