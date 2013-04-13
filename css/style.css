@@ -249,14 +249,6 @@ p.lead {
 	padding:20px;
 	background:#d85a1a url(../images/squaretexture.png) repeat;
 	margin:20px 0 0 0;
-	-moz-border-top-right-radius: 10px;
-	border-top-right-radius:10px;
-	-webkit-border-top-right-radius: 10px;
-	-khtml-border-top-right-radius: 10px;
-	-moz-border-bottom-right-radius: 10px;
-	border-bottom-right-radius:10px;
-	-webkit-border-bottom-right-radius: 10px;
-	-khtml-border-bottom-right-radius: 10px;
 }
 
 .contact-block p {
@@ -292,14 +284,6 @@ p.lead {
 	background:#666633 url(../images/squaretexture.png) repeat;
 	padding:10px 20px;
 	height:60px;
-	-moz-border-top-right-radius: 10px;
-	border-top-right-radius:10px;
-	-webkit-border-top-right-radius: 10px;
-	-khtml-border-top-right-radius: 10px;
-	-moz-border-bottom-right-radius: 10px;
-	border-bottom-right-radius:10px;
-	-webkit-border-bottom-right-radius: 10px;
-	-khtml-border-bottom-right-radius: 10px;
 }
 
 .donate-block:hover {
@@ -312,14 +296,6 @@ p.lead {
 	padding:20px 21px;
 	background:#385E86 url(../images/squaretexture.png) repeat;
 	margin-top:20px;
-	-moz-border-top-right-radius: 10px;
-	border-top-right-radius:10px;
-	-webkit-border-top-right-radius: 10px;
-	-khtml-border-top-right-radius: 10px;
-	-moz-border-bottom-right-radius: 10px;
-	border-bottom-right-radius:10px;
-	-webkit-border-bottom-right-radius: 10px;
-	-khtml-border-bottom-right-radius: 10px;
 }
 
 .about-block h4 {
