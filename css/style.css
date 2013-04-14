@@ -168,7 +168,7 @@ Content
 	height:482px;
 	overflow:hidden;
 	position:relative;
-	margin:0 0 10px 0;
+	margin:0 0 20px 0;
 }
 
 .content-homepage {
@@ -186,6 +186,19 @@ Content
 	margin:0px auto;
 	width:1022px;
 	margin-top:40px;
+}
+
+#homepage-message {
+}
+
+#homepage-message h2 {
+	margin:0px;
+	padding:0px;
+	font-size:26px;
+}
+
+#homepage-message h4.subtitle {
+	font-size:18px;
 }
 
 div.contentheader {
@@ -239,7 +252,7 @@ div.contentheader {
 
 p.lead {
 	color:#222;
-	font-size:15px;
+	font-size:16px;
 }
 
 /*Sidebars
@@ -416,10 +429,11 @@ Typography
 p,
 ul,
 li {
-	font-family:Georgia, "Times New Roman", Times, serif;
+	font-family:Helvetica, Arial, sans-serif;
 	color:#000;
 	line-height:160%;
 	font-size:14px;
+	color:#222;
 }
 
 a:link, a:active, a:visited {
@@ -472,6 +486,7 @@ h2.headline {
 	font-size:24px;
 	font-weight:normal;
 	padding:0px;
+	margin:0px;
 }
 
 ul.inline li {
