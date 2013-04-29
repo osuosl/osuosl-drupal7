@@ -21,9 +21,7 @@ include("includes/header.php");
         </ul>
       <?php endif; ?>
       
-      <div id="feat-image">
       	<?php print render($page['homepage_image']); ?>
-      </div>
 	
 	<div class="blog-post">
       <?php print render($page['homepage_message']); ?>
