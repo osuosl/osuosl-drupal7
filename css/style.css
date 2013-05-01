@@ -663,6 +663,15 @@ hr.decorative {
 	height:0;
 }
 
+/* * * * 
+ Blog Post Styles, Typography, etc.
+* * * */
+.caption {
+	color:#666;
+	font-size:12px;
+	font-style:italic;
+}
+
 /* * * *
  Calendar
 * * * */
