@@ -3,9 +3,10 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  
-   <!--Antic Slab font from Google Web Fonts-->
-   <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'/>
+
+  <!-- Jaf Facitweb bold-->
+  <script type="text/javascript" src="//use.typekit.net/sqk5ybr.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

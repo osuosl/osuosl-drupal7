@@ -193,7 +193,9 @@ div.contentheader {
 
 .contentheader h2 {
 	text-decoration:none;
-	font-family: 'Antic Slab', serif;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-weight:700;
+	font-style:normal;
 	margin:0px;
 	padding:0px;
 	text-decoration:none;
@@ -242,8 +244,9 @@ p.lead {
 	color:#fff;
 	padding:0px;
 	margin:0px;
-	font-family: 'Antic Slab', serif;
-	font-weight:normal;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-weight:300;
+	font-style:normal;
 	font-size:18px;
 }
 
@@ -282,8 +285,9 @@ p.lead {
 	color:#fff;
 	padding:0px;
 	margin:0px;
-	font-family: 'Antic Slab', serif;
-	font-weight:normal;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-weight:300;
+	font-style:normal;
 	font-size:18px;
 }
 
@@ -344,7 +348,9 @@ Blog Post Styles
 
 .page-content .sidebar h3 {
 	font-weight:normal;
-	font-family: 'Antic Slab', serif;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-weight:300;
+	font-style:normal;
 	font-size:16px;
 	color:#373737;
 	padding:0px;
@@ -438,7 +444,9 @@ h1.small a:visited {
 }
 
 h2.headline {
-	font-family: 'Antic Slab', serif;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-weight:700;
+	font-style:normal;
 	font-size:24px;
 	font-weight:normal;
 	padding:0px;
