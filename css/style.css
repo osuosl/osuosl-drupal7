@@ -406,7 +406,7 @@ a:hover {
 
 a.headline {
 	font-family: "jaf-facitweb", Helvetica, sans-serif;
-	font-weight:bold;
+	font-weight:700;
 	color:#000;
 	font-size:18px;
 	text-decoration:none;
@@ -418,11 +418,11 @@ a.headline:hover {
 }
 
 .byline {
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:10px;
-	text-transform:uppercase;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-weight:300;
+	font-size:14px;
 	color:#666;
-	padding:5px 0;
+	padding:3px 0;
 	display:block;
 }
 
