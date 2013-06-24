@@ -331,10 +331,8 @@ Blog Post Styles
 	float:left;
 	width:810px;
 	margin-top:0px;
-	padding:25px 20px;
+	padding:20px 20px 0 0;
 	z-index:99;
-	border:1px solid #ddd;
-	background:#fff;
 }
 
 .page-content .sidebar {
@@ -486,8 +484,8 @@ h4.subtitle {
 ***/
 #footer {
 	width:100%;
-	padding:20px 0;
-	background:url(../images/HeaderTexture.png) repeat;
+	padding:32px 0;
+	background:#333;
 	clear:both;
 	margin:0px auto;
 }
