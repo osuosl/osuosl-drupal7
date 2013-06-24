@@ -31,7 +31,7 @@ body {
 	width:1020px;
 	height:85px;
 	margin:0px auto;
-	padding:0px;
+	padding:0px 20px;
 }
 
 #header {
@@ -161,6 +161,7 @@ Content
 	margin:0px auto;
 	width:1020px;
 	margin-top:40px;
+	padding:0px 20px;
 }
 
 #feat-image {
