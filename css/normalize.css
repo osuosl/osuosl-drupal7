@@ -403,7 +403,8 @@ h5,
 h6 {
 	padding:0px;
 	margin:0px 0px 6px 0px;
-	font-family:'Antic Slab', serif;
-	font-weight:normal;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
+  font-weight:700;
+	font-style:none;
 }
 
