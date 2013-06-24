@@ -19,7 +19,7 @@ Homepage
 **/
 
 body {
-	background:#f5f2ed /* url('../images/subtle_grunge.png') repeat */;
+	background:#fff;
 	padding:0px;
 	margin: 0px;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 #header {
-	background:url(../images/HeaderTexture.png) repeat;
+	background:#333;
 	padding:0px;
 	margin:0px auto;
 	width:100%;
@@ -167,24 +167,9 @@ Content
 	margin:0 0 20px 0;
 }
 
-.content-homepage {
-	width:600px;
-	margin-top:0px;
-	padding:25px 20px;
-	z-index:99;
-	border:1px solid #ddd;
-	background:#fff;
-	float:right;
-}
-
-#homepage-contentcontainer {
-	position:relative;
-	margin:0px auto;
-	width:1022px;
-	margin-top:40px;
-}
-
-#homepage-message {
+#feat-image img {
+	width:100%;
+	text-align:center;
 }
 
 #homepage-message h2 {
@@ -226,18 +211,6 @@ div.contentheader {
 	color:#d85a1a;
 }
 
-.sidebar-home {
-	width:200px;
-	float:right;
-	padding:30px 0;
-}
-
-.content-main-home {
-	width:540px;
-	float:left;
-	padding:30px 0;
-}
-
 .content-main-home img {
 	max-width:100%;
 }
@@ -254,9 +227,8 @@ p.lead {
 /*Sidebars
 ****/
 .contact-block {
-	width:160px;
 	padding:20px;
-	background:#d85a1a url(../images/squaretexture.png) repeat;
+	background:#d85a1a;
 	margin:20px 0 0 0;
 }
 
@@ -283,27 +255,25 @@ p.lead {
 }
 
 .right-block-container {
-	width:200px;
+	width:166px;
 	padding:0px;
 	margin:55px 0 0 0;
 	float:left;
 }
 
 .donate-block {
-	background:#666633 url(../images/squaretexture.png) repeat;
-	padding:10px 20px;
-	height:60px;
+	background:#666633;
+	padding:10px 15px;
 }
 
 .donate-block:hover {
-	background:#339966 url(../images/squaretexture.png) repeat;
-	padding:10px 20px;
-	height:60px;
+	background:#339966;
+	padding:10px 15px;
 }
 
 .about-block {
 	padding:20px 21px;
-	background:#385E86 url(../images/squaretexture.png) repeat;
+	background:#385E86;
 	margin-top:20px;
 }
 
@@ -359,7 +329,7 @@ Blog Post Styles
 
 .page-content {
 	float:left;
-	width:778px;
+	width:810px;
 	margin-top:0px;
 	padding:25px 20px;
 	z-index:99;
