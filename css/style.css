@@ -335,8 +335,8 @@ Blog Post Styles
 }
 
 .page-content .sidebar {
-	float:right;
-	padding:5px 0 0px 20px;
+	float:left;
+	padding:5px 0px;
 	width:170px;
 }
 
@@ -363,7 +363,7 @@ Blog Post Styles
 }
 
 .page-content .blog-post {
-	float:left;
+	float:right;
 	width:600px;
 }
 
