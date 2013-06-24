@@ -181,6 +181,7 @@ Content
 
 #homepage-message h4.subtitle {
 	font-size:18px;
+	font-weight:300;
 }
 
 div.contentheader {
@@ -444,13 +445,21 @@ h1.small a:visited {
 }
 
 h2.headline {
+	padding:0px;
+	margin:0px;
+}
+
+h2.headline a:link,
+h2.headline a:active,
+h2.headline a:visited {
 	font-family: "jaf-facitweb", Helvetica, sans-serif;
 	font-weight:700;
 	font-style:normal;
 	font-size:24px;
-	font-weight:normal;
-	padding:0px;
-	margin:0px;
+}
+
+h2.headline a:hover {
+	color:#000;
 }
 
 ul.inline li {
@@ -484,7 +493,8 @@ ul.inline li:hover {
 
 h4.subtitle {
 	color:#615042;
-	margin:0 0 10px 0;
+	margin:4px 0 10px 0;
+	font-weight:normal;
 }
 
 
