@@ -121,29 +121,22 @@ Navigation
 #navigation ul li a:link, 
 #navigation ul li a:active, 
 #navigation ul li a:visited {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:"jaf-facitweb", Helvetica, sans-serif;
 	padding:0px;
 	margin:0px;
 	color:#fff;
 	text-decoration:none;
-	text-transform:uppercase;
-	font-size:11px;	
+	font-size:12px;	
 }
 
 #navigation ul li.current a:link, 
 #navigation ul li.current a:active, 
 #navigation ul li.current a:visited {
-	font-weight:bold;
+	font-weight:700;
 }
 
 #navigation ul li a:hover {
-	font-family:Arial, Helvetica, sans-serif;
-	padding:0px;
-	margin:0px;
-	color:#fff;
 	text-decoration:underline;
-	text-transform:uppercase;
-	font-size:11px;	
 }
 
 li.active a {
@@ -188,7 +181,7 @@ div.contentheader {
 	width:100%;
 	padding:0 0 0px 0;
 	margin:-10px 0 0 0;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
 	font-size:12px;
 }
 
@@ -412,7 +405,7 @@ a:hover {
 }
 
 a.headline {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
 	font-weight:bold;
 	color:#000;
 	font-size:18px;
@@ -605,7 +598,8 @@ h4.subtitle {
 
 p.footer-type {	
 	font-size:12px;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-weight:300;
 }
 
 
@@ -688,7 +682,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
 }
 label {
   display: block;
@@ -873,7 +867,7 @@ textarea::-webkit-input-placeholder {
 #search-block-form .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "jaf-facitweb", Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -900,7 +894,7 @@ CSS For Content Taken From Old Site
 ***/
 
 span.contentheader {
-  	font-family: Helvetica, Arial, sans-serif;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
   	font-size:18px;
   	font-weight:bold;
   	padding:5px 0 0 0;
@@ -908,7 +902,7 @@ span.contentheader {
 }
 
 .sub-contentheader {
-  	font-family: Helvetica, Arial, sans-serif;
+	font-family: "jaf-facitweb", Helvetica, sans-serif;
   	font-size:16px;
   	font-weight:normal;
   	padding:5px 0 0 0;
