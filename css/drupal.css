@@ -48,8 +48,8 @@
 }
 
 .sidebar h4 {
-	font-weight:300;
-	font-family:Helvetica, arial, sans-serif;
+	font-family:"jaf-facitweb", Helvetica, sans-serif;
+	font-size:18px;
 }
 
 ul li.expanded {
