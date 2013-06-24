@@ -29,7 +29,3 @@
 <!-- End Header and Header Container Below -->
 </div>
 </div>
-
-<div id="gray-line">
-	&nbsp;
-</div>
