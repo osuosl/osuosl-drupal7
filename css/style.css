@@ -508,6 +508,8 @@ h4.subtitle {
 }
 
 #footer-container p {
+	font-family:"jaf-facitweb", Helvetica, sans-serif;
+	font-weight:300;
 	color:#fff;
 } 
 
@@ -537,6 +539,8 @@ h4.subtitle {
 	margin:0px auto;
 	padding:0px;
 	list-style:none;
+	font-family:"jaf-facitweb", Helvetica, sans-serif;
+	font-weight:300;
 }
 
 #footer-container li.expanded ul.menu li {
