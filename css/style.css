@@ -35,7 +35,7 @@ body {
 }
 
 #header {
-	background:#333 url('images/aluminum.gif') repeat;
+	background:#333 url('../images/texture.gif') repeat;
 	padding:0px;
 	margin:0px auto;
 	width:100%;
@@ -496,7 +496,7 @@ h4.subtitle {
 #footer {
 	width:100%;
 	padding:32px 0;
-	background:#333 url('images/aluminum.gif') repeat;;
+	background:#333 url('../images/texture.gif') repeat;
 	clear:both;
 	margin:0px auto;
 }
