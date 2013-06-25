@@ -668,6 +668,15 @@ hr.decorative {
 	padding:0px;
 }
 
+/* * * *
+Build The Future
+* * * */
+.third {
+	width:32%;
+	float:left;
+	padding-right:10px;
+}
+
 label,
 input,
 button,
