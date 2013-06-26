@@ -1011,3 +1011,16 @@ img.badge-image {
     float: left;
     margin: 10px 10px 10px 25px;
 }
+
+/* * * Special Case Styles For Front- Page Promotions * * * */
+#featured-button {
+	left:75%;
+	padding:10px 15px;
+	position:absolute;
+	top:65%;
+}
+
+#merger-announcement {
+	padding:40px 0 120px 0;
+	position:relative;
+}
