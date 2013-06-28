@@ -48,7 +48,7 @@
 }
 
 .sidebar h4 {
-	font-family:"jaf-facitweb", Helvetica, sans-serif;
+	font-family:"Open Sans", Helvetica, sans-serif;
 	font-size:18px;
 }
 
@@ -83,7 +83,7 @@ li.expanded ul.menu .leaf{
 }
 
 .faq-question {
-	font-family:'Antic Slab', Serif;
+	font-family:"Open Sans", Serif;
 	font-size:1.2em;
 	margin:10px 0 0;
 }
