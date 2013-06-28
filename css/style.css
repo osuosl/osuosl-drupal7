@@ -121,7 +121,7 @@ Navigation
 #navigation ul li a:link, 
 #navigation ul li a:active, 
 #navigation ul li a:visited {
-	font-family:"jaf-facitweb", Helvetica, sans-serif;
+	font-family:"Open Sans", Helvetica, sans-serif;
 	padding:0px;
 	margin:0px;
 	color:#fff;
@@ -174,20 +174,20 @@ Content
 
 #homepage-message h4.subtitle {
 	font-size:18px;
-	font-weight:300;
+	font-weight:400;
 }
 
 div.contentheader {
 	width:100%;
 	padding:0 0 0px 0;
 	margin:-10px 0 0 0;
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-family: "Open Sans", Helvetica, sans-serif;
 	font-size:14px;
 }
 
 .contentheader h2 {
 	text-decoration:none;
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-family: "Open Sans", Helvetica, sans-serif;
 	font-weight:700;
 	font-style:normal;
 	margin:0px;
@@ -238,8 +238,8 @@ p.lead {
 	color:#fff;
 	padding:0px;
 	margin:0px;
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
-	font-weight:300;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight:400;
 	font-style:normal;
 	font-size:16px;
 }
@@ -279,8 +279,8 @@ p.lead {
 	color:#fff;
 	padding:0px;
 	margin:0px;
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
-	font-weight:300;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight:400;
 	font-style:normal;
 	font-size:16px;
 }
@@ -342,8 +342,8 @@ Blog Post Styles
 
 .page-content .sidebar h3 {
 	font-weight:normal;
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
-	font-weight:300;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight:400;
 	font-style:normal;
 	font-size:16px;
 	color:#373737;
@@ -405,7 +405,7 @@ a:hover {
 }
 
 a.headline {
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-family: "Open Sans", Helvetica, sans-serif;
 	font-weight:700;
 	color:#000;
 	font-size:18px;
@@ -418,8 +418,8 @@ a.headline:hover {
 }
 
 .byline {
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
-	font-weight:300;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight:400;
 	font-size:14px;
 	color:#666;
 	padding:3px 0;
@@ -445,7 +445,7 @@ h2.headline {
 h2.headline a:link,
 h2.headline a:active,
 h2.headline a:visited {
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-family: "Open Sans", Helvetica, sans-serif;
 	font-weight:700;
 	font-style:normal;
 }
@@ -508,8 +508,8 @@ h4.subtitle {
 }
 
 #footer-container p {
-	font-family:"jaf-facitweb", Helvetica, sans-serif;
-	font-weight:300;
+	font-family:"Open Sans", Helvetica, sans-serif;
+	font-weight:400;
 	color:#fff;
 } 
 
@@ -539,8 +539,8 @@ h4.subtitle {
 	margin:0px auto;
 	padding:0px;
 	list-style:none;
-	font-family:"jaf-facitweb", Helvetica, sans-serif;
-	font-weight:300;
+	font-family:"Open Sans", Helvetica, sans-serif;
+	font-weight:400;
 }
 
 #footer-container li.expanded ul.menu li {
@@ -644,8 +644,8 @@ a.button:focus {
 
 p.footer-type {	
 	font-size:12px;
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
-	font-weight:300;
+	font-family:"Open Sans", Helvetica, sans-serif;
+	font-weight:400;
 }
 
 
@@ -737,7 +737,7 @@ input,
 button,
 select,
 textarea {
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-family: "Open Sans", Helvetica, sans-serif;
 }
 label {
   display: block;
@@ -922,7 +922,8 @@ textarea::-webkit-input-placeholder {
 #search-block-form .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "jaf-facitweb", Helvetica, sans-serif;
+  font-family:"Open Sans", Helvetica, sans-serif;
+  font-weight:400;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -949,15 +950,15 @@ CSS For Content Taken From Old Site
 ***/
 
 span.contentheader {
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-family:"Open Sans", Helvetica, sans-serif;
   	font-size:18px;
-  	font-weight:bold;
+  	font-weight:700;
   	padding:5px 0 0 0;
   	color:#332E2C;
 }
 
 .sub-contentheader {
-	font-family: "jaf-facitweb", Helvetica, sans-serif;
+	font-family:"Open Sans", Helvetica, sans-serif;
   	font-size:16px;
   	font-weight:normal;
   	padding:5px 0 0 0;

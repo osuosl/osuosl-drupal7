@@ -4,10 +4,9 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
 
-  <!-- Jaf Facitweb bold-->
-  <script type="text/javascript" src="//use.typekit.net/sqk5ybr.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	
+<!-- Open Sans serviced from Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php print $page_top; ?>
