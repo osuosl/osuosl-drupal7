@@ -1030,7 +1030,8 @@ ol.top10 {
 	counter-reset: li;
 	margin-left:0;
 	padding-left:0;}
-ol > li:before {
+
+ol.top10 > li:before {
 	countent:counter(li,decimal);
 	counter-increment: li;
 	font-family: "Open Sans", Helvetica Neue, Sans-serif;
@@ -1042,13 +1043,9 @@ ol > li:before {
 	top:3px;
 }
 
-ol > li {
+ol.top10 > li {
 	list-style: none;
 	margin:0 0 6px 2em;
 	padding:0px;
 	position:relative;
-}
-
-}
-}
 }
