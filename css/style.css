@@ -1025,3 +1025,30 @@ img.badge-image {
 	padding:40px 0 120px 0;
 	position:relative;
 }
+
+ol.top10 {
+	counter-reset: li;
+	margin-left:0;
+	padding-left:0;}
+ol > li:before {
+	countent:counter(li,decimal);
+	counter-increment: li;
+	font-family: "Open Sans", Helvetica Neue, Sans-serif;
+	size:16px;
+	weight:700;
+	left:-1.7em;
+	padding:0;
+	position:absolute;
+	top:3px;
+}
+
+ol > li {
+	list-style: none;
+	margin:0 0 6px 2em;
+	padding:0px;
+	position:relative;
+}
+
+}
+}
+}
