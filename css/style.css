@@ -1036,11 +1036,13 @@ ol.top10 > li:before {
 	counter-increment: li;
 	font-family: "Open Sans", Helvetica Neue, Sans-serif;
 	size:16px;
-	weight:700;
 	left:-1.7em;
 	padding:0;
 	position:absolute;
 	top:3px;
+	font-size:16px;
+	font-weight:bold;
+	color:#c34500;
 }
 
 ol.top10 > li {
