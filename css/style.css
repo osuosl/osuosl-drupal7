@@ -1032,7 +1032,7 @@ ol.top10 {
 	padding-left:0;}
 
 ol.top10 > li:before {
-	countent:counter(li,decimal);
+	content:counter(li,decimal);
 	counter-increment: li;
 	font-family: "Open Sans", Helvetica Neue, Sans-serif;
 	size:16px;
