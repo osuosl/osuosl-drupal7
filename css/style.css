@@ -479,8 +479,8 @@ ul.inline li:hover {
 .staff-picture {
 	width:120px;
 	height:160px;
-	float:right;
-	margin: 0 0 10px 10px;
+	float:left;
+	margin: 0 15px 10px 0px;
 }
 
 h4.subtitle {
