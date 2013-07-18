@@ -27,15 +27,11 @@ body {
 @font-face {
     font-family: 'EksjaExtremesThin';
     src: 
-url(http://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-thin-webfont.e
-ot);
+url('http://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-thin-webfont.eot');
     src: local('☺'), 
-url(http://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-thin-webfont.w
-off) format('woff'),
-url(http://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-thin-webfont.t
-tf) format('truetype'),
-url(http://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-thin-webfont.s
-vg#webfont) format('svg');
+url('http://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-thin-webfont.woff') format('woff'),
+url('http://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-thin-webfont.ttf') format('truetype'),
+url('http://oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-thin-webfont.svg#webfont') format('svg');
     font-weight: normal;
     font-style: normal;
 }
