@@ -9,25 +9,32 @@
 
 @import "foundation/components/global"; // *always required
 @import "foundation/components/grid";
-@import "foundation/components/visibility";
 @import "foundation/components/buttons";
 @import "foundation/components/forms"; // *requires components/buttons
 
-
-@import url('normalize.css');
-
 /**
 ===============
-Beginning of Responsive OSUOSL Stylesheet
-Built with ZURB Foundation
-Created by Mitchell Garcia
+Welcome to the Responsive OSUOSL Stylesheet!
+Built by Mitchell Garcia (mitchillgarcia@gmail.com) with Compass, Sass, and Zurb Foundation.
 
-This was a lot of work ;)
+Hope you enjoy your stay.
 
-Index:
-General
+Table of Contents:
 1. Header Styles
 2. Navigation
+3. Content
+4. Sidebars
+5. Donate
+6. Hosted
+7. Typography
+8. Staff
+9. Footer
+10. Etc.
+10.1 Calendar
+10.2 Build The Future
+10.3 Old Site
+10.4 Front Page
+10.5 Featured Articles
 
 ===============
 **/
@@ -54,10 +61,7 @@ General
 }
 
 #osu-tag {
-	@extend .large-2, .hide-for-medium-down, .columns;
-	max-width:110px;
-	float:left;
-	padding-left:0px;
+	@extend .large-2, .columns;
 }
 
 #osu-tag img {
@@ -65,20 +69,21 @@ General
 }
 
 #osl-logo {
-	@extend .large-3, .small-12, .columns;
-	max-width:140px;
-	padding:25px 0;
+	@extend .large-4, .columns;
+	text-align:center;
+	padding-top:32px;
 }
 
 #navigation {
 	@extend .large-9, .columns;
-	padding:35px 15px;
+	padding:24px 0;
+	margin:0px;
 }
 
 #searchbar {
 	@extend .large-3, .columns;
-	max-width:165px;
-	padding:25px 0;
+	padding:0;
+	margin:0px;
 }
 
 #search-block-form .form-text{
@@ -93,38 +98,110 @@ General
 /***
 2. Navigation
 ****/
+.flexnav {
+	*zoom: 1;
+	-webkit-transition: 0;
+	-moz-transition: 0;
+	-o-transition: 0;
+	transition: 0;
+	-webkit-transform-style: preserve-3d;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	max-height: 0; }
 
-#navigation ul {
-	display:inline;
+.flexnav:after {
+	content: "";
+    display: table;
+    clear: both; 
+}
+
+.flexnav.show {
+	max-height: 2000px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; 
+}
+
+ul.flexnav {
 	padding:0px;
 	margin:0px;
 }
 
-#navigation ul li {
-	display:inline;
-	margin:0 8px 0 0;
-	padding:0px;
+.flexnav li {
+    font-size: 100%;
+    position: relative;
+    overflow: hidden; 
 }
 
-#navigation ul li a:link, 
-#navigation ul li a:active, 
-#navigation ul li a:visited {
-	font-family:"Open Sans", Helvetica, sans-serif;
-	padding:0px;
+.flexnav li a {
+    position: relative;
+    display: block;
+    padding: .96em;
+    z-index: 2;
+    overflow: hidden;
+    color: #fff;
+    background: darken($success-color, 13%);
+    border-bottom: 1px solid darken($success-color, 17%); 
+    text-decoration:none;
+    font-family:"Open Sans", Helvetica, Arial;
+}
+ 
+.flexnav li ul {
+    width: 100%; 
+}
+
+.flexnav li ul li {
+    font-size: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.flexnav li ul.show li {
+    overflow: visible; 
+}
+
+.flexnav li ul li a {
+    display: block;
+    background: #b2b2af; 
+ }
+
+ .flexnav ul li ul li a {
+    background: #bfbfbc; 
+ }
+
+.flexnav ul li ul li ul li a {
+    background: #cbcbc9; 
+}
+
+.menu-button {
+	@extend .button, .success, .radius;
+	position: relative;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
 	margin:0px;
-	color:#fff;
-	text-decoration:none;
-	font-size:12px;	
+	text-align:left;
 }
 
-#navigation ul li.current a:link, 
-#navigation ul li.current a:active, 
-#navigation ul li.current a:visited {
-	font-weight:700;
+.menu-button .touch-button {
+    background: transparent;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center; 
 }
 
-#navigation ul li a:hover {
-	text-decoration:underline;
+.menu-button .touch-button .navicon {
+    font-size: 16px;
+    position: relative;
+    top: 1em;
+    color: #fff;
 }
 
 li.active a {
@@ -132,7 +209,7 @@ li.active a {
 }
 
 /***
-Content
+3. Content
 ****/
 
 #content-container {
@@ -263,7 +340,7 @@ p.lead {
 }
 
 /***
-Sidebars
+4. Sidebars
 ****/
 
 .right-block-container {
@@ -353,7 +430,7 @@ Sidebars
 }
 
 /****
-Donate
+5. Donate
 ****/
 
 .campaignWidget {
@@ -365,11 +442,7 @@ Donate
 }
 
 /****
-Blog Post Styles
-****/
-
-/****
-Hosted Communities
+6. Hosted Communities
 ****/
 #communities-panel {
 	position:fixed;
@@ -381,20 +454,20 @@ Hosted Communities
 
 
 /****
-Typography
+7. Typography
 ****/
 p,
 ul,
 li {
 	font-family:'Georgia', Times New Roman;
-	color:#000;
-	line-height:160%;
-	font-size:14px;
 	color:#222;
+	line-height:1.6;
+	font-size:14px;
+	color:#111;
 }
 
 a:link, a:active, a:visited {
-	text-decoration:none;
+	text-decoration:underline;
 	color:#d85a1a;
 	font-weight:normal;
 }
@@ -403,19 +476,6 @@ a:hover {
 	text-decoration:underline;
 	color:#373737;
 	font-weight:normal;
-}
-
-a.headline {
-	font-family: "Open Sans", Helvetica, sans-serif;
-	font-weight:700;
-	color:#000;
-	font-size:18px;
-	text-decoration:none;
-	padding:0px;
-}
-
-a.headline:hover {
-	color:#d85a1a;
 }
 
 .byline {
@@ -449,6 +509,7 @@ h2.headline a:visited {
 	font-family: "Open Sans", Helvetica, sans-serif;
 	font-weight:700;
 	font-style:normal;
+	text-decoration:none;
 }
 
 h2.headline a:hover {
@@ -465,8 +526,22 @@ ul.inline li:hover {
 	border:1px solid #999;
 }
 
-/***Staff
+h4.subtitle {
+	color:#615042;
+	margin:4px 0 10px 0;
+	font-weight:normal;
+}
+
+.caption {
+	color:#666;
+	font-size:12px;
+	font-style:italic;
+}
+
+/***
+8. Staff
 ***/
+
 .staff-profile {
 	padding:0 0 10px 0;
 	margin:20px 0 0 0;
@@ -484,15 +559,10 @@ ul.inline li:hover {
 	margin: 0 15px 10px 0px;
 }
 
-h4.subtitle {
-	color:#615042;
-	margin:4px 0 10px 0;
-	font-weight:normal;
-}
 
 
-
-/**Footer
+/**
+9. Footer
 ***/
 #footer {
 	width:100%;
@@ -503,8 +573,7 @@ h4.subtitle {
 }
 
 #footer-container {
-	width:1000px;
-	margin:0px auto;
+	@extend .row;
 	color:#fff;
 }
 
@@ -522,8 +591,12 @@ h4.subtitle {
 #footer-container a:link,
 #footer-container a:active,
 #footer-container a:visited {
-	color:#ddd;
+	color:#C8C8C8;
 	font-size:12px;
+}
+
+#footer-container a:hover {
+	color:#fff;
 }
 
 #footer-container ul {
@@ -545,103 +618,31 @@ h4.subtitle {
 }
 
 #footer-container li.expanded ul.menu li {
-	margin: 0 0 0 10px;
+	margin: 0 0 0 15px;
 	padding:0px;
 	list-style:none;
 }
 
 #footer-container #column1 {
-	width:19%;
-	float:left;
-	margin:0 40px 0 0;
+	@extend .large-4, .columns;
 }
 
 #footer-container #navcontainer {
-	width:40%;
-	padding:0 0 20px 0;
-	float:left;
-	margin:0px;
+	@extend .large-8, .columns;
 }
 
 #footer-container #column2,
 #footer-container #column3 {
-	width:50%;
-	padding:0;
-	margin:0;
-	float:left;
+	@extend .large-8, .columns;
 }
 
 #footer-container #column4 {
-	width:25%;
-	padding: 0;
-	text-align:left;
-	float:right;
+	@extend .large-4, .columns;
 }
 
 .mollom-privacy {
 	display:none;
 }
-
-.form-submit,
-a.button:link,
-a.button:active,
-a.button:visited {
-	border-style: solid;
-	border-width: 1px;
-	font-weight: 300;
-	line-height: 1;
-	margin: 0 0 1.25em;
-	position: relative;
-	text-decoration: none;
-	text-align: center;
-	display: inline-block;
-    padding-top:6px;
-    padding-bottom:6px;
-    padding-right:14px;
-    padding-left:14px;
-	font-size: 14;
-	background-color: #5da423;
-	border-color: #457a1a;
-	color: white;
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    -webkit-transition: background-color 300ms ease-out;
-    -moz-transition: background-color 300ms ease-out;
-    transition: background-color 300ms ease-out;
-    float:right;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-
-.form-submit:hover,
-.form-submit:focus,
-a.button:hover,
-a.button:focus {
-  background-color: #457a1a;
-}
-
-#footer-container .icons {
-	float:right;
-}
-
-#footer-container .icons .twitter {
-	background:#39A9e0;
-}
-
-#footer-container .icons .facebook {
-	background:#3B5998;
-}
-
-#footer-container .icons .github {
-	background:#4183C4;
-}
-
-#footer-container .icons .drupal {
-	background:#0077C0;
-}
-
-
 
 p.footer-type {	
 	font-size:12px;
@@ -649,10 +650,8 @@ p.footer-type {
 	font-weight:400;
 }
 
-
-
 /****
-Random
+10. Etc
 ****/
 
 .field-item.even {
@@ -664,6 +663,7 @@ Random
 .clrfix {
 	clear:both;
 }
+
 hr.decorative {   
 	border: 0; 
 	margin:10px 0;
@@ -684,230 +684,6 @@ hr.decorative {
 	margin:10px 0;
 	border-top:1px solid #eaeaea;
 	height:0;
-}
-
-/* * * * 
- Blog Post Styles, Typography, etc.
-* * * */
-.caption {
-	color:#666;
-	font-size:12px;
-	font-style:italic;
-}
-
-/* * * *
- Calendar
-* * * */
-.calendar {
-	font-family:Georgia, Times New Roman, serif;
-}
-
-.calendar small {
-	color:#666;
-}
-
-.calendar p {
-	padding: 5px 0 0 0;
-	margin:0px;
-}
-
-.calendar h4 {
-	margin:5px 0 0 0;
-	padding:0px;
-}
-
-/* * * *
-Build The Future
-* * * */
-.third {
-	width:30%;
-	float:left;
-	padding-right:20px;
-}
-
-label,
-input,
-button,
-select,
-textarea {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 20px;
-}
-input,
-button,
-select,
-textarea {
-	font-family: "Open Sans", Helvetica, sans-serif;
-}
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  display: inline-block;
-  height: 20px;
-  padding: 4px 6px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #555555;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  vertical-align: middle;
-}
-input,
-textarea,
-.uneditable-input {
-  width: 95%;
-}
-textarea {
-  height: auto;
-}
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear .2s, box-shadow linear .2s;
-  -moz-transition: border linear .2s, box-shadow linear .2s;
-  -o-transition: border linear .2s, box-shadow linear .2s;
-  transition: border linear .2s, box-shadow linear .2s;
-}
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
-
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-}
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 4px 0 0;
-  *margin-top: 0;
-  /* IE7 */
-
-  margin-top: 1px \9;
-  /* IE8-9 */
-
-  line-height: normal;
-}
-input[type="file"],
-input[type="image"],
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-input[type="radio"],
-input[type="checkbox"] {
-  width: auto;
-}
-select,
-input[type="file"] {
-  height: 30px;
-  /* In IE7, the height of the select element cannot be changed by height, only font-size */
-
-  *margin-top: 4px;
-  /* For IE7, add top margin to align select with labels */
-
-  line-height: 30px;
-}
-select {
-  width: 220px;
-  border: 1px solid #cccccc;
-  background-color: #ffffff;
-}
-select[multiple],
-select[size] {
-  height: auto;
-}
-select:focus,
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.uneditable-input,
-.uneditable-textarea {
-  color: #999999;
-  background-color: #fcfcfc;
-  border-color: #cccccc;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
-  cursor: not-allowed;
-}
-.uneditable-input {
-  overflow: hidden;
-  white-space: nowrap;
-}
-.uneditable-textarea {
-  width: auto;
-  height: auto;
-}
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #999999;
-}
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #999999;
-}
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #999999;
 }
 
 #search-block-form {
@@ -933,6 +709,41 @@ textarea::-webkit-input-placeholder {
   border-radius: 15px;
 }
 
+.form-submit {
+	@extend .button, .success, .radius, .small;
+	float:right;
+}
+
+/* * * *
+10.1 Calendar
+* * * */
+.calendar {
+	font-family:Georgia, Times New Roman, serif;
+}
+
+.calendar small {
+	color:#666;
+}
+
+.calendar p {
+	padding: 5px 0 0 0;
+	margin:0px;
+}
+
+.calendar h4 {
+	margin:5px 0 0 0;
+	padding:0px;
+}
+
+/* * * *
+10.2 Build The Future
+* * * */
+.third {
+	width:30%;
+	float:left;
+	padding-right:20px;
+}
+
 /***
 Hosted Communities
 * Styles for Hosted Communities Page
@@ -947,7 +758,7 @@ Hosted Communities
 }
 
 /***
-CSS For Content Taken From Old Site
+10.3 Old Site CSS
 ***/
 
 span.contentheader {
@@ -1014,7 +825,10 @@ img.badge-image {
     margin: 10px 10px 10px 25px;
 }
 
-/* * * Special Case Styles For Front- Page Promotions * * * */
+/***
+10.4 Front Page
+***/
+
 #featured-button {
 	left:75%;
 	padding:10px 15px;
@@ -1026,6 +840,10 @@ img.badge-image {
 	padding:40px 0 120px 0;
 	position:relative;
 }
+
+/***
+10.5 Feature Articles
+***/
 
 ol.top10 {
 	counter-reset: li;
@@ -1054,6 +872,23 @@ ol.top10 > li {
 }
 
 @media only screen and (min-width: 768px) {
+
+#osl-logo {
+	width:133px;
+	float:left;
+	padding:0px;
+	margin-top:25px;
+}
+
+#navigation {
+	padding:35px 15px;
+}
+
+#searchbar {
+	width:165px;
+	padding:25px 0;
+}
+
 #header-container {
 	height:90px;
 }
@@ -1063,6 +898,101 @@ ol.top10 > li {
 }
 
 .page-content .sidebar {
+	padding-right:0px;
+}
+
+/* Flexnav Styles */
+
+.flexnav {
+	overflow: visible; 
+	padding:0px 0px 0px 20px;
+	margin:0px;
+}
+
+.flexnav li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    overflow: visible; 
+}
+
+.flexnav li a {
+	color:#fff;
+	background:none;
+    border-bottom: none; 
+    font-size:12px;
+    padding:0px 14px 0 0;
+    margin:0px;
+}
+
+.flexnav li a:hover {
+	text-decoration:underline;
+}
+
+.flexnav li > ul {
+    position: absolute;
+    top: auto;
+    left: 0;
+    display: block; }
+
+.flexnav li > ul li {
+    width: 100%; 
+ }
+    
+.flexnav li ul li > ul {
+    margin-left: 100%;
+    top: 0; 
+}
+
+.flexnav li ul li a {
+    border-bottom: none; 
+}
+
+.flexnav li ul.open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1; 
+}
+
+.flexnav li ul.open li {
+    overflow: visible;
+    max-height: 100px; 
+}
+
+.flexnav li ul.open ul.open {
+    margin-left: 100%;
+    top: 0; 
+}
+
+.menu-button {
+    display: none; 
+    } 
+
+}
+
+@media only screen and (max-width: 768px) {
+.right-block-container {
+	display:none !important;
+}
+
+#search-block-form .form-text {
+	width:100% !important;
+}
+
+}
+
+@media only screen and (max-width: 1220px) {
+#osu-tag {
+	display:none !important;
+}
+
+#osu-tag img {
+	display:none !important;
+}
+
+.right-block-container {
 	padding-right:0px;
 }
 
