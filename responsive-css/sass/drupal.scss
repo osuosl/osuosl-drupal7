@@ -1,0 +1,94 @@
+/*Styles to Override Drupal Defaults*/
+.byline {
+	display:inline;
+}
+
+.byline .field-label {
+	display:none;
+}
+
+.byline .field-item {
+	display:inline;
+	padding-right:5px;
+}
+
+.byline .field {
+}
+
+#node {padding:20px 0;}
+
+.tabs {
+	padding: 0;
+}
+
+.field-name-field-article-image {
+	margin:20px 0 0 0;
+}
+
+.region-homepage-message {
+	padding:0px;
+	margin:0px;
+}
+
+.region-homepage-message .content {
+	padding:0px;
+	margin:0px;
+}
+
+.sidebar .block {
+	padding:0 0 28px 0;
+}
+
+.sidebar hr.decorative {
+	margin:5px;
+	border:none;
+	background:none;
+	color:none;
+	padding:0px;
+}
+
+.sidebar h4 {
+	font-family:"Open Sans", Helvetica, sans-serif;
+	font-size:18px;
+}
+
+ul li.expanded {
+	list-style-image:none;
+	list-style-type: circle;
+}
+
+ul li.leaf {
+	list-style-image:none;
+	list-style-type: circle;
+}
+
+.sidebar .view-staff {
+	margin:0px;
+}
+
+li.expanded ul.menu .leaf{
+	list-style-image:none;
+	list-style-type:square;
+	color:#ddd;
+	margin-top:0px;
+}
+
+.field-type-taxonomy-term-reference .field-label {
+	font-weight:normal !important;
+}
+
+.form-item .description {
+	color:#666;
+	font-size:.7em;
+}
+
+.faq-question {
+	font-family:"Open Sans", Serif;
+	font-size:1.2em;
+	margin:10px 0 0;
+}
+
+.faq-answer {
+	padding:0 0 10px 0;
+	border-bottom:1px solid #ddd;
+}
