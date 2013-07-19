@@ -17,7 +17,7 @@
     <script src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/js/jquery.flexnav.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-      $(".flexnav").flexNav();
+      jquery(".flexnav").flexNav();
     </script>
 </body>
 </html>
