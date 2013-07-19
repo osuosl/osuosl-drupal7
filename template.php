@@ -38,5 +38,4 @@ function osuosl_preprocess_image(&$variables) {
     unset($variables[$key]);
   }
 }
-
 ?>
