@@ -39,19 +39,4 @@ function osuosl_preprocess_image(&$variables) {
   }
 }
 
-// JQuery Fix from http://oldwildissue.wordpress.com/2012/11/19/drupal-7-manually-update-jquery-version/. thank you
-function osuosl_js_alter(&$javascript) {
-  //We define the path of our new jquery core file
-  //assuming we are using the minified version 1.8.3
-  $jquery_path = drupal_get_path('theme','osuosl') . '/js/jquery-1.9.0.min.js';
-
-  //We duplicate the important information from the Drupal one
-  $javascript[$jquery_path] = $javascript['misc/jquery.js'];
-  //..and we update the information that we care about
-  $javascript[$jquery_path]['version'] = '1.9.0';
-  $javascript[$jquery_path]['data'] = $jquery_path;
-
-  //Then we remove the Drupal core version
-  unset($javascript['misc/jquery.js']);
-}
 ?>
