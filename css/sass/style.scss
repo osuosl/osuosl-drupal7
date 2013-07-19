@@ -1,0 +1,999 @@
+// Global Foundation Settings
+@import "settings";
+@import "normalize.scss";
+@import "drupal.scss";
+
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+@import "foundation/components/global"; // *always required
+@import "foundation/components/grid";
+@import "foundation/components/buttons";
+@import "foundation/components/forms"; // *requires components/buttons
+
+/**
+===============
+Welcome to the Responsive OSUOSL Stylesheet!
+Built by Mitchell Garcia (mitchillgarcia@gmail.com) with Compass, Sass, and Zurb Foundation.
+
+Hope you enjoy your stay.
+
+Table of Contents:
+1. Header Styles
+2. Navigation
+3. Content
+4. Sidebars
+5. Donate
+6. Hosted
+7. Typography
+8. Staff
+9. Footer
+10. Etc.
+10.1 Calendar
+10.2 Build The Future
+10.3 Old Site
+10.4 Front Page
+10.5 Featured Articles
+
+===============
+**/
+
+/***
+1. Header Styles
+****/
+
+#header-container {
+	@extend .row;
+	padding:0px 20px;
+}
+
+#header {
+	background:#333 url('../images/texture.gif') repeat;
+	padding:0px;
+	margin:0px auto;
+	width:100%;
+	border-bottom:1px solid #373737;
+}
+
+#header img {
+	border:0;
+}
+
+#osu-tag {
+	@extend .large-2, .columns;
+}
+
+#osu-tag img {
+	z-index:99;
+}
+
+#osl-logo {
+	@extend .large-4, .columns;
+	text-align:center;
+	padding-top:32px;
+}
+
+#navigation {
+	@extend .large-9, .columns;
+	padding:24px 0;
+	margin:0px;
+}
+
+#searchbar {
+	@extend .large-3, .columns;
+	padding:0;
+	margin:0px;
+}
+
+#search-block-form .form-text{
+	padding:5px 0;
+	width:100%;
+}
+
+#searchbar .form-submit {
+	display:none;
+}
+
+/***
+2. Navigation
+****/
+.flexnav {
+	*zoom: 1;
+	-webkit-transition: 0;
+	-moz-transition: 0;
+	-o-transition: 0;
+	transition: 0;
+	-webkit-transform-style: preserve-3d;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	max-height: 0; }
+
+.flexnav:after {
+	content: "";
+    display: table;
+    clear: both; 
+}
+
+.flexnav.show {
+	max-height: 2000px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; 
+}
+
+ul.flexnav {
+	padding:0px;
+	margin:0px;
+}
+
+.flexnav li {
+    font-size: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+
+.flexnav li a {
+    position: relative;
+    display: block;
+    padding: .96em;
+    z-index: 2;
+    overflow: hidden;
+    color: #fff;
+    background: darken($success-color, 13%);
+    border-bottom: 1px solid darken($success-color, 17%); 
+    text-decoration:none;
+    font-family:"Open Sans", Helvetica, Arial;
+}
+ 
+.flexnav li ul {
+    width: 100%; 
+}
+
+.flexnav li ul li {
+    font-size: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.flexnav li ul.show li {
+    overflow: visible; 
+}
+
+.flexnav li ul li a {
+    display: block;
+    background: #b2b2af; 
+ }
+
+ .flexnav ul li ul li a {
+    background: #bfbfbc; 
+ }
+
+.flexnav ul li ul li ul li a {
+    background: #cbcbc9; 
+}
+
+.menu-button {
+	@extend .button, .success, .radius;
+	position: relative;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	margin:0px;
+	text-align:left;
+}
+
+.menu-button .touch-button {
+    background: transparent;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center; 
+}
+
+.menu-button .touch-button .navicon {
+    font-size: 16px;
+    position: relative;
+    top: 1em;
+    color: #fff;
+}
+
+li.active a {
+	font-weight:bold;
+}
+
+/***
+3. Content
+****/
+
+#content-container {
+	@extend .row;
+	margin-top:40px;
+	padding:20px 20px 20px 10px;
+}
+
+.page-content {
+	@extend .large-13, .columns;
+	z-index:99;
+}
+
+.page-content .blog-post {
+	@extend .large-12, .columns;
+}
+
+.page-content .blog-post img {
+	display:block;
+}
+
+.page-content .sidebar {
+	@extend .large-4, .columns;
+}
+
+.page-content .sidebar h3 {
+	font-weight:normal;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight:400;
+	font-style:normal;
+	font-size:16px;
+	color:#373737;
+	padding:0px;
+	margin:0px;
+}
+
+.page-content .sidebar ul {
+	margin:0px;
+	padding:5px 0 0 0;
+}
+
+.page-content .sidebar li {
+	color:#999;
+	font-size:12px;
+	margin:3px 20px;
+}
+
+.more-link {
+	padding:5px;
+	border:1px solid #eaeaea;
+	float:right;
+}
+
+.more-link:hover {
+	padding:5px;
+	border:1px solid #ddd;
+	float:right;
+}
+
+img.float-right {
+	float:right;
+	margin:0 0 5px 10px !important;
+}
+
+
+#feat-image {
+	margin:0 0 20px 0;
+}
+
+#feat-image img {
+	width:100%;
+	text-align:center;
+}
+
+#homepage-message h2 {
+	margin:0px;
+	padding:0px;
+	font-size:26px;
+}
+
+#homepage-message h4.subtitle {
+	font-size:18px;
+	font-weight:400;
+}
+
+div.contentheader {
+	width:100%;
+	padding:0 0 0px 0;
+	margin:-10px 0 0 0;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size:14px;
+}
+
+.contentheader h2 {
+	text-decoration:none;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight:700;
+	font-style:normal;
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	font-size:16px;
+}
+
+.contentheader a:link,
+.contentheader a:visited,
+.contentheader a:active {
+	text-decoration:none;
+	color:#666;
+}
+
+.contentheader a:hover {
+	text-decoration:none;
+	color:#d85a1a;
+}
+
+.content-main-home img {
+	max-width:100%;
+}
+
+.content-main-home p {
+	font-size:13px;
+}
+
+p.lead {
+	color:#222;
+	font-size:18px;
+}
+
+/***
+4. Sidebars
+****/
+
+.right-block-container {
+	@extend .large-3, .columns;
+	margin-top:55px;
+}
+
+.contact-block {
+	padding:20px;
+	background:#d85a1a;
+	margin:20px 0 0 0;
+}
+
+.contact-block p {
+	color:#fff;
+	font-size:12px;
+}
+
+.contact-block h5 {
+	color:#fff;
+	padding:0px;
+	margin:0px;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight:400;
+	font-style:normal;
+	font-size:16px;
+}
+
+.contact-block a {
+	color:#fff !important;
+}
+
+.vertical-padding {
+	padding:20px 0 0 0;
+}
+
+.donate-block {
+	background:#666633;
+	padding:10px 15px;
+}
+
+.donate-block:hover {
+	background:#339966;
+	padding:10px 15px;
+}
+
+.about-block {
+	padding:20px 21px;
+	background:#385E86;
+	margin-top:20px;
+}
+
+.about-block h5 {
+	color:#fff;
+	padding:0px;
+	margin:0px;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight:400;
+	font-style:normal;
+	font-size:16px;
+}
+
+.about-block a {
+	color:#fff !important;
+}
+
+.about-block p {
+	color:#fff;
+	font-size:13px;
+	line-height:150%;
+}
+
+.blog-post {
+	padding:0px 0px 20px 0;
+}
+
+.blog-post img {
+	max-width:100%;
+}
+
+.blog-post .field-item img {
+	margin:10px 0;
+}
+
+.content-padding {
+	padding:0px 0 20px 0;
+}
+
+/****
+5. Donate
+****/
+
+.campaignWidget {
+	float:right;
+	width:30%;
+	border:1px solid #ddd;
+	padding:25px;
+	margin:0 0 15px 15px;
+}
+
+/****
+6. Hosted Communities
+****/
+#communities-panel {
+	position:fixed;
+}
+
+#communities-panel a:active {
+	color:#000;
+}
+
+
+/****
+7. Typography
+****/
+p,
+ul,
+li {
+	font-family:'Georgia', Times New Roman;
+	color:#222;
+	line-height:1.6;
+	font-size:14px;
+	color:#111;
+}
+
+a:link, a:active, a:visited {
+	text-decoration:underline;
+	color:#d85a1a;
+	font-weight:normal;
+}
+
+a:hover {
+	text-decoration:underline;
+	color:#373737;
+	font-weight:normal;
+}
+
+.byline {
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight:400;
+	font-size:14px;
+	color:#666;
+	padding:3px 0;
+	display:block;
+}
+
+h1.small {
+	font-size:14px;
+	font-weight:normal;
+}
+
+h1.small a:link,
+h1.small a:active,
+h1.small a:visited {
+	text-decoration:underline;
+}
+
+h2.headline {
+	padding:0px;
+	margin:0px;
+}
+
+h2.headline a:link,
+h2.headline a:active,
+h2.headline a:visited {
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+}
+
+h2.headline a:hover {
+	color:#000;
+}
+
+ul.inline li {
+	float:right;
+	padding:5px;
+	border:1px solid #ddd;
+}
+
+ul.inline li:hover {
+	border:1px solid #999;
+}
+
+h4.subtitle {
+	color:#615042;
+	margin:4px 0 10px 0;
+	font-weight:normal;
+}
+
+.caption {
+	color:#666;
+	font-size:12px;
+	font-style:italic;
+}
+
+/***
+8. Staff
+***/
+
+.staff-profile {
+	padding:0 0 10px 0;
+	margin:20px 0 0 0;
+	border-bottom: 1px dotted #ddd;
+}
+
+.view-staff {
+	margin:-20px 0 0 0;
+}
+
+.staff-picture {
+	width:120px;
+	height:160px;
+	float:left;
+	margin: 0 15px 10px 0px;
+}
+
+
+
+/**
+9. Footer
+***/
+#footer {
+	width:100%;
+	padding:32px 0;
+	background:#333 url('../images/texture.gif') repeat;
+	clear:both;
+	margin:0px auto;
+}
+
+#footer-container {
+	@extend .row;
+	color:#fff;
+}
+
+#footer-container p {
+	font-family:"Open Sans", Helvetica, sans-serif;
+	font-weight:400;
+	color:#fff;
+} 
+
+#footer .content {
+	padding:0px;
+	margin:0px;
+}
+
+#footer-container a:link,
+#footer-container a:active,
+#footer-container a:visited {
+	color:#C8C8C8;
+	font-size:12px;
+}
+
+#footer-container a:hover {
+	color:#fff;
+}
+
+#footer-container ul {
+	margin:0px auto;
+	padding:0px;
+	list-style:none;
+}
+
+#footer-container p, #footer-container ul, #footer-container li {
+	color:#fff;
+}
+
+#footer-container li {
+	margin:0px auto;
+	padding:0px;
+	list-style:none;
+	font-family:"Open Sans", Helvetica, sans-serif;
+	font-weight:400;
+}
+
+#footer-container li.expanded ul.menu li {
+	margin: 0 0 0 15px;
+	padding:0px;
+	list-style:none;
+}
+
+#footer-container #column1 {
+	@extend .large-4, .columns;
+}
+
+#footer-container #navcontainer {
+	@extend .large-8, .columns;
+}
+
+#footer-container #column2,
+#footer-container #column3 {
+	@extend .large-8, .columns;
+}
+
+#footer-container #column4 {
+	@extend .large-4, .columns;
+}
+
+.mollom-privacy {
+	display:none;
+}
+
+p.footer-type {	
+	font-size:12px;
+	font-family:"Open Sans", Helvetica, sans-serif;
+	font-weight:400;
+}
+
+/****
+10. Etc
+****/
+
+.field-item.even {
+	font-size:15px;
+	line-height:130%;
+	color:#222;
+}
+
+.clrfix {
+	clear:both;
+}
+
+hr.decorative {   
+	border: 0; 
+	margin:10px 0;
+	height: 0; 
+	border-top: 1px solid rgba(0, 0, 0, 0.2); 
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.hr {
+	width:100%;
+	margin:10px 0;
+	border-top:1px solid #ddd;
+	height:0;
+}
+
+.hr-light {
+	width:100%;
+	margin:10px 0;
+	border-top:1px solid #eaeaea;
+	height:0;
+}
+
+#search-block-form {
+	width:100%;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#search-block-form input {
+	padding:0 3px;
+}
+
+#search-block-form .search-query {
+  margin-bottom: 0;
+  padding: 4px 14px;
+  font-family:"Open Sans", Helvetica, sans-serif;
+  font-weight:400;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.form-submit {
+	@extend .button, .success, .radius, .small;
+	float:right;
+}
+
+/* * * *
+10.1 Calendar
+* * * */
+.calendar {
+	font-family:Georgia, Times New Roman, serif;
+}
+
+.calendar small {
+	color:#666;
+}
+
+.calendar p {
+	padding: 5px 0 0 0;
+	margin:0px;
+}
+
+.calendar h4 {
+	margin:5px 0 0 0;
+	padding:0px;
+}
+
+/* * * *
+10.2 Build The Future
+* * * */
+.third {
+	width:30%;
+	float:left;
+	padding-right:20px;
+}
+
+/***
+Hosted Communities
+* Styles for Hosted Communities Page
+**/
+.community-container {
+	padding:0 0 26px 0px;
+}
+
+.node-picture {
+	float:right;
+	margin:0 0 10px 10px;
+}
+
+/***
+10.3 Old Site CSS
+***/
+
+span.contentheader {
+	font-family:"Open Sans", Helvetica, sans-serif;
+  	font-size:18px;
+  	font-weight:700;
+  	padding:5px 0 0 0;
+  	color:#332E2C;
+}
+
+.sub-contentheader {
+	font-family:"Open Sans", Helvetica, sans-serif;
+  	font-size:16px;
+  	font-weight:normal;
+  	padding:5px 0 0 0;
+  	color:#998d88;
+}
+  
+.donation-benefits li {
+	font-family: 'Georgia', Times New Roman, serif;
+	font-size:14px;
+	line-height:160%;
+}
+
+.float-left-donor {
+	float:left;
+	margin: 5px 10px 10px 0;
+}
+
+div.campaignWidget label {
+    display: block;
+    float: left;
+    margin: 5px 5px 0 0;
+    padding: 0;
+    text-align: right;
+    width: 70px;
+}
+
+div.campaignWidget input.radio {
+    margin: 0;
+    padding: 0;
+    width: 15px;
+}
+
+div.campaignWidget div.submit-img {
+    clear: both;
+    margin: 15px 0 0 18px;
+    padding: 15px 0 0;
+}
+
+div.campaignWidget div.foot {
+    margin: 5px 0 10px;
+    padding: 10px 0;
+}
+
+div.badge-container {
+    margin: 20px 10px 20px 100px;
+}
+div.badge-spacer {
+    clear: both;
+}
+img.badge-image {
+    float: left;
+    margin: 10px 10px 10px 25px;
+}
+
+/***
+10.4 Front Page
+***/
+
+#featured-button {
+	left:75%;
+	padding:10px 15px;
+	position:absolute;
+	top:65%;
+}
+
+#merger-announcement {
+	padding:40px 0 120px 0;
+	position:relative;
+}
+
+/***
+10.5 Feature Articles
+***/
+
+ol.top10 {
+	counter-reset: li;
+	margin-left:0;
+	padding-left:0;}
+
+ol.top10 > li:before {
+	content:counter(li,decimal);
+	counter-increment: li;
+	font-family: "Open Sans", Helvetica Neue, Sans-serif;
+	size:16px;
+	left:-1.7em;
+	padding:0;
+	position:absolute;
+	top:3px;
+	font-size:16px;
+	font-weight:bold;
+	color:#c34500;
+}
+
+ol.top10 > li {
+	list-style: none;
+	margin:0 0 6px 2em;
+	padding:0px;
+	position:relative;
+}
+
+@media only screen and (min-width: 768px) {
+
+#osl-logo {
+	width:133px;
+	float:left;
+	padding:0px;
+	margin-top:25px;
+}
+
+#navigation {
+	padding:35px 15px;
+}
+
+#searchbar {
+	width:165px;
+	padding:25px 0;
+}
+
+#header-container {
+	height:90px;
+}
+
+.page-content .blog-post {
+	padding-left:0px;
+}
+
+.page-content .sidebar {
+	padding-right:0px;
+}
+
+/* Flexnav Styles */
+
+.flexnav {
+	overflow: visible; 
+	padding:0px 0px 0px 20px;
+	margin:0px;
+}
+
+.flexnav li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    overflow: visible; 
+}
+
+.flexnav li a {
+	color:#fff;
+	background:none;
+    border-bottom: none; 
+    font-size:12px;
+    padding:0px 14px 0 0;
+    margin:0px;
+}
+
+.flexnav li a:hover {
+	text-decoration:underline;
+}
+
+.flexnav li > ul {
+    position: absolute;
+    top: auto;
+    left: 0;
+    display: block; }
+
+.flexnav li > ul li {
+    width: 100%; 
+ }
+    
+.flexnav li ul li > ul {
+    margin-left: 100%;
+    top: 0; 
+}
+
+.flexnav li ul li a {
+    border-bottom: none; 
+}
+
+.flexnav li ul.open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1; 
+}
+
+.flexnav li ul.open li {
+    overflow: visible;
+    max-height: 100px; 
+}
+
+.flexnav li ul.open ul.open {
+    margin-left: 100%;
+    top: 0; 
+}
+
+.menu-button {
+    display: none; 
+    } 
+
+}
+
+@media only screen and (max-width: 768px) {
+.right-block-container {
+	display:none !important;
+}
+
+#search-block-form .form-text {
+	width:100% !important;
+}
+
+}
+
+@media only screen and (max-width: 1220px) {
+#osu-tag {
+	display:none !important;
+}
+
+#osu-tag img {
+	display:none !important;
+}
+
+.right-block-container {
+	padding-right:0px;
+}
+
+}
