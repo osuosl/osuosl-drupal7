@@ -9,6 +9,9 @@
     </div>
     
   <div id="navigation">
+        <div class="menu-button">Menu</div>
+            <nav>
+              <ul data-breakpoint="768" class="flexnav">
     	<?php if ($main_menu): ?>
         	<?php print theme('links__system_main_menu', array(
           	'links' => $main_menu,
@@ -18,6 +21,8 @@
           ),
         )); ?>
     	<?php endif; ?>
+            </ul>
+        </nav>  
     </div>
     
     <div id="searchbar">
