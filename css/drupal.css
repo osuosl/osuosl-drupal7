@@ -1,0 +1,112 @@
+/*Styles to Override Drupal Defaults*/
+/* line 2, sass/drupal.scss */
+.byline {
+  display: inline;
+}
+
+/* line 6, sass/drupal.scss */
+.byline .field-label {
+  display: none;
+}
+
+/* line 10, sass/drupal.scss */
+.byline .field-item {
+  display: inline;
+  padding-right: 5px;
+}
+
+/* line 18, sass/drupal.scss */
+#node {
+  padding: 20px 0;
+}
+
+/* line 20, sass/drupal.scss */
+.tabs {
+  padding: 0;
+}
+
+/* line 24, sass/drupal.scss */
+.field-name-field-article-image {
+  margin: 20px 0 0 0;
+}
+
+/* line 28, sass/drupal.scss */
+.region-homepage-message {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 33, sass/drupal.scss */
+.region-homepage-message .content {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 38, sass/drupal.scss */
+.sidebar .block {
+  padding: 0 0 28px 0;
+}
+
+/* line 42, sass/drupal.scss */
+.sidebar hr.decorative {
+  margin: 5px;
+  border: none;
+  background: none;
+  color: none;
+  padding: 0px;
+}
+
+/* line 50, sass/drupal.scss */
+.sidebar h4 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+/* line 55, sass/drupal.scss */
+ul li.expanded {
+  list-style-image: none;
+  list-style-type: circle;
+}
+
+/* line 60, sass/drupal.scss */
+ul li.leaf {
+  list-style-image: none;
+  list-style-type: circle;
+}
+
+/* line 65, sass/drupal.scss */
+.sidebar .view-staff {
+  margin: 0px;
+}
+
+/* line 69, sass/drupal.scss */
+li.expanded ul.menu .leaf {
+  list-style-image: none;
+  list-style-type: square;
+  color: #ddd;
+  margin-top: 0px;
+}
+
+/* line 76, sass/drupal.scss */
+.field-type-taxonomy-term-reference .field-label {
+  font-weight: normal !important;
+}
+
+/* line 80, sass/drupal.scss */
+.form-item .description {
+  color: #666;
+  font-size: .7em;
+}
+
+/* line 85, sass/drupal.scss */
+.faq-question {
+  font-family: "Open Sans", Serif;
+  font-size: 1.2em;
+  margin: 10px 0 0;
+}
+
+/* line 91, sass/drupal.scss */
+.faq-answer {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ddd;
+}
