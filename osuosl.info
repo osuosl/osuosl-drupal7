@@ -26,5 +26,3 @@ features[] = main_menu
 features[] = secondary_menu
 
 stylesheets[all][] = css/style.css
-scripts[] = js/jquery-1.9.1.min.js
-scripts[] = js/jquery.flexnav.min.js
