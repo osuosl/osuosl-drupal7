@@ -16,8 +16,11 @@
   
     <script src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/js/jquery.flexnav.min.js" type="text/javascript"></script>
 
-    <script type="text/javascript">
-      jquery(".flexnav").flexNav();
-    </script>
+<script type="text/javascript">
+  (function ($) { 
+    $('.flexnav').flexNav();
+  })(jQuery);
+</script>
+
 </body>
 </html>
