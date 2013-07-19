@@ -15,7 +15,7 @@
   <?php print $page_bottom; ?>
 
     <script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
-    <script src="<?php print path_to_theme(); ?>/js/jquery.flexnav.min.js" type="text/javascript"></script>
+    <script src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/js/jquery.flexnav.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
       $(".flexnav").flexNav();
