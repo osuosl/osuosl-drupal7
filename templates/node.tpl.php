@@ -9,12 +9,12 @@
   <?php print render($title_suffix); ?>
 
   <?php if ($display_submitted): ?>
-    <div class="submitted">
+    <!--div class="submitted">
     	<div class="byline">
     	<?php print $submitted = t('Posted by !username on !datetime', array('!username' => $name, '!datetime' => $date));?>
     	<php print ($terms); ?>
     	</div>
-    </div>
+    </div-->
   <?php endif; ?>
 
   <div class="content clearfix"<?php print $content_attributes; ?>>
