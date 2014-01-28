@@ -27,10 +27,10 @@ include("includes/header.php");
       <?php print render($page['content']); ?>
 
     </div>
-        
+<!--        
 	<div class="sidebar">
 		<?php print render($page['sidebar_blog']); ?>
-	</div>
+	</div>-->
     
     <!-- Clear blog-post and sidebar-left to fix layout -->
     <div class="clrfix"></div>
@@ -45,13 +45,15 @@ include("includes/header.php");
     	</a>
     	
     	<div class="contact-block">
-			<?php print render($page['contact_block']); ?>
+			//<?php print render($page['contact_block']); ?>
 		</div>
 		
     	<div class="about-block">
     		<?php print render($page['about_block']); ?>
     	</div>
-
+	<div class="sidebar">
+		<?php print render($page['sidebar_blog']); ?>
+	</div>
     </div>
     
     <!--end #content-container below -->
