@@ -16,7 +16,7 @@
         	<?php print theme('links__system_main_menu', array(
           	'links' => $main_menu,
           	'attributes' => array(
-            'id' => 'main-menu-links',
+            //'id' => 'main-menu-links',
             'class' => array('links', 'clearfix'),
           ),
         )); ?>
