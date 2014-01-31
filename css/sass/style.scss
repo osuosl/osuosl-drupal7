@@ -104,10 +104,10 @@ Table of Contents:
 
 .flexnav {
 	*zoom: 1;
-	-webkit-transition: 0;
-	-moz-transition: 0;
-	-o-transition: 0;
-	transition: 0;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
 	-webkit-transform-style: preserve-3d;
 	overflow: hidden;
 	margin: 0 auto;
@@ -145,7 +145,7 @@ ul.flexnav {
     padding: .96em;
     z-index: 2;
     overflow: hidden;
-    color: #fff;
+    color: #abafa6;
     background: darken($success-color, 13%);
     border-bottom: 1px solid darken($success-color, 17%); 
     text-decoration:none;
@@ -467,7 +467,7 @@ p.lead {
 p,
 ul,
 li {
-	font-family:'Georgia', Times New Roman;
+	font-family:'Bitter', serif;
 	color:#222;
 	line-height:1.6;
 	font-size:14px;
@@ -514,7 +514,7 @@ h2.headline {
 h2.headline a:link,
 h2.headline a:active,
 h2.headline a:visited {
-	font-family: "Open Sans", Helvetica, sans-serif;
+	font-family: "Bitter", sans-serif;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
@@ -929,13 +929,15 @@ ol.top10 > li {
 	color:#fff;
 	background:none;
     border-bottom: none; 
-    font-size:12px;
-    padding:0px 11px 0 0;
+    font-size: 15px;
+    padding:0px 10px 0 30px;
     margin:0px;
+	transition: .5s;
 }
 
 .flexnav li a:hover {
-	text-decoration:underline;
+	/*text-decoration:underline;*/
+	color:#f37321
 }
 
 .flexnav li > ul {

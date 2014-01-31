@@ -6,7 +6,10 @@
 
 <!-- Open Sans serviced from Google Web Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Gudea' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+
+ <meta name="viewport" content="width=device-width">
 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
