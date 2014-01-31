@@ -1,0 +1,2073 @@
+3.1.15 (Brainy Betty)
+2c1e5e27299a7c7171091632bf118e6ac31ecf28
+o:Sass::Tree::RootNode
+:@template"Su//
+// Foundation Variables
+//
+
+// The default font-size is set to 100% of the browser style sheet (usually 16px)
+// for compatibility with brower-based text zoom or user-set defaults.
+$base-font-size: 100% !default;
+
+// $base-line-height is 24px while $base-font-size is 16px
+// $base-line-height: 150%;
+
+// This is the default html and body font-size for the base em value.
+
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// If you want your base font-size to be a different size and not have it effect grid size too,
+// set the value of $em-base to $base-font-size ($em-base: $base-font-size;)
+$em-base: 16px !default;
+
+// Working in ems is annoying. Think in pixels by using this handy function, emCalc(#px)
+@function emCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1em;
+}
+
+// Various global styles
+
+// $default-float: left;
+
+// $body-bg: #fff;
+// $body-font-color: #222;
+// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+// $body-font-weight: normal;
+// $body-font-style: normal;
+
+// Font-smoothing
+
+// $font-smoothing: antialiased;
+
+// Text direction settings
+
+// $text-direction: ltr;
+
+// Colors
+
+$primary-color: #c34500;
+$secondary-color: #9fa617;
+// $alert-color: #c60f13;
+$success-color: #c34500;
+
+// Make sure border radius matches unless we want it different.
+
+// $global-radius: 3px;
+// $global-rounded: 1000px;
+
+// Inset shadow shiny edges and depressions.
+
+// $shiny-edge-size: 0 1px 0;
+// $shiny-edge-color: rgba(#fff, .5);
+// $shiny-edge-active-color: rgba(#000, .2);
+
+// Control whether or not CSS classes come through in the CSS files.
+
+// $include-html-classes: true;
+// $include-print-styles: true;
+// $include-html-global-classes: $include-html-classes;
+// $include-html-type-classes: $include-html-classes;
+// $include-html-grid-classes: $include-html-classes;
+// $include-html-visibility-classes: $include-html-classes;
+// $include-html-button-classes: $include-html-classes;
+// $include-html-form-classes: $include-html-classes;
+// $include-html-custom-form-classes: $include-html-classes;
+// $include-html-media-classes: $include-html-classes;
+// $include-html-section-classes: $include-html-classes;
+// $include-html-orbit-classes: $include-html-classes;
+// $include-html-reveal-classes: $include-html-classes;
+// $include-html-joyride-classes: $include-html-classes;
+// $include-html-clearing-classes: $include-html-classes;
+// $include-html-alert-classes: $include-html-classes;
+// $include-html-nav-classes: $include-html-classes;
+// $include-html-label-classes: $include-html-classes;
+// $include-html-panel-classes: $include-html-classes;
+// $include-html-pricing-classes: $include-html-classes;
+// $include-html-progress-classes: $include-html-classes;
+// $include-html-magellan-classes: $include-html-classes;
+// $include-html-tooltip-classes: $include-html-classes;
+
+// Media Queries
+
+// $small-screen: emCalc(768px);
+// $medium-screen: emCalc(1280px);
+// $large-screen: emCalc(1440px);
+
+// $screen: "only screen";
+// $small: "only screen and (min-width: #{$small-screen})";
+// $medium: "only screen and (min-width: #{$medium-screen})";
+// $large: "only screen and (min-width: #{$large-screen})";
+// $landscape: "only screen and (orientation: landscape)";
+// $portrait: "only screen and (orientation: portrait)";
+
+//
+// Grid Variables
+//
+
+$row-width: emCalc(1060px);
+$column-gutter: emCalc(30px);
+$total-columns: 16;
+
+//
+// Block Grid Variables
+//
+
+// Maximum number of block grid elements per row
+
+// $block-grid-elements: 12;
+// $block-grid-default-spacing: 10px;
+
+// Enables media queries for block-grid classes. Set to false if writing semantic HTML.
+
+// $block-grid-media-queries: true;
+
+//
+// Typography Variables
+//
+
+// Heading font styles
+
+$header-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $header-font-weight: bold;
+// $header-font-style: normal;
+// $header-font-color: #222;
+// $header-line-height: 1.4;
+// $header-top-margin: .2em;
+// $header-bottom-margin: .5em;
+// $header-text-rendering: optimizeLegibility;
+
+// Heading font sizes
+
+// $h1-font-size: emCalc(44px);
+// $h2-font-size: emCalc(37px);
+// $h3-font-size: emCalc(27px);
+// $h4-font-size: emCalc(23px);
+// $h5-font-size: emCalc(18px);
+// $h6-font-size: 1em;
+
+// Subheaders
+
+// $subheader-line-height: 1.4;
+// $subheader-font-color: lighten($header-font-color, 30%);
+// $subheader-font-weight: 300;
+// $subheader-top-margin: .2em;
+// $subheader-bottom-margin: .5em;
+
+// <small> styling
+
+// $small-font-size: 60%;
+// $small-font-color: lighten($header-font-color, 30%);
+
+// Paragraphs
+
+// $paragraph-font-family: inherit;
+// $paragraph-font-weight: normal;
+// $paragraph-font-size: 1em;
+// $paragraph-line-height: 1.6;
+// $paragraph-margin-bottom: emCalc(20px);
+// $paragraph-aside-font-size: emCalc(14px);
+// $paragraph-aside-line-height: 1.35;
+// $paragraph-aside-font-style: italic;
+
+// <code> tags
+
+// $code-color: darken($alert-color, 15%);
+// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
+// $code-font-weight: bold;
+
+// Anchors
+
+// $anchor-text-decoration: none;
+// $anchor-font-color: $primary-color;
+// $anchor-font-color-hover: darken($primary-color, 5%);
+
+// <hr> element
+
+// $hr-border-width: 1px;
+// $hr-border-style: solid;
+// $hr-border-color: #ddd;
+// $hr-margin: emCalc(20px);
+
+// Lists
+
+// $list-style-position: outside;
+// $list-side-margin: emCalc(18px);
+// $definition-list-header-weight: bold;
+// $definition-list-header-margin-bottom: .3em;
+// $definition-list-margin-bottom: emCalc(12px);
+
+// Blockquotes
+
+// $blockquote-font-color: lighten($header-font-color, 30%);
+// $blockquote-padding: emCalc(9px) emCalc(20px) 0 emCalc(19px);
+// $blockquote-border: 1px solid #ddd;
+// $blockquote-cite-font-size: emCalc(13px);
+// $blockquote-cite-font-color: lighten($header-font-color, 20%);
+// $blockquote-cite-link-color: $blockquote-cite-font-color;
+
+// Acronym
+
+// $acronym-underline: 1px dotted #ddd;
+
+// Padding and margin
+
+// $microformat-padding: emCalc(10px) emCalc(12px);
+// $microformat-margin: 0 0 emCalc(20px) 0;
+
+// Border styles
+
+// $microformat-border-width: 1px;
+// $microformat-border-style: solid;
+// $microformat-border-color: #ddd;
+
+// Full name font styles
+
+// $microformat-fullname-font-weight: bold;
+// $microformat-fullname-font-size: emCalc(15px);
+
+// Summary font styles
+
+// $microformat-summary-font-weight: bold;
+
+// <abbr> padding
+
+// $microformat-abbr-padding: 0 emCalc(1px);
+
+// <abbr> font styles
+
+// $microformat-abbr-font-weight: bold;
+// $microformat-abbr-font-decoration: none;
+
+//
+// Form Variables
+//
+
+// Base for lots of form spacing and positioning styles
+
+// $form-spacing: emCalc(16px);
+
+// Labels
+
+// $form-label-pointer: pointer;
+// $form-label-font-size: emCalc(14px);
+// $form-label-font-weight: 500;
+// $form-label-font-color: lighten(#000, 30%);
+// $form-label-bottom-margin: emCalc(3px);
+// $input-font-family: inherit;
+// $input-font-color: rgba(0,0,0,0.75);
+// $input-font-size: emCalc(14px);
+// $input-bg-color: #fff;
+// $input-focus-bg-color: darken(#fff, 2%);
+// $input-border-color: darken(#fff, 20%);
+// $input-focus-border-color: darken(#fff, 40%);
+// $input-border-style: solid;
+// $input-border-width: 1px;
+// $input-disabled-bg: #ddd;
+// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+
+// Fieldset border and spacing.
+
+// $fieldset-border-style: solid;
+// $fieldset-border-width: 1px;
+// $fieldset-border-color: #ddd;
+// $fieldset-padding: emCalc(20px);
+// $fieldset-margin: emCalc(18px) 0;
+
+// Legends
+
+// $legend-bg: #fff;
+// $legend-font-weight: bold;
+// $legend-padding: 0 emCalc(3px);
+
+// Prefix and postfix input elements
+
+// $input-prefix-bg: darken(#fff, 5%);
+// $input-prefix-border-color: darken(#fff, 20%);
+// $input-prefix-border-size: 1px;
+// $input-prefix-border-type: solid;
+// $input-prefix-overflow: hidden;
+// $input-prefix-font-color: #333;
+// $input-prefix-font-color-alt: #fff;
+
+// Error states for inputs and labels
+
+// $input-error-message-padding: emCalc(6px) emCalc(4px);
+// $input-error-message-top: -($form-spacing) - emCalc(5px);
+// $input-error-message-font-size: emCalc(12px);
+// $input-error-message-font-weight: bold;
+// $input-error-message-font-color: #fff;
+// $input-error-message-font-color-alt: #333;
+
+// Padding for buttons.
+
+// $button-tny: emCalc(7px);
+// $button-sml: emCalc(9px);
+// $button-med: emCalc(12px);
+// $button-lrg: emCalc(16px);
+
+// Display property.
+
+// $button-display: inline-block;
+// $button-margin-bottom: emCalc(20px);
+
+// Button text styles.
+
+// $button-font-family: inherit;
+// $button-font-color: #fff;
+// $button-font-color-alt: #333;
+// $button-font-med: emCalc(16px);
+// $button-font-tny: emCalc(11px);
+// $button-font-sml: emCalc(13px);
+// $button-font-lrg: emCalc(20px);
+// $button-font-weight: bold;
+// $button-font-align: center;
+
+// Various hover effects.
+
+// $button-function-factor: 10%;
+
+// Button border styles.
+
+// $button-border-width: 1px;
+// $button-border-style: solid;
+// $button-border-color: darken($primary-color, $button-function-factor);
+
+// Radius used throughout the core.
+
+// $button-radius: $global-radius;
+
+// Opacity for disabled buttons.
+
+// $button-disabled-opacity: 0.6;
+
+//
+// Dropdown Button Variables
+//
+
+// Color of the pip in dropdown buttons
+
+// $dropdown-button-pip-color: #fff;
+// $dropdown-button-pip-color-alt: #333;
+
+// Tiny dropdown buttons
+
+// $dropdown-button-padding-tny: $button-tny * 5;
+// $dropdown-button-pip-size-tny: $button-tny;
+// $dropdown-button-pip-right-tny: $button-tny * 2;
+// $dropdown-button-pip-top-tny: -$button-tny / 2 + emCalc(1px);
+
+// Small dropdown buttons
+
+// $dropdown-button-padding-sml: $button-sml * 5;
+// $dropdown-button-pip-size-sml: $button-sml;
+// $dropdown-button-pip-right-sml: $button-sml * 2;
+// $dropdown-button-pip-top-sml: -$button-sml / 2 + emCalc(1px);
+
+// Medium dropdown buttons
+
+// $dropdown-button-padding-med: $button-med * 4 + emCalc(3px);
+// $dropdown-button-pip-size-med: $button-med - emCalc(3px);
+// $dropdown-button-pip-right-med: $button-med * 2;
+// $dropdown-button-pip-top-med: -$button-med / 2 + emCalc(2px);
+
+// Large dropdown buttons
+
+// $dropdown-button-padding-lrg: $button-lrg * 4;
+// $dropdown-button-pip-size-lrg: $button-lrg - emCalc(6px);
+// $dropdown-button-pip-right-lrg: $button-lrg + emCalc(12px);
+// $dropdown-button-pip-top-lrg: -$button-lrg / 2 + emCalc(3px);
+
+//
+// Split Button Variables
+//
+
+// Shared styles for Split Buttons
+
+// $split-button-function-factor: 15%;
+// $split-button-pip-color: #fff;
+// $split-button-pip-color-alt: #333;
+// $split-button-active-bg-tint: rgba(0,0,0,0.1);
+
+// Tiny split buttons
+
+// $split-button-padding-tny: $button-tny * 9;
+// $split-button-span-width-tny: $button-tny * 6.5;
+// $split-button-pip-size-tny: $button-tny;
+// $split-button-pip-top-tny: $button-tny * 2;
+// $split-button-pip-left-tny: emCalc(-5px);
+
+// Small split buttons
+
+// $split-button-padding-sml: $button-sml * 7;
+// $split-button-span-width-sml: $button-sml * 5;
+// $split-button-pip-size-sml: $button-sml;
+// $split-button-pip-top-sml: $button-sml * 1.5;
+// $split-button-pip-left-sml: emCalc(-9px);
+
+// Medium split buttons
+
+// $split-button-padding-med: $button-med * 6.4;
+// $split-button-span-width-med: $button-med * 4;
+// $split-button-pip-size-med: $button-med - emCalc(3px);
+// $split-button-pip-top-med: $button-med * 1.5;
+// $split-button-pip-left-med: emCalc(-9px);
+
+// Large split buttons
+
+// $split-button-padding-lrg: $button-lrg * 6;
+// $split-button-span-width-lrg: $button-lrg * 3.75;
+// $split-button-pip-size-lrg: $button-lrg - emCalc(6px);
+// $split-button-pip-top-lrg: $button-lrg + emCalc(5px);
+// $split-button-pip-left-lrg: emCalc(-9px);
+
+//
+// Alert Variables
+//
+
+// Alert padding.
+
+// $alert-padding-top: emCalc(11px);
+// $alert-padding-left: $alert-padding-top;
+// $alert-padding-right: $alert-padding-top + emCalc(10px);
+// $alert-padding-bottom: $alert-padding-top + emCalc(1px);
+
+// Text style.
+
+// $alert-font-weight: bold;
+// $alert-font-size: emCalc(14px);
+// $alert-font-color: #fff;
+// $alert-font-color-alt: darken($secondary-color, 60%);
+
+// Close hover effect.
+
+// $alert-function-factor: 10%;
+
+// Border styles.
+
+// $alert-border-style: solid;
+// $alert-border-width: 1px;
+// $alert-border-color: darken($primary-color, $alert-function-factor);
+// $alert-bottom-margin: emCalc(20px);
+
+// Close buttons
+
+// $alert-close-color: #333;
+// $alert-close-position: emCalc(5px);
+// $alert-close-font-size: emCalc(22px);
+// $alert-close-opacity: 0.3;
+// $alert-close-opacity-hover: 0.5;
+// $alert-close-padding: 5px 4px 4px;
+
+// Border radius
+
+// $alert-radius: $global-radius;
+
+//
+// Breadcrumb Variables
+//
+
+// Background color for the breadcrumb container.
+
+// $crumb-bg: lighten($secondary-color, 5%);
+
+// Padding around the breadcrumbs.
+
+// $crumb-padding: emCalc(6px) emCalc(14px) emCalc(9px);
+// $crumb-side-padding: emCalc(12px);
+
+// Border styles.
+
+// $crumb-function-factor: 10%;
+// $crumb-border-size: 1px;
+// $crumb-border-style: solid;
+// $crumb-border-color: darken($crumb-bg, $crumb-function-factor);
+// $crumb-radius: $global-radius;
+
+// Various text styles for breadcrumbs.
+
+// $crumb-font-size: emCalc(11px);
+// $crumb-font-color: $primary-color;
+// $crumb-font-color-current: #333;
+// $crumb-font-color-unavailable: #999;
+// $crumb-font-transform: uppercase;
+// $crumb-link-decor: underline;
+
+// Slash between breadcrumbs
+
+// $crumb-slash-color: #aaa;
+// $crumb-slash: "/";
+
+//
+// Clearing Variables
+//
+
+// Background colors for parts of Clearing.
+
+// $clearing-bg: #111;
+// $clearing-caption-bg: $clearing-bg;
+// $clearing-carousel-bg: #111;
+// $clearing-img-bg: $clearing-bg;
+
+// Close button
+
+// $clearing-close-color: #fff;
+// $clearing-close-size: 40px;
+
+// Style the arrows
+
+// $clearing-arrow-size: 16px;
+// $clearing-arrow-color: $clearing-close-color;
+
+// Style captions
+
+// $clearing-caption-font-color: #fff;
+// $clearing-caption-padding: 10px 30px;
+
+// Make the image and carousel height and style
+
+// $clearing-active-img-height: 75%;
+// $clearing-carousel-height: 150px;
+// $clearing-carousel-thumb-width: 175px;
+// $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255);
+
+//
+// Custom Form Variables
+//
+
+// Basic form styles input styles
+
+// $custom-form-border-color: #ccc;
+// $custom-form-border-size: 1px;
+// $custom-form-bg: #fff;
+// $custom-form-bg-disabled: #ddd;
+// $custom-form-input-size: 16px;
+// $custom-form-check-color: #222;
+// $custom-form-check-size: 14px;
+// $custom-form-radio-size: 8px;
+// $custom-form-checkbox-radius: 0px;
+
+// Custom select form element.
+
+// $custom-select-bg: #fff;
+// $custom-select-fade-to-color: #f3f3f3;
+// $custom-select-border-color: #ddd;
+// $custom-select-triangle-color: #aaa;
+// $custom-select-triangle-color-open: #222;
+// $custom-select-height: emCalc(13px) + ($form-spacing * 1.5);
+// $custom-select-margin-bottom: emCalc(20px);
+// $custom-select-font-color-selected: #141414;
+// $custom-select-disabled-color: #888;
+
+// Custom select dropdown element.
+
+// $custom-dropdown-height: 200px;
+// $custom-dropdown-bg: #fff;
+// $custom-dropdown-border-color: darken(#fff, 20%);
+// $custom-dropdown-border-width: 1px;
+// $custom-dropdown-border-style: solid;
+// $custom-dropdown-font-color: #555;
+// $custom-dropdown-font-size: emCalc(14px);
+// $custom-dropdown-color-selected: #eeeeee;
+// $custom-dropdown-font-color-selected: #000;
+// $custom-dropdown-shadow: 0 2px 2px 0px rgba(0,0,0,0.1);
+// $custom-dropdown-offset-top: none;
+// $custom-dropdown-list-padding: emCalc(4px);
+// $custom-dropdown-left-padding: emCalc(6px);
+// $custom-dropdown-right-padding: emCalc(38px);
+// $custom-dropdown-list-item-min-height: emCalc(24px);
+
+//
+// Dropdown Variables
+//
+
+// Height and width styles.
+
+// $f-dropdown-max-width: 200px;
+// $f-dropdown-height: auto;
+// $f-dropdown-max-height: none;
+// $f-dropdown-margin-top: 2px;
+
+// Background color
+
+// $f-dropdown-bg: #fff;
+
+// Border styles for dropdowns.
+
+// $f-dropdown-border-style: solid;
+// $f-dropdown-border-width: 1px;
+// $f-dropdown-border-color: darken(#fff, 20%);
+
+// Triangle pip.
+
+// $f-dropdown-triangle-size: 6px;
+// $f-dropdown-triangle-color: #fff;
+// $f-dropdown-triangle-side-offset: 10px;
+
+// List elements.
+
+// $f-dropdown-list-style: none;
+// $f-dropdown-font-color: #555;
+// $f-dropdown-font-size: emCalc(14px);
+// $f-dropdown-list-padding: emCalc(5px) emCalc(10px);
+// $f-dropdown-line-height: emCalc(18px);
+// $f-dropdown-list-hover-bg: #eeeeee;
+// $dropdown-mobile-left: 0;
+
+// When the dropdown has custom content.
+
+// $f-dropdown-content-padding: emCalc(20px);
+
+//
+// Flex Video Variables
+//
+
+// Video container padding and margins
+
+// $flex-video-padding-top: emCalc(25px);
+// $flex-video-padding-bottom: 67.5%;
+// $flex-video-margin-bottom: emCalc(16px);
+
+// Widescreen bottom padding
+
+// $flex-video-widescreen-padding-bottom: 57.25%;
+
+//
+// Inline List Variables
+//
+
+// Margins and padding of the inline list.
+
+// $inline-list-margin-bottom: emCalc(17px) emCalc(-22px );
+// $inline-list-margin: 0 0;
+// $inline-list-padding: 0;
+
+// Overflow of the inline list.
+
+// $inline-list-overflow: hidden;
+
+// List items
+
+// $inline-list-display: block;
+
+// Elments within list items
+
+// $inline-list-children-display: block;
+
+//
+// Joyride Variables
+//
+
+// Joyride styles
+
+// $joyride-tip-bg: rgb(0,0,0);
+// $joyride-tip-default-width: 300px;
+// $joyride-tip-padding: emCalc(18px) emCalc(20px) emCalc(24px);
+// $joyride-tip-border: solid 1px #555;
+// $joyride-tip-radius: 4px;
+// $joyride-tip-position-offset: 22px;
+
+// Tip font styles
+
+// $joyride-tip-font-color: #fff;
+// $joyride-tip-font-size: emCalc(14px);
+// $joyride-tip-header-weight: bold;
+
+// Changes the nub size
+
+// $joyride-tip-nub-size: 14px;
+
+// Adjusts the styles for the timer when its enabled
+
+// $joyride-tip-timer-width: 50px;
+// $joyride-tip-timer-height: 3px;
+// $joyride-tip-timer-color: #666;
+
+// Changes up the styles for the close button
+
+// $joyride-tip-close-color: #777;
+// $joyride-tip-close-size: 30px;
+// $joyride-tip-close-weight: normal;
+
+// When Joyride is filling the screen, style for the bg
+
+// $joyride-screenfill: rgba(0,0,0,0.5);
+
+//
+// Keystroke Variables
+//
+
+// Text styles.
+
+// $keystroke-font: "Consolas", "Menlo", "Courier", monospace;
+// $keystroke-font-size: emCalc(15px);
+// $keystroke-font-color: #222;
+// $keystroke-font-color-alt: #fff;
+// $keystroke-function-factor: 7%;
+
+// Keystroke padding.
+
+// $keystroke-padding: emCalc(2px) emCalc(4px) emCalc(0px);
+
+// Background and border styles.
+
+// $keystroke-bg: darken(#fff, $keystroke-function-factor);
+// $keystroke-border-style: solid;
+// $keystroke-border-width: 1px;
+// $keystroke-border-color: darken($keystroke-bg, $keystroke-function-factor);
+// $keystroke-radius: $global-radius;
+
+//
+// Label Variables
+//
+
+// Style the labels
+
+// $label-padding: emCalc(3px) emCalc(10px) emCalc(4px);
+// $label-radius: $global-radius;
+
+// We use these to style the label text
+
+// $label-font-sizing: emCalc(14px);
+// $label-font-weight: bold;
+// $label-font-color: #333;
+// $label-font-color-alt: #fff;
+
+//
+// Magellan Variables
+//
+
+// Basic visual styles
+
+// $magellan-bg: #fff;
+// $magellan-padding: 10px;
+
+//
+// Orbit Settings
+//
+
+// Caption styles
+
+// $orbit-container-bg: #f5f5f5;
+// $orbit-caption-bg-old-browser: #000;
+// $orbit-caption-bg-old: rgb(0,0,0);
+// $orbit-caption-bg: rgba(0,0,0,0.6);
+// $orbit-caption-font-color: #fff;
+
+// Left/right nav styles
+
+// $orbit-nav-bg-old: rgb(0,0,0);
+// $orbit-nav-bg: rgba(0,0,0,0.6);
+
+// Timer styles
+
+// $orbit-timer-bg-old: rgb(0,0,0);
+// $orbit-timer-bg: rgba(0,0,0,0.6);
+
+// Bullet nav styles
+
+// $orbit-bullet-nav-color: #999;
+// $orbit-bullet-nav-color-active: #222;
+
+// Slide numbers
+
+// $orbit-slide-number-bg: rgb(0,0,0);
+// $orbit-slide-number-font-color: #fff;
+// $orbit-slide-number-padding: emCalc(5px);
+
+// Margin for when Orbit is stacked on small screens
+
+// $stack-on-small-margin-bottom: emCalc(20px); // Doesn't quite work yet
+
+//
+// Pagination Variables
+//
+
+// Pagination container
+
+// $pagination-height: emCalc(24px);
+// $pagination-margin: emCalc(-5px);
+
+// List-item properties
+
+// $pagination-li-float: $default-float;
+// $pagination-li-height: emCalc(24px);
+// $pagination-li-font-color: #222;
+// $pagination-li-font-size: emCalc(14px);
+// $pagination-li-margin: emCalc(5px);
+
+// Pagination anchor links
+
+// $pagination-link-pad: emCalc(1px) emCalc(7px) emCalc(1px);
+// $pagination-link-font-color: #999;
+// $pagination-link-active-bg: darken(#fff, 10%);
+
+// Disabled anchor links
+
+// $pagination-link-unavailable-cursor: default;
+// $pagination-link-unavailable-font-color: #999;
+// $pagination-link-unavailable-bg-active: transparent;
+
+// Currently selected anchor links
+
+// $pagination-link-current-background: $primary-color;
+// $pagination-link-current-font-color: #fff;
+// $pagination-link-current-font-weight: bold;
+// $pagination-link-current-cursor: default;
+// $pagination-link-current-active-bg: $primary-color;
+
+//
+// Panel Variables
+//
+
+// Background and border styles
+
+// $panel-bg: darken(#fff, 5%);
+// $panel-border-style: solid;
+// $panel-border-size: 1px;
+
+// Control how much we darken things on hover
+
+// $panel-function-factor: 10%;
+// $panel-border-color: darken($panel-bg, $panel-function-factor);
+
+// Inner padding and bottom margin
+
+// $panel-margin-bottom: emCalc(20px);
+// $panel-padding: emCalc(20px);
+
+// Font colors
+
+// $panel-font-color: #333;
+// $panel-font-color-alt: #fff;
+
+//
+// Pricing Table Variables
+//
+
+// Border color
+
+// $price-table-border: solid 1px #ddd;
+
+// Bottom margin of the pricing table
+
+// $price-table-margin-bottom: emCalc(20px);
+
+// Control the title styles
+
+// $price-title-bg: #ddd;
+// $price-title-padding: emCalc(15px) emCalc(20px);
+// $price-title-align: center;
+// $price-title-color: #333;
+// $price-title-weight: bold;
+// $price-title-size: emCalc(16px);
+
+// Control the price styles
+
+// $price-money-bg: #eee;
+// $price-money-padding: emCalc(15px) emCalc(20px);
+// $price-money-align: center;
+// $price-money-color: #333;
+// $price-money-weight: normal;
+// $price-money-size: emCalc(20px);
+
+// Description styles
+
+// $price-bg: #fff;
+// $price-desc-color: #777;
+// $price-desc-padding: emCalc(15px);
+// $price-desc-align: center;
+// $price-desc-font-size: emCalc(12px);
+// $price-desc-weight: normal;
+// $price-desc-line-height: 1.4;
+// $price-desc-bottom-border: dotted 1px #ddd;
+
+// List item styles
+
+// $price-item-color: #333;
+// $price-item-padding: emCalc(15px);
+// $price-item-align: center;
+// $price-item-font-size: emCalc(14px);
+// $price-item-weight: normal;
+// $price-item-bottom-border: dotted 1px #ddd;
+
+// CTA area styles
+
+// $price-cta-bg: #f5f5f5;
+// $price-cta-align: center;
+// $price-cta-padding: emCalc(20px) emCalc(20px) 0;
+
+//
+// Progress Bar Variables
+//
+
+// Progress bar height
+
+// $progress-bar-height: emCalc(25px);
+// $progress-bar-color: transparent;
+
+// Border styles
+
+// $progress-bar-border-color: darken(#fff, 20%);
+// $progress-bar-border-size: 1px;
+// $progress-bar-border-style: solid;
+// $progress-bar-border-radius: $global-radius;
+
+// Margin & padding
+
+// $progress-bar-pad: emCalc(2px);
+// $progress-bar-margin-bottom: emCalc(10px);
+
+// Meter colors
+
+// $progress-meter-color: $primary-color;
+// $progress-meter-secondary-color: $secondary-color;
+// $progress-meter-success-color: $success-color;
+// $progress-meter-alert-color: $alert-color;
+
+//
+// Reveal Variables
+//
+
+// Reveal overlay.
+
+// $reveal-overlay-bg: rgba(#000, .45);
+// $reveal-overlay-bg-old: #000;
+
+// Modal itself.
+
+// $reveal-modal-bg: #fff;
+// $reveal-position-top: 50px;
+// $reveal-default-width: 80%;
+// $reveal-modal-padding: emCalc(20px);
+// $reveal-box-shadow: 0 0 10px rgba(#000,.4);
+
+// Reveal close button
+
+// $reveal-close-font-size: emCalc(22px);
+// $reveal-close-top: emCalc(8px);
+// $reveal-close-side: emCalc(11px);
+// $reveal-close-color: #aaa;
+// $reveal-close-weight: bold;
+
+// Modal border
+
+// $reveal-border-style: solid;
+// $reveal-border-width: 1px;
+// $reveal-border-color: #666;
+
+//
+// Section Variables
+//
+
+// Padding and hover factor
+
+// $section-padding: emCalc(15px);
+// $section-function-factor: 10%;
+
+// Titles
+
+// $section-title-color: #333;
+// $section-title-bg: #efefef;
+// $section-title-bg-active: darken($section-title-bg, $section-function-factor);
+// $section-title-bg-active-tabs: #fff;
+
+// Border size
+
+// $section-border-size: 1px;
+// $section-border-style: solid;
+// $section-border-color: #ccc;
+
+// Color of the background and some size options
+
+// $section-content-bg: #fff;
+// $section-vertical-nav-min-width: emCalc(200px);
+// $section-vertical-tabs-title-width: emCalc(200px);
+// $section-bottom-margin: emCalc(20px);
+
+//
+// Side Nav Variables
+//
+
+// Padding
+
+// $side-nav-padding: emCalc(14px) 0;
+
+// List styles
+
+// $side-nav-list-type: none;
+// $side-nav-list-position: inside;
+// $side-nav-list-margin: 0 0 emCalc(7px) 0;
+
+// Link styles
+
+// $side-nav-link-color: $primary-color;
+// $side-nav-link-color-active: lighten(#000, 30%);
+// $side-nav-font-size: emCalc(14px);
+// $side-nav-font-weight: bold;
+
+// Border styles
+
+// $side-nav-divider-size: 1px;
+// $side-nav-divider-style: solid;
+// $side-nav-divider-color: darken(#fff, 10%);
+
+//
+// Sub Nav Variables
+//
+
+// Margin and padding
+
+// $sub-nav-list-margin: emCalc(-4px) 0 emCalc(18px);
+// $sub-nav-list-padding-top: emCalc(4px);
+
+// Definition
+
+// $sub-nav-font-size: emCalc(14px);
+// $sub-nav-font-color: #999;
+// $sub-nav-font-weight: normal;
+// $sub-nav-text-decoration: none;
+// $sub-nav-border-radius: 1000px;
+
+// Active item styles
+
+// $sub-nav-active-font-weight: bold;
+// $sub-nav-active-bg: $primary-color;
+// $sub-nav-active-color: #fff;
+// $sub-nav-active-padding: emCalc(3px) emCalc(9px);
+// $sub-nav-active-cursor: default;
+
+//
+// Switch Variables
+//
+
+// Border styles and background colors for the switch container
+
+// $switch-border-color: darken(#fff, 20%);
+// $switch-border-style: solid;
+// $switch-border-width: 1px;
+// $switch-bg: #fff;
+
+// Switch heights for our default classes
+
+// $switch-height-tny: 22px;
+// $switch-height-sml: 28px;
+// $switch-height-med: 36px;
+// $switch-height-lrg: 44px;
+// $switch-bottom-margin: emCalc(20px);
+
+// Font sizes for our classes.
+
+// $switch-font-size-tny: 11px;
+// $switch-font-size-sml: 12px;
+// $switch-font-size-med: 14px;
+// $switch-font-size-lrg: 17px;
+// $switch-label-side-padding: 6px;
+
+// Switch-paddle
+
+// $switch-paddle-bg: #fff;
+// $switch-paddle-fade-to-color: darken($switch-paddle-bg, 10%);
+// $switch-paddle-border-color: darken($switch-paddle-bg, 35%);
+// $switch-paddle-border-width: 1px;
+// $switch-paddle-border-style: solid;
+// $switch-paddle-transition-speed: .1s;
+// $switch-paddle-transition-ease: ease-out;
+// $switch-positive-color: lighten($success-color, 50%);
+// $switch-negative-color: #f5f5f5;
+
+// Outline Style for tabbing through switches
+
+// $switch-label-outline: 1px dotted #888;
+
+//
+// Table Variables
+//
+
+// Background color for the table and even rows
+
+// $table-bg: #fff;
+// $table-even-row-bg: #f9f9f9;
+
+// Table cell border style
+
+// $table-border-style: solid;
+// $table-border-size: 1px;
+// $table-border-color: #ddd;
+
+// Table head styles
+
+// $table-head-bg: #f5f5f5;
+// $table-head-font-size: emCalc(14px);
+// $table-head-font-color: #222;
+// $table-head-font-weight: bold;
+// $table-head-padding: emCalc(8px) emCalc(10px) emCalc(10px);
+
+// Row padding and font styles
+
+// $table-row-padding: emCalc(9px) emCalc(10px);
+// $table-row-font-size: emCalc(14px);
+// $table-row-font-color: #222;
+// $table-line-height: emCalc(18px);
+
+// Display and margin of tables
+
+// $table-display: table-cell;
+// $table-margin-bottom: emCalc(20px);
+
+//
+// Image Thumbnail Variables
+//
+
+// Border styles
+
+// $thumb-border-style: solid;
+// $thumb-border-width: 4px;
+// $thumb-border-color: #fff;
+// $thumb-box-shadow: 0 0 0 1px rgba(#000,.2);
+// $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
+
+// Radius and transition speed for thumbs
+
+// $thumb-radius: $global-radius;
+// $thumb-transition-speed: 200ms;
+
+//
+// Tooltip Variables
+//
+
+// $has-tip-border-bottom: dotted 1px #ccc;
+// $has-tip-font-weight: bold;
+// $has-tip-font-color: #333;
+// $has-tip-border-bottom-hover: dotted 1px darken($primary-color, 20%);
+// $has-tip-font-color-hover: $primary-color;
+// $has-tip-cursor-type: help;
+
+// $tooltip-padding: emCalc(8px);
+// $tooltip-bg: #000;
+// $tooltip-font-size: emCalc(15px);
+// $tooltip-font-weight: bold;
+// $tooltip-font-color: #fff;
+// $tooltip-line-height: 1.3;
+// $tooltip-close-font-size: emCalc(10px);
+// $tooltip-close-font-weight: normal;
+// $tooltip-close-font-color: #888;
+// $tooltip-font-size-sml: emCalc(14px);
+// $tooltip-radius: $global-radius;
+// $tooltip-pip-size: 5px;
+
+//
+// Top Bar Variables
+//
+
+// Background color for the top bar
+
+// $topbar-bg: #111;
+
+// Height and margin
+
+// $topbar-height: 45px;
+// $topbar-margin-bottom: emCalc(30px);
+
+// Input height for top bar
+
+// $topbar-input-height: 2.45em;
+
+// Title in the top bar
+
+// $topbar-title-weight: bold;
+// $topbar-title-font-size: emCalc(17px);
+
+// Link colors and styles for top-level nav
+
+// $topbar-link-color: #fff;
+// $topbar-link-weight: bold;
+// $topbar-link-font-size: emCalc(13px);
+// $topbar-link-hover-lightness: -30% !default; // Darken by 30%
+
+// Top bar dropdown elements
+
+// $topbar-dropdown-bg: #333;
+// $topbar-dropdown-link-color: #fff;
+// $topbar-dropdown-toggle-size: 5px;
+// $topbar-dropdown-toggle-color: #fff;
+// $topbar-dropdown-toggle-alpha: 0.5;
+// $dropdown-label-color: #555;
+
+// Top menu icon styles
+
+// $topbar-menu-link-transform: uppercase;
+// $topbar-menu-link-font-size: emCalc(13px);
+// $topbar-menu-link-weight: bold;
+// $topbar-menu-link-color: #fff;
+// $topbar-menu-icon-color: #fff;
+// $topbar-menu-link-color-toggled: #888;
+// $topbar-menu-icon-color-toggled: #888;
+
+// Transitions and breakpoint styles
+
+// $topbar-transition-speed: 300ms;
+// $topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
+// $topbar-media-query: "only screen and (min-width: "#{$topbar-breakpoint}")";
+:
+@linei:@children[go:Sass::Tree::CommentNode:
+@loud0:@silenti :@value["%/*
+ * Foundation Variables
+ * */;i;[ :@options{ o;	;
+0;i ;["õ/* The default font-size is set to 100% of the browser style sheet (usually 16px)
+ * for compatibility with brower-based text zoom or user-set defaults. */;i
+;[ ;@o:Sass::Tree::VariableNode:
+@expro:Sass::Script::Number:@denominator_units[ :@numerator_units["%:@original"	100%;ii;i;@;i;[ ;@:@guarded"!default:
+@name"base-font-sizeo;	;
+0;i ;["^/* $base-line-height is 24px while $base-font-size is 16px
+ * $base-line-height: 150%; */;i;[ ;@o;	;
+0;i ;["M/* This is the default html and body font-size for the base em value. */;i;[ ;@o;	;
+0;i ;["/* Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+ * If you want your base font-size to be a different size and not have it effect grid size too,
+ * set the value of $em-base to $base-font-size ($em-base: $base-font-size;) */;i;[ ;@o;;o;;[ ;["px;"	16px;i;i;@;i;[ ;@;"!default;"em-baseo;	;
+0;i ;["`/* Working in ems is annoying. Think in pixels by using this handy function, emCalc(#px) */;i;[ ;@o:Sass::Tree::FunctionNode;i;[o:Sass::Tree::ReturnNode	;o:Sass::Script::Operation
+:@operator:
+times:@operand2o;;[ ;["em;"1em;i;i;@;i:@operand1o;
+;:div;o:Sass::Script::Variable	;i;@;"em-base:@underscored_name"em_base;i;o;	;i;@;"pxWidth;"pxWidth;@;@;i;[ ;@:
+@args[[o;;@;"pxWidth;"pxWidth0;@:@has_childrenT;"emCalco;	;
+0;i ;[" /* Various global styles */;i;[ ;@o;	;
+0;i ;[" /* $default-float: left; */;i;[ ;@o;	;
+0;i ;["æ/* $body-bg: #fff;
+ * $body-font-color: #222;
+ * $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ * $body-font-weight: normal;
+ * $body-font-style: normal; */;i!;[ ;@o;	;
+0;i ;["/* Font-smoothing */;i';[ ;@o;	;
+0;i ;["(/* $font-smoothing: antialiased; */;i);[ ;@o;	;
+0;i ;[""/* Text direction settings */;i+;[ ;@o;	;
+0;i ;[" /* $text-direction: ltr; */;i-;[ ;@o;	;
+0;i ;["/* Colors */;i/;[ ;@o;;o:Sass::Script::Color	:@attrs{	:
+greeniJ:	bluei :redi√:
+alphai;0;i1;@;i1;[ ;@;0;"primary-coloro;;o;"	;#{	;$i¶;%i;&iü;'i;0;i2;@;i2;[ ;@;0;"secondary-coloro;	;
+0;i ;["!/* $alert-color: #c60f13; */;i3;[ ;@o;;o;"	;#{	;$iJ;%i ;&i√;'i;0;i4;@;i4;[ ;@;0;"success-coloro;	;
+0;i ;["G/* Make sure border radius matches unless we want it different. */;i6;[ ;@o;	;
+0;i ;[";/* $global-radius: 3px;
+ * $global-rounded: 1000px; */;i8;[ ;@o;	;
+0;i ;["4/* Inset shadow shiny edges and depressions. */;i;;[ ;@o;	;
+0;i ;["x/* $shiny-edge-size: 0 1px 0;
+ * $shiny-edge-color: rgba(#fff, .5);
+ * $shiny-edge-active-color: rgba(#000, .2); */;i=;[ ;@o;	;
+0;i ;["L/* Control whether or not CSS classes come through in the CSS files. */;iA;[ ;@o;	;
+0;i ;["ﬂ/* $include-html-classes: true;
+ * $include-print-styles: true;
+ * $include-html-global-classes: $include-html-classes;
+ * $include-html-type-classes: $include-html-classes;
+ * $include-html-grid-classes: $include-html-classes;
+ * $include-html-visibility-classes: $include-html-classes;
+ * $include-html-button-classes: $include-html-classes;
+ * $include-html-form-classes: $include-html-classes;
+ * $include-html-custom-form-classes: $include-html-classes;
+ * $include-html-media-classes: $include-html-classes;
+ * $include-html-section-classes: $include-html-classes;
+ * $include-html-orbit-classes: $include-html-classes;
+ * $include-html-reveal-classes: $include-html-classes;
+ * $include-html-joyride-classes: $include-html-classes;
+ * $include-html-clearing-classes: $include-html-classes;
+ * $include-html-alert-classes: $include-html-classes;
+ * $include-html-nav-classes: $include-html-classes;
+ * $include-html-label-classes: $include-html-classes;
+ * $include-html-panel-classes: $include-html-classes;
+ * $include-html-pricing-classes: $include-html-classes;
+ * $include-html-progress-classes: $include-html-classes;
+ * $include-html-magellan-classes: $include-html-classes;
+ * $include-html-tooltip-classes: $include-html-classes; */;iC;[ ;@o;	;
+0;i ;["/* Media Queries */;i[;[ ;@o;	;
+0;i ;["m/* $small-screen: emCalc(768px);
+ * $medium-screen: emCalc(1280px);
+ * $large-screen: emCalc(1440px); */;i];[ ;@o;	;
+0;i ;["G/* $screen: "only screen";
+ * $small: "only screen and (min-width: #{$small-screen})";
+ * $medium: "only screen and (min-width: #{$medium-screen})";
+ * $large: "only screen and (min-width: #{$large-screen})";
+ * $landscape: "only screen and (orientation: landscape)";
+ * $portrait: "only screen and (orientation: portrait)"; */;ia;[ ;@o;	;
+0;i ;["/*
+ * Grid Variables
+ * */;ih;[ ;@o;;o:Sass::Script::Funcall
+:@keywords{ ;il; [o;;[ ;["px;"1060px;i$;il;@;@;"emCalc;il;[ ;@;0;"row-widtho;;o;(
+;){ ;im; [o;;[ ;["px;"	30px;i#;im;@;@;"emCalc;im;[ ;@;0;"column-guttero;;o;;[ ;[ ;"16;i;in;@;in;[ ;@;0;"total-columnso;	;
+0;i ;["%/*
+ * Block Grid Variables
+ * */;ip;[ ;@o;	;
+0;i ;["8/* Maximum number of block grid elements per row */;it;[ ;@o;	;
+0;i ;["J/* $block-grid-elements: 12;
+ * $block-grid-default-spacing: 10px; */;iv;[ ;@o;	;
+0;i ;["_/* Enables media queries for block-grid classes. Set to false if writing semantic HTML. */;iy;[ ;@o;	;
+0;i ;["+/* $block-grid-media-queries: true; */;i{;[ ;@o;	;
+0;i ;["%/*
+ * Typography Variables
+ * */;i};[ ;@o;	;
+0;i ;["/* Heading font styles */;i|;[ ;@o;;o:Sass::Script::List	:@separator:
+comma;[
+o:Sass::Script::String	:
+@type:string;"Open Sans;i~;@o;-	;.;/;"Helvetica Neue;i~;@o;-	;.:identifier;"Helvetica;i~;@o;-	;.;0;"
+Arial;i~;@o;-	;.;0;"sans-serif;i~;@;i~;@;i~;[ ;@;0;"header-font-familyo;	;
+0;i ;["Â/* $header-font-weight: bold;
+ * $header-font-style: normal;
+ * $header-font-color: #222;
+ * $header-line-height: 1.4;
+ * $header-top-margin: .2em;
+ * $header-bottom-margin: .5em;
+ * $header-text-rendering: optimizeLegibility; */;i;[ ;@o;	;
+0;i ;["/* Heading font sizes */;iá;[ ;@o;	;
+0;i ;["π/* $h1-font-size: emCalc(44px);
+ * $h2-font-size: emCalc(37px);
+ * $h3-font-size: emCalc(27px);
+ * $h4-font-size: emCalc(23px);
+ * $h5-font-size: emCalc(18px);
+ * $h6-font-size: 1em; */;iâ;[ ;@o;	;
+0;i ;["/* Subheaders */;iê;[ ;@o;	;
+0;i ;["¡/* $subheader-line-height: 1.4;
+ * $subheader-font-color: lighten($header-font-color, 30%);
+ * $subheader-font-weight: 300;
+ * $subheader-top-margin: .2em;
+ * $subheader-bottom-margin: .5em; */;ií;[ ;@o;	;
+0;i ;["/* <small> styling */;iò;[ ;@o;	;
+0;i ;["Y/* $small-font-size: 60%;
+ * $small-font-color: lighten($header-font-color, 30%); */;iö;[ ;@o;	;
+0;i ;["/* Paragraphs */;iù;[ ;@o;	;
+0;i ;["./* $paragraph-font-family: inherit;
+ * $paragraph-font-weight: normal;
+ * $paragraph-font-size: 1em;
+ * $paragraph-line-height: 1.6;
+ * $paragraph-margin-bottom: emCalc(20px);
+ * $paragraph-aside-font-size: emCalc(14px);
+ * $paragraph-aside-line-height: 1.35;
+ * $paragraph-aside-font-style: italic; */;iü;[ ;@o;	;
+0;i ;["/* <code> tags */;i®;[ ;@o;	;
+0;i ;["ê/* $code-color: darken($alert-color, 15%);
+ * $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
+ * $code-font-weight: bold; */;i™;[ ;@o;	;
+0;i ;["/* Anchors */;iÆ;[ ;@o;	;
+0;i ;["Ñ/* $anchor-text-decoration: none;
+ * $anchor-font-color: $primary-color;
+ * $anchor-font-color-hover: darken($primary-color, 5%); */;i∞;[ ;@o;	;
+0;i ;["/* <hr> element */;i¥;[ ;@o;	;
+0;i ;["u/* $hr-border-width: 1px;
+ * $hr-border-style: solid;
+ * $hr-border-color: #ddd;
+ * $hr-margin: emCalc(20px); */;i∂;[ ;@o;	;
+0;i ;["/* Lists */;iª;[ ;@o;	;
+0;i ;["“/* $list-style-position: outside;
+ * $list-side-margin: emCalc(18px);
+ * $definition-list-header-weight: bold;
+ * $definition-list-header-margin-bottom: .3em;
+ * $definition-list-margin-bottom: emCalc(12px); */;iΩ;[ ;@o;	;
+0;i ;["/* Blockquotes */;i√;[ ;@o;	;
+0;i ;["S/* $blockquote-font-color: lighten($header-font-color, 30%);
+ * $blockquote-padding: emCalc(9px) emCalc(20px) 0 emCalc(19px);
+ * $blockquote-border: 1px solid #ddd;
+ * $blockquote-cite-font-size: emCalc(13px);
+ * $blockquote-cite-font-color: lighten($header-font-color, 20%);
+ * $blockquote-cite-link-color: $blockquote-cite-font-color; */;i≈;[ ;@o;	;
+0;i ;["/* Acronym */;iÃ;[ ;@o;	;
+0;i ;["//* $acronym-underline: 1px dotted #ddd; */;iŒ;[ ;@o;	;
+0;i ;["/* Padding and margin */;i–;[ ;@o;	;
+0;i ;["g/* $microformat-padding: emCalc(10px) emCalc(12px);
+ * $microformat-margin: 0 0 emCalc(20px) 0; */;i“;[ ;@o;	;
+0;i ;["/* Border styles */;i’;[ ;@o;	;
+0;i ;["s/* $microformat-border-width: 1px;
+ * $microformat-border-style: solid;
+ * $microformat-border-color: #ddd; */;i◊;[ ;@o;	;
+0;i ;[" /* Full name font styles */;i€;[ ;@o;	;
+0;i ;["e/* $microformat-fullname-font-weight: bold;
+ * $microformat-fullname-font-size: emCalc(15px); */;i›;[ ;@o;	;
+0;i ;["/* Summary font styles */;i‡;[ ;@o;	;
+0;i ;["2/* $microformat-summary-font-weight: bold; */;i‚;[ ;@o;	;
+0;i ;["/* <abbr> padding */;i‰;[ ;@o;	;
+0;i ;["4/* $microformat-abbr-padding: 0 emCalc(1px); */;iÊ;[ ;@o;	;
+0;i ;["/* <abbr> font styles */;iË;[ ;@o;	;
+0;i ;["[/* $microformat-abbr-font-weight: bold;
+ * $microformat-abbr-font-decoration: none; */;iÍ;[ ;@o;	;
+0;i ;["/*
+ * Form Variables
+ * */;iÌ;[ ;@o;	;
+0;i ;["?/* Base for lots of form spacing and positioning styles */;iÒ;[ ;@o;	;
+0;i ;["'/* $form-spacing: emCalc(16px); */;iÛ;[ ;@o;	;
+0;i ;["/* Labels */;iı;[ ;@o;	;
+0;i ;["c/* $form-label-pointer: pointer;
+ * $form-label-font-size: emCalc(14px);
+ * $form-label-font-weight: 500;
+ * $form-label-font-color: lighten(#000, 30%);
+ * $form-label-bottom-margin: emCalc(3px);
+ * $input-font-family: inherit;
+ * $input-font-color: rgba(0,0,0,0.75);
+ * $input-font-size: emCalc(14px);
+ * $input-bg-color: #fff;
+ * $input-focus-bg-color: darken(#fff, 2%);
+ * $input-border-color: darken(#fff, 20%);
+ * $input-focus-border-color: darken(#fff, 40%);
+ * $input-border-style: solid;
+ * $input-border-width: 1px;
+ * $input-disabled-bg: #ddd;
+ * $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1); */;i˜;[ ;@o;	;
+0;i ;["'/* Fieldset border and spacing. */;i;[ ;@o;	;
+0;i ;["Æ/* $fieldset-border-style: solid;
+ * $fieldset-border-width: 1px;
+ * $fieldset-border-color: #ddd;
+ * $fieldset-padding: emCalc(20px);
+ * $fieldset-margin: emCalc(18px) 0; */;i
+;[ ;@o;	;
+0;i ;["/* Legends */;i;[ ;@o;	;
+0;i ;["]/* $legend-bg: #fff;
+ * $legend-font-weight: bold;
+ * $legend-padding: 0 emCalc(3px); */;i;[ ;@o;	;
+0;i ;[",/* Prefix and postfix input elements */;i;[ ;@o;	;
+0;i ;["/* $input-prefix-bg: darken(#fff, 5%);
+ * $input-prefix-border-color: darken(#fff, 20%);
+ * $input-prefix-border-size: 1px;
+ * $input-prefix-border-type: solid;
+ * $input-prefix-overflow: hidden;
+ * $input-prefix-font-color: #333;
+ * $input-prefix-font-color-alt: #fff; */;i;[ ;@o;	;
+0;i ;["-/* Error states for inputs and labels */;i ;[ ;@o;	;
+0;i ;["-/* $input-error-message-padding: emCalc(6px) emCalc(4px);
+ * $input-error-message-top: -($form-spacing) - emCalc(5px);
+ * $input-error-message-font-size: emCalc(12px);
+ * $input-error-message-font-weight: bold;
+ * $input-error-message-font-color: #fff;
+ * $input-error-message-font-color-alt: #333; */;i";[ ;@o;	;
+0;i ;["/* Padding for buttons. */;i);[ ;@o;	;
+0;i ;["}/* $button-tny: emCalc(7px);
+ * $button-sml: emCalc(9px);
+ * $button-med: emCalc(12px);
+ * $button-lrg: emCalc(16px); */;i+;[ ;@o;	;
+0;i ;["/* Display property. */;i0;[ ;@o;	;
+0;i ;["Q/* $button-display: inline-block;
+ * $button-margin-bottom: emCalc(20px); */;i2;[ ;@o;	;
+0;i ;["/* Button text styles. */;i5;[ ;@o;	;
+0;i ;["*/* $button-font-family: inherit;
+ * $button-font-color: #fff;
+ * $button-font-color-alt: #333;
+ * $button-font-med: emCalc(16px);
+ * $button-font-tny: emCalc(11px);
+ * $button-font-sml: emCalc(13px);
+ * $button-font-lrg: emCalc(20px);
+ * $button-font-weight: bold;
+ * $button-font-align: center; */;i7;[ ;@o;	;
+0;i ;["!/* Various hover effects. */;iA;[ ;@o;	;
+0;i ;["(/* $button-function-factor: 10%; */;iC;[ ;@o;	;
+0;i ;[" /* Button border styles. */;iE;[ ;@o;	;
+0;i ;["ä/* $button-border-width: 1px;
+ * $button-border-style: solid;
+ * $button-border-color: darken($primary-color, $button-function-factor); */;iG;[ ;@o;	;
+0;i ;["+/* Radius used throughout the core. */;iK;[ ;@o;	;
+0;i ;["*/* $button-radius: $global-radius; */;iM;[ ;@o;	;
+0;i ;["(/* Opacity for disabled buttons. */;iO;[ ;@o;	;
+0;i ;[")/* $button-disabled-opacity: 0.6; */;iQ;[ ;@o;	;
+0;i ;["*/*
+ * Dropdown Button Variables
+ * */;iS;[ ;@o;	;
+0;i ;["//* Color of the pip in dropdown buttons */;iW;[ ;@o;	;
+0;i ;["U/* $dropdown-button-pip-color: #fff;
+ * $dropdown-button-pip-color-alt: #333; */;iY;[ ;@o;	;
+0;i ;[" /* Tiny dropdown buttons */;i\;[ ;@o;	;
+0;i ;["ÿ/* $dropdown-button-padding-tny: $button-tny * 5;
+ * $dropdown-button-pip-size-tny: $button-tny;
+ * $dropdown-button-pip-right-tny: $button-tny * 2;
+ * $dropdown-button-pip-top-tny: -$button-tny / 2 + emCalc(1px); */;i^;[ ;@o;	;
+0;i ;["!/* Small dropdown buttons */;ic;[ ;@o;	;
+0;i ;["ÿ/* $dropdown-button-padding-sml: $button-sml * 5;
+ * $dropdown-button-pip-size-sml: $button-sml;
+ * $dropdown-button-pip-right-sml: $button-sml * 2;
+ * $dropdown-button-pip-top-sml: -$button-sml / 2 + emCalc(1px); */;ie;[ ;@o;	;
+0;i ;[""/* Medium dropdown buttons */;ij;[ ;@o;	;
+0;i ;["Ù/* $dropdown-button-padding-med: $button-med * 4 + emCalc(3px);
+ * $dropdown-button-pip-size-med: $button-med - emCalc(3px);
+ * $dropdown-button-pip-right-med: $button-med * 2;
+ * $dropdown-button-pip-top-med: -$button-med / 2 + emCalc(2px); */;il;[ ;@o;	;
+0;i ;["!/* Large dropdown buttons */;iq;[ ;@o;	;
+0;i ;["Ò/* $dropdown-button-padding-lrg: $button-lrg * 4;
+ * $dropdown-button-pip-size-lrg: $button-lrg - emCalc(6px);
+ * $dropdown-button-pip-right-lrg: $button-lrg + emCalc(12px);
+ * $dropdown-button-pip-top-lrg: -$button-lrg / 2 + emCalc(3px); */;is;[ ;@o;	;
+0;i ;["'/*
+ * Split Button Variables
+ * */;ix;[ ;@o;	;
+0;i ;["*/* Shared styles for Split Buttons */;i|;[ ;@o;	;
+0;i ;["£/* $split-button-function-factor: 15%;
+ * $split-button-pip-color: #fff;
+ * $split-button-pip-color-alt: #333;
+ * $split-button-active-bg-tint: rgba(0,0,0,0.1); */;i~;[ ;@o;	;
+0;i ;["/* Tiny split buttons */;iÉ;[ ;@o;	;
+0;i ;["Ì/* $split-button-padding-tny: $button-tny * 9;
+ * $split-button-span-width-tny: $button-tny * 6.5;
+ * $split-button-pip-size-tny: $button-tny;
+ * $split-button-pip-top-tny: $button-tny * 2;
+ * $split-button-pip-left-tny: emCalc(-5px); */;iÖ;[ ;@o;	;
+0;i ;["/* Small split buttons */;iã;[ ;@o;	;
+0;i ;["Ì/* $split-button-padding-sml: $button-sml * 7;
+ * $split-button-span-width-sml: $button-sml * 5;
+ * $split-button-pip-size-sml: $button-sml;
+ * $split-button-pip-top-sml: $button-sml * 1.5;
+ * $split-button-pip-left-sml: emCalc(-9px); */;iç;[ ;@o;	;
+0;i ;["/* Medium split buttons */;iì;[ ;@o;	;
+0;i ;["˝/* $split-button-padding-med: $button-med * 6.4;
+ * $split-button-span-width-med: $button-med * 4;
+ * $split-button-pip-size-med: $button-med - emCalc(3px);
+ * $split-button-pip-top-med: $button-med * 1.5;
+ * $split-button-pip-left-med: emCalc(-9px); */;iï;[ ;@o;	;
+0;i ;["/* Large split buttons */;iõ;[ ;@o;	;
+0;i ;["/* $split-button-padding-lrg: $button-lrg * 6;
+ * $split-button-span-width-lrg: $button-lrg * 3.75;
+ * $split-button-pip-size-lrg: $button-lrg - emCalc(6px);
+ * $split-button-pip-top-lrg: $button-lrg + emCalc(5px);
+ * $split-button-pip-left-lrg: emCalc(-9px); */;iù;[ ;@o;	;
+0;i ;[" /*
+ * Alert Variables
+ * */;i£;[ ;@o;	;
+0;i ;["/* Alert padding. */;iß;[ ;@o;	;
+0;i ;["À/* $alert-padding-top: emCalc(11px);
+ * $alert-padding-left: $alert-padding-top;
+ * $alert-padding-right: $alert-padding-top + emCalc(10px);
+ * $alert-padding-bottom: $alert-padding-top + emCalc(1px); */;i©;[ ;@o;	;
+0;i ;["/* Text style. */;iÆ;[ ;@o;	;
+0;i ;["ó/* $alert-font-weight: bold;
+ * $alert-font-size: emCalc(14px);
+ * $alert-font-color: #fff;
+ * $alert-font-color-alt: darken($secondary-color, 60%); */;i∞;[ ;@o;	;
+0;i ;["/* Close hover effect. */;iµ;[ ;@o;	;
+0;i ;["'/* $alert-function-factor: 10%; */;i∑;[ ;@o;	;
+0;i ;["/* Border styles. */;iπ;[ ;@o;	;
+0;i ;["≠/* $alert-border-style: solid;
+ * $alert-border-width: 1px;
+ * $alert-border-color: darken($primary-color, $alert-function-factor);
+ * $alert-bottom-margin: emCalc(20px); */;iª;[ ;@o;	;
+0;i ;["/* Close buttons */;i¿;[ ;@o;	;
+0;i ;["◊/* $alert-close-color: #333;
+ * $alert-close-position: emCalc(5px);
+ * $alert-close-font-size: emCalc(22px);
+ * $alert-close-opacity: 0.3;
+ * $alert-close-opacity-hover: 0.5;
+ * $alert-close-padding: 5px 4px 4px; */;i¬;[ ;@o;	;
+0;i ;["/* Border radius */;i…;[ ;@o;	;
+0;i ;[")/* $alert-radius: $global-radius; */;iÀ;[ ;@o;	;
+0;i ;["%/*
+ * Breadcrumb Variables
+ * */;iÕ;[ ;@o;	;
+0;i ;["9/* Background color for the breadcrumb container. */;i—;[ ;@o;	;
+0;i ;["4/* $crumb-bg: lighten($secondary-color, 5%); */;i”;[ ;@o;	;
+0;i ;["*/* Padding around the breadcrumbs. */;i’;[ ;@o;	;
+0;i ;["f/* $crumb-padding: emCalc(6px) emCalc(14px) emCalc(9px);
+ * $crumb-side-padding: emCalc(12px); */;i◊;[ ;@o;	;
+0;i ;["/* Border styles. */;i⁄;[ ;@o;	;
+0;i ;["¬/* $crumb-function-factor: 10%;
+ * $crumb-border-size: 1px;
+ * $crumb-border-style: solid;
+ * $crumb-border-color: darken($crumb-bg, $crumb-function-factor);
+ * $crumb-radius: $global-radius; */;i‹;[ ;@o;	;
+0;i ;["//* Various text styles for breadcrumbs. */;i‚;[ ;@o;	;
+0;i ;["›/* $crumb-font-size: emCalc(11px);
+ * $crumb-font-color: $primary-color;
+ * $crumb-font-color-current: #333;
+ * $crumb-font-color-unavailable: #999;
+ * $crumb-font-transform: uppercase;
+ * $crumb-link-decor: underline; */;i‰;[ ;@o;	;
+0;i ;["$/* Slash between breadcrumbs */;iÎ;[ ;@o;	;
+0;i ;[":/* $crumb-slash-color: #aaa;
+ * $crumb-slash: "/"; */;iÌ;[ ;@o;	;
+0;i ;["#/*
+ * Clearing Variables
+ * */;i;[ ;@o;	;
+0;i ;["3/* Background colors for parts of Clearing. */;iÙ;[ ;@o;	;
+0;i ;["É/* $clearing-bg: #111;
+ * $clearing-caption-bg: $clearing-bg;
+ * $clearing-carousel-bg: #111;
+ * $clearing-img-bg: $clearing-bg; */;iˆ;[ ;@o;	;
+0;i ;["/* Close button */;i˚;[ ;@o;	;
+0;i ;["F/* $clearing-close-color: #fff;
+ * $clearing-close-size: 40px; */;i˝;[ ;@o;	;
+0;i ;["/* Style the arrows */;i ;[ ;@o;	;
+0;i ;["W/* $clearing-arrow-size: 16px;
+ * $clearing-arrow-color: $clearing-close-color; */;i;[ ;@o;	;
+0;i ;["/* Style captions */;i;[ ;@o;	;
+0;i ;["W/* $clearing-caption-font-color: #fff;
+ * $clearing-caption-padding: 10px 30px; */;i;[ ;@o;	;
+0;i ;["7/* Make the image and carousel height and style */;i
+;[ ;@o;	;
+0;i ;["Ω/* $clearing-active-img-height: 75%;
+ * $clearing-carousel-height: 150px;
+ * $clearing-carousel-thumb-width: 175px;
+ * $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255); */;i;[ ;@o;	;
+0;i ;["&/*
+ * Custom Form Variables
+ * */;i;[ ;@o;	;
+0;i ;[")/* Basic form styles input styles */;i;[ ;@o;	;
+0;i ;["3/* $custom-form-border-color: #ccc;
+ * $custom-form-border-size: 1px;
+ * $custom-form-bg: #fff;
+ * $custom-form-bg-disabled: #ddd;
+ * $custom-form-input-size: 16px;
+ * $custom-form-check-color: #222;
+ * $custom-form-check-size: 14px;
+ * $custom-form-radio-size: 8px;
+ * $custom-form-checkbox-radius: 0px; */;i;[ ;@o;	;
+0;i ;["&/* Custom select form element. */;i!;[ ;@o;	;
+0;i ;["ä/* $custom-select-bg: #fff;
+ * $custom-select-fade-to-color: #f3f3f3;
+ * $custom-select-border-color: #ddd;
+ * $custom-select-triangle-color: #aaa;
+ * $custom-select-triangle-color-open: #222;
+ * $custom-select-height: emCalc(13px) + ($form-spacing * 1.5);
+ * $custom-select-margin-bottom: emCalc(20px);
+ * $custom-select-font-color-selected: #141414;
+ * $custom-select-disabled-color: #888; */;i#;[ ;@o;	;
+0;i ;["*/* Custom select dropdown element. */;i-;[ ;@o;	;
+0;i ;["ü/* $custom-dropdown-height: 200px;
+ * $custom-dropdown-bg: #fff;
+ * $custom-dropdown-border-color: darken(#fff, 20%);
+ * $custom-dropdown-border-width: 1px;
+ * $custom-dropdown-border-style: solid;
+ * $custom-dropdown-font-color: #555;
+ * $custom-dropdown-font-size: emCalc(14px);
+ * $custom-dropdown-color-selected: #eeeeee;
+ * $custom-dropdown-font-color-selected: #000;
+ * $custom-dropdown-shadow: 0 2px 2px 0px rgba(0,0,0,0.1);
+ * $custom-dropdown-offset-top: none;
+ * $custom-dropdown-list-padding: emCalc(4px);
+ * $custom-dropdown-left-padding: emCalc(6px);
+ * $custom-dropdown-right-padding: emCalc(38px);
+ * $custom-dropdown-list-item-min-height: emCalc(24px); */;i/;[ ;@o;	;
+0;i ;["#/*
+ * Dropdown Variables
+ * */;i?;[ ;@o;	;
+0;i ;["#/* Height and width styles. */;iC;[ ;@o;	;
+0;i ;["Å/* $f-dropdown-max-width: 200px;
+ * $f-dropdown-height: auto;
+ * $f-dropdown-max-height: none;
+ * $f-dropdown-margin-top: 2px; */;iE;[ ;@o;	;
+0;i ;["/* Background color */;iJ;[ ;@o;	;
+0;i ;[" /* $f-dropdown-bg: #fff; */;iL;[ ;@o;	;
+0;i ;["'/* Border styles for dropdowns. */;iN;[ ;@o;	;
+0;i ;["}/* $f-dropdown-border-style: solid;
+ * $f-dropdown-border-width: 1px;
+ * $f-dropdown-border-color: darken(#fff, 20%); */;iP;[ ;@o;	;
+0;i ;["/* Triangle pip. */;iT;[ ;@o;	;
+0;i ;["z/* $f-dropdown-triangle-size: 6px;
+ * $f-dropdown-triangle-color: #fff;
+ * $f-dropdown-triangle-side-offset: 10px; */;iV;[ ;@o;	;
+0;i ;["/* List elements. */;iZ;[ ;@o;	;
+0;i ;["/* $f-dropdown-list-style: none;
+ * $f-dropdown-font-color: #555;
+ * $f-dropdown-font-size: emCalc(14px);
+ * $f-dropdown-list-padding: emCalc(5px) emCalc(10px);
+ * $f-dropdown-line-height: emCalc(18px);
+ * $f-dropdown-list-hover-bg: #eeeeee;
+ * $dropdown-mobile-left: 0; */;i\;[ ;@o;	;
+0;i ;["0/* When the dropdown has custom content. */;id;[ ;@o;	;
+0;i ;["5/* $f-dropdown-content-padding: emCalc(20px); */;if;[ ;@o;	;
+0;i ;["%/*
+ * Flex Video Variables
+ * */;ih;[ ;@o;	;
+0;i ;["./* Video container padding and margins */;il;[ ;@o;	;
+0;i ;["~/* $flex-video-padding-top: emCalc(25px);
+ * $flex-video-padding-bottom: 67.5%;
+ * $flex-video-margin-bottom: emCalc(16px); */;in;[ ;@o;	;
+0;i ;["$/* Widescreen bottom padding */;ir;[ ;@o;	;
+0;i ;["9/* $flex-video-widescreen-padding-bottom: 57.25%; */;it;[ ;@o;	;
+0;i ;["&/*
+ * Inline List Variables
+ * */;iv;[ ;@o;	;
+0;i ;["2/* Margins and padding of the inline list. */;iz;[ ;@o;	;
+0;i ;["|/* $inline-list-margin-bottom: emCalc(17px) emCalc(-22px );
+ * $inline-list-margin: 0 0;
+ * $inline-list-padding: 0; */;i|;[ ;@o;	;
+0;i ;["'/* Overflow of the inline list. */;iÄ;[ ;@o;	;
+0;i ;[")/* $inline-list-overflow: hidden; */;iÇ;[ ;@o;	;
+0;i ;["/* List items */;iÑ;[ ;@o;	;
+0;i ;["'/* $inline-list-display: block; */;iÜ;[ ;@o;	;
+0;i ;["$/* Elments within list items */;ià;[ ;@o;	;
+0;i ;["0/* $inline-list-children-display: block; */;iä;[ ;@o;	;
+0;i ;[""/*
+ * Joyride Variables
+ * */;iå;[ ;@o;	;
+0;i ;["/* Joyride styles */;iê;[ ;@o;	;
+0;i ;["ı/* $joyride-tip-bg: rgb(0,0,0);
+ * $joyride-tip-default-width: 300px;
+ * $joyride-tip-padding: emCalc(18px) emCalc(20px) emCalc(24px);
+ * $joyride-tip-border: solid 1px #555;
+ * $joyride-tip-radius: 4px;
+ * $joyride-tip-position-offset: 22px; */;ií;[ ;@o;	;
+0;i ;["/* Tip font styles */;iô;[ ;@o;	;
+0;i ;["w/* $joyride-tip-font-color: #fff;
+ * $joyride-tip-font-size: emCalc(14px);
+ * $joyride-tip-header-weight: bold; */;iõ;[ ;@o;	;
+0;i ;["/* Changes the nub size */;iü;[ ;@o;	;
+0;i ;["'/* $joyride-tip-nub-size: 14px; */;i°;[ ;@o;	;
+0;i ;["</* Adjusts the styles for the timer when its enabled */;i£;[ ;@o;	;
+0;i ;["p/* $joyride-tip-timer-width: 50px;
+ * $joyride-tip-timer-height: 3px;
+ * $joyride-tip-timer-color: #666; */;i•;[ ;@o;	;
+0;i ;["5/* Changes up the styles for the close button */;i©;[ ;@o;	;
+0;i ;["r/* $joyride-tip-close-color: #777;
+ * $joyride-tip-close-size: 30px;
+ * $joyride-tip-close-weight: normal; */;i´;[ ;@o;	;
+0;i ;["?/* When Joyride is filling the screen, style for the bg */;iØ;[ ;@o;	;
+0;i ;["0/* $joyride-screenfill: rgba(0,0,0,0.5); */;i±;[ ;@o;	;
+0;i ;["$/*
+ * Keystroke Variables
+ * */;i≥;[ ;@o;	;
+0;i ;["/* Text styles. */;i∑;[ ;@o;	;
+0;i ;["œ/* $keystroke-font: "Consolas", "Menlo", "Courier", monospace;
+ * $keystroke-font-size: emCalc(15px);
+ * $keystroke-font-color: #222;
+ * $keystroke-font-color-alt: #fff;
+ * $keystroke-function-factor: 7%; */;iπ;[ ;@o;	;
+0;i ;["/* Keystroke padding. */;iø;[ ;@o;	;
+0;i ;["C/* $keystroke-padding: emCalc(2px) emCalc(4px) emCalc(0px); */;i¡;[ ;@o;	;
+0;i ;["(/* Background and border styles. */;i√;[ ;@o;	;
+0;i ;["˜/* $keystroke-bg: darken(#fff, $keystroke-function-factor);
+ * $keystroke-border-style: solid;
+ * $keystroke-border-width: 1px;
+ * $keystroke-border-color: darken($keystroke-bg, $keystroke-function-factor);
+ * $keystroke-radius: $global-radius; */;i≈;[ ;@o;	;
+0;i ;[" /*
+ * Label Variables
+ * */;iÀ;[ ;@o;	;
+0;i ;["/* Style the labels */;iœ;[ ;@o;	;
+0;i ;["b/* $label-padding: emCalc(3px) emCalc(10px) emCalc(4px);
+ * $label-radius: $global-radius; */;i—;[ ;@o;	;
+0;i ;["//* We use these to style the label text */;i‘;[ ;@o;	;
+0;i ;["Ä/* $label-font-sizing: emCalc(14px);
+ * $label-font-weight: bold;
+ * $label-font-color: #333;
+ * $label-font-color-alt: #fff; */;i÷;[ ;@o;	;
+0;i ;["#/*
+ * Magellan Variables
+ * */;i€;[ ;@o;	;
+0;i ;["/* Basic visual styles */;iﬂ;[ ;@o;	;
+0;i ;[":/* $magellan-bg: #fff;
+ * $magellan-padding: 10px; */;i·;[ ;@o;	;
+0;i ;["/*
+ * Orbit Settings
+ * */;i‰;[ ;@o;	;
+0;i ;["/* Caption styles */;iË;[ ;@o;	;
+0;i ;["º/* $orbit-container-bg: #f5f5f5;
+ * $orbit-caption-bg-old-browser: #000;
+ * $orbit-caption-bg-old: rgb(0,0,0);
+ * $orbit-caption-bg: rgba(0,0,0,0.6);
+ * $orbit-caption-font-color: #fff; */;iÍ;[ ;@o;	;
+0;i ;[" /* Left/right nav styles */;i;[ ;@o;	;
+0;i ;["L/* $orbit-nav-bg-old: rgb(0,0,0);
+ * $orbit-nav-bg: rgba(0,0,0,0.6); */;iÚ;[ ;@o;	;
+0;i ;["/* Timer styles */;iı;[ ;@o;	;
+0;i ;["P/* $orbit-timer-bg-old: rgb(0,0,0);
+ * $orbit-timer-bg: rgba(0,0,0,0.6); */;i˜;[ ;@o;	;
+0;i ;["/* Bullet nav styles */;i˙;[ ;@o;	;
+0;i ;["R/* $orbit-bullet-nav-color: #999;
+ * $orbit-bullet-nav-color-active: #222; */;i¸;[ ;@o;	;
+0;i ;["/* Slide numbers */;iˇ;[ ;@o;	;
+0;i ;["/* $orbit-slide-number-bg: rgb(0,0,0);
+ * $orbit-slide-number-font-color: #fff;
+ * $orbit-slide-number-padding: emCalc(5px); */;i;[ ;@o;	;
+0;i ;["</* Margin for when Orbit is stacked on small screens */;i;[ ;@o;	;
+0;i ;["Q/* $stack-on-small-margin-bottom: emCalc(20px); // Doesn't quite work yet */;i;[ ;@o;	;
+0;i ;["%/*
+ * Pagination Variables
+ * */;i	;[ ;@o;	;
+0;i ;["/* Pagination container */;i;[ ;@o;	;
+0;i ;["Q/* $pagination-height: emCalc(24px);
+ * $pagination-margin: emCalc(-5px); */;i;[ ;@o;	;
+0;i ;["/* List-item properties */;i;[ ;@o;	;
+0;i ;["…/* $pagination-li-float: $default-float;
+ * $pagination-li-height: emCalc(24px);
+ * $pagination-li-font-color: #222;
+ * $pagination-li-font-size: emCalc(14px);
+ * $pagination-li-margin: emCalc(5px); */;i;[ ;@o;	;
+0;i ;[""/* Pagination anchor links */;i;[ ;@o;	;
+0;i ;["ò/* $pagination-link-pad: emCalc(1px) emCalc(7px) emCalc(1px);
+ * $pagination-link-font-color: #999;
+ * $pagination-link-active-bg: darken(#fff, 10%); */;i;[ ;@o;	;
+0;i ;[" /* Disabled anchor links */;i ;[ ;@o;	;
+0;i ;["ù/* $pagination-link-unavailable-cursor: default;
+ * $pagination-link-unavailable-font-color: #999;
+ * $pagination-link-unavailable-bg-active: transparent; */;i";[ ;@o;	;
+0;i ;["*/* Currently selected anchor links */;i&;[ ;@o;	;
+0;i ;["˚/* $pagination-link-current-background: $primary-color;
+ * $pagination-link-current-font-color: #fff;
+ * $pagination-link-current-font-weight: bold;
+ * $pagination-link-current-cursor: default;
+ * $pagination-link-current-active-bg: $primary-color; */;i(;[ ;@o;	;
+0;i ;[" /*
+ * Panel Variables
+ * */;i.;[ ;@o;	;
+0;i ;["'/* Background and border styles */;i2;[ ;@o;	;
+0;i ;["b/* $panel-bg: darken(#fff, 5%);
+ * $panel-border-style: solid;
+ * $panel-border-size: 1px; */;i4;[ ;@o;	;
+0;i ;["5/* Control how much we darken things on hover */;i8;[ ;@o;	;
+0;i ;["j/* $panel-function-factor: 10%;
+ * $panel-border-color: darken($panel-bg, $panel-function-factor); */;i:;[ ;@o;	;
+0;i ;["*/* Inner padding and bottom margin */;i=;[ ;@o;	;
+0;i ;["O/* $panel-margin-bottom: emCalc(20px);
+ * $panel-padding: emCalc(20px); */;i?;[ ;@o;	;
+0;i ;["/* Font colors */;iB;[ ;@o;	;
+0;i ;["C/* $panel-font-color: #333;
+ * $panel-font-color-alt: #fff; */;iD;[ ;@o;	;
+0;i ;["(/*
+ * Pricing Table Variables
+ * */;iG;[ ;@o;	;
+0;i ;["/* Border color */;iK;[ ;@o;	;
+0;i ;["//* $price-table-border: solid 1px #ddd; */;iM;[ ;@o;	;
+0;i ;["-/* Bottom margin of the pricing table */;iO;[ ;@o;	;
+0;i ;["4/* $price-table-margin-bottom: emCalc(20px); */;iQ;[ ;@o;	;
+0;i ;["#/* Control the title styles */;iS;[ ;@o;	;
+0;i ;["Œ/* $price-title-bg: #ddd;
+ * $price-title-padding: emCalc(15px) emCalc(20px);
+ * $price-title-align: center;
+ * $price-title-color: #333;
+ * $price-title-weight: bold;
+ * $price-title-size: emCalc(16px); */;iU;[ ;@o;	;
+0;i ;["#/* Control the price styles */;i\;[ ;@o;	;
+0;i ;["–/* $price-money-bg: #eee;
+ * $price-money-padding: emCalc(15px) emCalc(20px);
+ * $price-money-align: center;
+ * $price-money-color: #333;
+ * $price-money-weight: normal;
+ * $price-money-size: emCalc(20px); */;i^;[ ;@o;	;
+0;i ;["/* Description styles */;ie;[ ;@o;	;
+0;i ;["/* $price-bg: #fff;
+ * $price-desc-color: #777;
+ * $price-desc-padding: emCalc(15px);
+ * $price-desc-align: center;
+ * $price-desc-font-size: emCalc(12px);
+ * $price-desc-weight: normal;
+ * $price-desc-line-height: 1.4;
+ * $price-desc-bottom-border: dotted 1px #ddd; */;ig;[ ;@o;	;
+0;i ;["/* List item styles */;ip;[ ;@o;	;
+0;i ;["ÿ/* $price-item-color: #333;
+ * $price-item-padding: emCalc(15px);
+ * $price-item-align: center;
+ * $price-item-font-size: emCalc(14px);
+ * $price-item-weight: normal;
+ * $price-item-bottom-border: dotted 1px #ddd; */;ir;[ ;@o;	;
+0;i ;["/* CTA area styles */;iy;[ ;@o;	;
+0;i ;["s/* $price-cta-bg: #f5f5f5;
+ * $price-cta-align: center;
+ * $price-cta-padding: emCalc(20px) emCalc(20px) 0; */;i{;[ ;@o;	;
+0;i ;["'/*
+ * Progress Bar Variables
+ * */;i;[ ;@o;	;
+0;i ;["/* Progress bar height */;iÉ;[ ;@o;	;
+0;i ;["S/* $progress-bar-height: emCalc(25px);
+ * $progress-bar-color: transparent; */;iÖ;[ ;@o;	;
+0;i ;["/* Border styles */;ià;[ ;@o;	;
+0;i ;["≠/* $progress-bar-border-color: darken(#fff, 20%);
+ * $progress-bar-border-size: 1px;
+ * $progress-bar-border-style: solid;
+ * $progress-bar-border-radius: $global-radius; */;iä;[ ;@o;	;
+0;i ;["/* Margin & padding */;iè;[ ;@o;	;
+0;i ;["X/* $progress-bar-pad: emCalc(2px);
+ * $progress-bar-margin-bottom: emCalc(10px); */;ië;[ ;@o;	;
+0;i ;["/* Meter colors */;iî;[ ;@o;	;
+0;i ;["¬/* $progress-meter-color: $primary-color;
+ * $progress-meter-secondary-color: $secondary-color;
+ * $progress-meter-success-color: $success-color;
+ * $progress-meter-alert-color: $alert-color; */;iñ;[ ;@o;	;
+0;i ;["!/*
+ * Reveal Variables
+ * */;iõ;[ ;@o;	;
+0;i ;["/* Reveal overlay. */;iü;[ ;@o;	;
+0;i ;["P/* $reveal-overlay-bg: rgba(#000, .45);
+ * $reveal-overlay-bg-old: #000; */;i°;[ ;@o;	;
+0;i ;["/* Modal itself. */;i§;[ ;@o;	;
+0;i ;["≤/* $reveal-modal-bg: #fff;
+ * $reveal-position-top: 50px;
+ * $reveal-default-width: 80%;
+ * $reveal-modal-padding: emCalc(20px);
+ * $reveal-box-shadow: 0 0 10px rgba(#000,.4); */;i¶;[ ;@o;	;
+0;i ;["/* Reveal close button */;i¨;[ ;@o;	;
+0;i ;["±/* $reveal-close-font-size: emCalc(22px);
+ * $reveal-close-top: emCalc(8px);
+ * $reveal-close-side: emCalc(11px);
+ * $reveal-close-color: #aaa;
+ * $reveal-close-weight: bold; */;iÆ;[ ;@o;	;
+0;i ;["/* Modal border */;i¥;[ ;@o;	;
+0;i ;["d/* $reveal-border-style: solid;
+ * $reveal-border-width: 1px;
+ * $reveal-border-color: #666; */;i∂;[ ;@o;	;
+0;i ;[""/*
+ * Section Variables
+ * */;i∫;[ ;@o;	;
+0;i ;["#/* Padding and hover factor */;iæ;[ ;@o;	;
+0;i ;["L/* $section-padding: emCalc(15px);
+ * $section-function-factor: 10%; */;i¿;[ ;@o;	;
+0;i ;["/* Titles */;i√;[ ;@o;	;
+0;i ;["∫/* $section-title-color: #333;
+ * $section-title-bg: #efefef;
+ * $section-title-bg-active: darken($section-title-bg, $section-function-factor);
+ * $section-title-bg-active-tabs: #fff; */;i≈;[ ;@o;	;
+0;i ;["/* Border size */;i ;[ ;@o;	;
+0;i ;["f/* $section-border-size: 1px;
+ * $section-border-style: solid;
+ * $section-border-color: #ccc; */;iÃ;[ ;@o;	;
+0;i ;["8/* Color of the background and some size options */;i–;[ ;@o;	;
+0;i ;["≤/* $section-content-bg: #fff;
+ * $section-vertical-nav-min-width: emCalc(200px);
+ * $section-vertical-tabs-title-width: emCalc(200px);
+ * $section-bottom-margin: emCalc(20px); */;i“;[ ;@o;	;
+0;i ;["#/*
+ * Side Nav Variables
+ * */;i◊;[ ;@o;	;
+0;i ;["/* Padding */;i€;[ ;@o;	;
+0;i ;["-/* $side-nav-padding: emCalc(14px) 0; */;i›;[ ;@o;	;
+0;i ;["/* List styles */;iﬂ;[ ;@o;	;
+0;i ;["v/* $side-nav-list-type: none;
+ * $side-nav-list-position: inside;
+ * $side-nav-list-margin: 0 0 emCalc(7px) 0; */;i·;[ ;@o;	;
+0;i ;["/* Link styles */;iÂ;[ ;@o;	;
+0;i ;["•/* $side-nav-link-color: $primary-color;
+ * $side-nav-link-color-active: lighten(#000, 30%);
+ * $side-nav-font-size: emCalc(14px);
+ * $side-nav-font-weight: bold; */;iÁ;[ ;@o;	;
+0;i ;["/* Border styles */;iÏ;[ ;@o;	;
+0;i ;["y/* $side-nav-divider-size: 1px;
+ * $side-nav-divider-style: solid;
+ * $side-nav-divider-color: darken(#fff, 10%); */;iÓ;[ ;@o;	;
+0;i ;[""/*
+ * Sub Nav Variables
+ * */;iÚ;[ ;@o;	;
+0;i ;["/* Margin and padding */;iˆ;[ ;@o;	;
+0;i ;["h/* $sub-nav-list-margin: emCalc(-4px) 0 emCalc(18px);
+ * $sub-nav-list-padding-top: emCalc(4px); */;i¯;[ ;@o;	;
+0;i ;["/* Definition */;i˚;[ ;@o;	;
+0;i ;["¨/* $sub-nav-font-size: emCalc(14px);
+ * $sub-nav-font-color: #999;
+ * $sub-nav-font-weight: normal;
+ * $sub-nav-text-decoration: none;
+ * $sub-nav-border-radius: 1000px; */;i˝;[ ;@o;	;
+0;i ;["/* Active item styles */;i;[ ;@o;	;
+0;i ;["»/* $sub-nav-active-font-weight: bold;
+ * $sub-nav-active-bg: $primary-color;
+ * $sub-nav-active-color: #fff;
+ * $sub-nav-active-padding: emCalc(3px) emCalc(9px);
+ * $sub-nav-active-cursor: default; */;i;[ ;@o;	;
+0;i ;["!/*
+ * Switch Variables
+ * */;i;[ ;@o;	;
+0;i ;["G/* Border styles and background colors for the switch container */;i;[ ;@o;	;
+0;i ;["Å/* $switch-border-color: darken(#fff, 20%);
+ * $switch-border-style: solid;
+ * $switch-border-width: 1px;
+ * $switch-bg: #fff; */;i;[ ;@o;	;
+0;i ;["1/* Switch heights for our default classes */;i;[ ;@o;	;
+0;i ;["û/* $switch-height-tny: 22px;
+ * $switch-height-sml: 28px;
+ * $switch-height-med: 36px;
+ * $switch-height-lrg: 44px;
+ * $switch-bottom-margin: emCalc(20px); */;i;[ ;@o;	;
+0;i ;["&/* Font sizes for our classes. */;i;[ ;@o;	;
+0;i ;["¶/* $switch-font-size-tny: 11px;
+ * $switch-font-size-sml: 12px;
+ * $switch-font-size-med: 14px;
+ * $switch-font-size-lrg: 17px;
+ * $switch-label-side-padding: 6px; */;i ;[ ;@o;	;
+0;i ;["/* Switch-paddle */;i&;[ ;@o;	;
+0;i ;["û/* $switch-paddle-bg: #fff;
+ * $switch-paddle-fade-to-color: darken($switch-paddle-bg, 10%);
+ * $switch-paddle-border-color: darken($switch-paddle-bg, 35%);
+ * $switch-paddle-border-width: 1px;
+ * $switch-paddle-border-style: solid;
+ * $switch-paddle-transition-speed: .1s;
+ * $switch-paddle-transition-ease: ease-out;
+ * $switch-positive-color: lighten($success-color, 50%);
+ * $switch-negative-color: #f5f5f5; */;i(;[ ;@o;	;
+0;i ;["5/* Outline Style for tabbing through switches */;i2;[ ;@o;	;
+0;i ;["2/* $switch-label-outline: 1px dotted #888; */;i4;[ ;@o;	;
+0;i ;[" /*
+ * Table Variables
+ * */;i6;[ ;@o;	;
+0;i ;["7/* Background color for the table and even rows */;i:;[ ;@o;	;
+0;i ;[";/* $table-bg: #fff;
+ * $table-even-row-bg: #f9f9f9; */;i<;[ ;@o;	;
+0;i ;[""/* Table cell border style */;i?;[ ;@o;	;
+0;i ;["`/* $table-border-style: solid;
+ * $table-border-size: 1px;
+ * $table-border-color: #ddd; */;iA;[ ;@o;	;
+0;i ;["/* Table head styles */;iE;[ ;@o;	;
+0;i ;["»/* $table-head-bg: #f5f5f5;
+ * $table-head-font-size: emCalc(14px);
+ * $table-head-font-color: #222;
+ * $table-head-font-weight: bold;
+ * $table-head-padding: emCalc(8px) emCalc(10px) emCalc(10px); */;iG;[ ;@o;	;
+0;i ;["&/* Row padding and font styles */;iM;[ ;@o;	;
+0;i ;["ü/* $table-row-padding: emCalc(9px) emCalc(10px);
+ * $table-row-font-size: emCalc(14px);
+ * $table-row-font-color: #222;
+ * $table-line-height: emCalc(18px); */;iO;[ ;@o;	;
+0;i ;["'/* Display and margin of tables */;iT;[ ;@o;	;
+0;i ;["M/* $table-display: table-cell;
+ * $table-margin-bottom: emCalc(20px); */;iV;[ ;@o;	;
+0;i ;["*/*
+ * Image Thumbnail Variables
+ * */;iY;[ ;@o;	;
+0;i ;["/* Border styles */;i];[ ;@o;	;
+0;i ;["Õ/* $thumb-border-style: solid;
+ * $thumb-border-width: 4px;
+ * $thumb-border-color: #fff;
+ * $thumb-box-shadow: 0 0 0 1px rgba(#000,.2);
+ * $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5); */;i_;[ ;@o;	;
+0;i ;["1/* Radius and transition speed for thumbs */;ie;[ ;@o;	;
+0;i ;["L/* $thumb-radius: $global-radius;
+ * $thumb-transition-speed: 200ms; */;ig;[ ;@o;	;
+0;i ;[""/*
+ * Tooltip Variables
+ * */;ij;[ ;@o;	;
+0;i ;["/* $has-tip-border-bottom: dotted 1px #ccc;
+ * $has-tip-font-weight: bold;
+ * $has-tip-font-color: #333;
+ * $has-tip-border-bottom-hover: dotted 1px darken($primary-color, 20%);
+ * $has-tip-font-color-hover: $primary-color;
+ * $has-tip-cursor-type: help; */;in;[ ;@o;	;
+0;i ;["ò/* $tooltip-padding: emCalc(8px);
+ * $tooltip-bg: #000;
+ * $tooltip-font-size: emCalc(15px);
+ * $tooltip-font-weight: bold;
+ * $tooltip-font-color: #fff;
+ * $tooltip-line-height: 1.3;
+ * $tooltip-close-font-size: emCalc(10px);
+ * $tooltip-close-font-weight: normal;
+ * $tooltip-close-font-color: #888;
+ * $tooltip-font-size-sml: emCalc(14px);
+ * $tooltip-radius: $global-radius;
+ * $tooltip-pip-size: 5px; */;iu;[ ;@o;	;
+0;i ;[""/*
+ * Top Bar Variables
+ * */;iÇ;[ ;@o;	;
+0;i ;["+/* Background color for the top bar */;iÜ;[ ;@o;	;
+0;i ;["/* $topbar-bg: #111; */;ià;[ ;@o;	;
+0;i ;["/* Height and margin */;iä;[ ;@o;	;
+0;i ;["H/* $topbar-height: 45px;
+ * $topbar-margin-bottom: emCalc(30px); */;iå;[ ;@o;	;
+0;i ;["#/* Input height for top bar */;iè;[ ;@o;	;
+0;i ;["(/* $topbar-input-height: 2.45em; */;ië;[ ;@o;	;
+0;i ;["/* Title in the top bar */;iì;[ ;@o;	;
+0;i ;["P/* $topbar-title-weight: bold;
+ * $topbar-title-font-size: emCalc(17px); */;iï;[ ;@o;	;
+0;i ;["3/* Link colors and styles for top-level nav */;iò;[ ;@o;	;
+0;i ;["ß/* $topbar-link-color: #fff;
+ * $topbar-link-weight: bold;
+ * $topbar-link-font-size: emCalc(13px);
+ * $topbar-link-hover-lightness: -30% !default; // Darken by 30% */;iö;[ ;@o;	;
+0;i ;["$/* Top bar dropdown elements */;iü;[ ;@o;	;
+0;i ;["€/* $topbar-dropdown-bg: #333;
+ * $topbar-dropdown-link-color: #fff;
+ * $topbar-dropdown-toggle-size: 5px;
+ * $topbar-dropdown-toggle-color: #fff;
+ * $topbar-dropdown-toggle-alpha: 0.5;
+ * $dropdown-label-color: #555; */;i°;[ ;@o;	;
+0;i ;["/* Top menu icon styles */;i®;[ ;@o;	;
+0;i ;["/* $topbar-menu-link-transform: uppercase;
+ * $topbar-menu-link-font-size: emCalc(13px);
+ * $topbar-menu-link-weight: bold;
+ * $topbar-menu-link-color: #fff;
+ * $topbar-menu-icon-color: #fff;
+ * $topbar-menu-link-color-toggled: #888;
+ * $topbar-menu-icon-color-toggled: #888; */;i™;[ ;@o;	;
+0;i ;[",/* Transitions and breakpoint styles */;i≤;[ ;@o;	;
+0;i ;["…/* $topbar-transition-speed: 300ms;
+ * $topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
+ * $topbar-media-query: "only screen and (min-width: "#{$topbar-breakpoint}")"; */;i¥;[ ;@;@;!T
