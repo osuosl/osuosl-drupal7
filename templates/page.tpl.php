@@ -45,7 +45,7 @@ include("includes/header.php");
     	</a>
     	
 <!--    	<div class="contact-block">
-			//<?php print render($page['contact_block']); ?>
+			<?php print render($page['contact_block']); ?>
 		</div>-->
 		
     	<div class="about-block">
