@@ -1,5 +1,5 @@
 3.2.12 (Media Mark)
-aea1d3166a79d1315bee5b750e8b2f65ca81c482
+9ce365218bcf4760113ce2d367f99ad70c37d68b
 o:Sass::Tree::RootNode
 :@templateI"97// Global Foundation Settings
 @import "settings";
@@ -602,7 +602,7 @@ h4.subtitle {
 #footer-container a:link,
 #footer-container a:active,
 #footer-container a:visited {
-	color:#C8C8C8;
+	color:#eeeeee;
 	font-size:12px;
 }
 
@@ -2301,7 +2301,7 @@ iY;!@ ;!@ ;
 iY;!@ ;
 iY;@;	T;
 iY;"i ;[o;&;';(; [I"
-color;T;o;);I"#C8C8C8;T;@;;*;@;
+color;T;o;);I"#eeeeee;T;@;;*;@;
 iZ;"i ;[ o;&;';(; [I"font-size;T;o;);I"	12px;T;@;;*;@;
 i[;"i ;[ o;;[I"#footer-container a:hover;T;o;;[o;;[o;
 ;o;;{ ;0;[o;; [I"footer-container;T;!I" ;T;
