@@ -48,9 +48,9 @@ include("includes/header.php");
 		<img src="/<?php print $directory;?>/images/donatetext.png" alt="Donate to the OSU Open Source Lab" border="0" />
 		</a></div>
     	
-<!---    	<div class="contact-block">
+    	<div class="contact-block">
 			<?php print render($page['contact_block']); ?>
-		</div>-->
+		</div>
 		
     	<div class="about-block">
     		<?php print render($page['about_block']); ?>
