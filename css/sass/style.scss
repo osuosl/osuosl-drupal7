@@ -382,8 +382,11 @@ p.lead {
 
 .contact-block a {
 	color:#fff !important;
-	text-decoration: none;
+	text-decoration: none !important;
 }
+
+.contact-block a:hover{
+	opacity: .7;}
 
 .vertical-padding {
 	padding:20px 0 0 0;
@@ -477,7 +480,6 @@ li {
 }
 
 a:link, a:active, a:visited {
-	text-decoration:underline;
 	color:#d85a1a;
 	font-weight:normal;
 }
@@ -932,7 +934,7 @@ ol.top10 > li {
 	background:none;
     border-bottom: none; 
     font-size: 15px;
-    padding:0px 10px 0 30px;
+    padding:0px 10px 0px 10px;
     margin:0px;
 	transition: .5s;
 }

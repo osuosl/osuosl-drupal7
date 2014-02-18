@@ -3,7 +3,7 @@
   <?php print render($title_prefix); ?>
 <?php if ($block->subject): ?>
   <h5<?php print $title_attributes; ?>><?php print $block->subject ?></h5>
-  <hr class="decorative" />
+ <!-- <hr class="decorative" />-->
 <?php endif;?>
   <?php print render($title_suffix); ?>
 
