@@ -2,7 +2,7 @@ name = OSUOSL
 description = Drupal 7 theme for osuosl.org, by Mitchell Garcia.
 version = 2.0
 core = 7.x
-base theme = Bartik
+;base theme = Bartik
 
 regions[header] = Header
 regions[homepage_message] = Homepage Message
