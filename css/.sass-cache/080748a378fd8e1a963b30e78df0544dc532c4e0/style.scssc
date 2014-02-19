@@ -1,7 +1,7 @@
 3.2.12 (Media Mark)
-a65723e2fc2eb41dcc4898bb06f6508782e21a28
+87e7579aa5b2bb61017eb282134a2c0788e73fd4
 o:Sass::Tree::RootNode
-:@templateI"Ÿ6// Global Foundation Settings
+:@templateI"ž6// Global Foundation Settings
 @import "settings";
 @import "normalize.scss";
 @import "drupal.scss";
@@ -478,7 +478,7 @@ li {
 	font-family:'Bitter', serif;
 	color:#222;
 	line-height:1.6;
-	font-size:14px;
+	font-size:16px;
 	color:#111;
 }
 
@@ -937,7 +937,7 @@ ol.top10 > li {
 	background:none;
     border-bottom: none; 
     font-size: 15px;
-    padding:0px 10px 0px 10px;
+    padding:0px 10px 0px 5px;
     margin:0px;
 	transition: .5s;
 }
@@ -2000,7 +2000,7 @@ o;&;';(; [I"font-family;T;o;);I"'Bitter', serif;T;@;;*;@;
 iÛ;"i ;[ o;&;';(; [I"
 color;T;o;);I"	#222;T;@;;*;@;
 iÜ;"i ;[ o;&;';(; [I"line-height;T;o;);I"1.6;T;@;;*;@;
-iÝ;"i ;[ o;&;';(; [I"font-size;T;o;);I"	14px;T;@;;*;@;
+iÝ;"i ;[ o;&;';(; [I"font-size;T;o;);I"	16px;T;@;;*;@;
 iÞ;"i ;[ o;&;';(; [I"
 color;T;o;);I"	#111;T;@;;*;@;
 iß;"i ;[ o;;[I" a:link, a:active, a:visited;T;o;;[o;;[o;
@@ -2963,7 +2963,7 @@ color;T;o;);I"	#fff;T;@;;*;@;
 i¥;"i ;[ o;&;';(; [I"background;T;o;);I"	none;T;@;;*;@;
 i¦;"i ;[ o;&;';(; [I"border-bottom;T;o;);I"	none;T;@;;*;@;
 i§;"i ;[ o;&;';(; [I"font-size;T;o;);I"	15px;T;@;;*;@;
-i¨;"i ;[ o;&;';(; [I"padding;T;o;);I"0px 10px 0px 10px;T;@;;*;@;
+i¨;"i ;[ o;&;';(; [I"padding;T;o;);I"0px 10px 0px 5px;T;@;;*;@;
 i©;"i ;[ o;&;';(; [I"margin;T;o;);I"0px;T;@;;*;@;
 iª;"i ;[ o;&;';(; [I"transition;T;o;);I".5s;T;@;;*;@;
 i«;"i ;[ o;;[I".flexnav li a:hover;T;o;;[o;;[o;

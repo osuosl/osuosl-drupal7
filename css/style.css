@@ -3507,7 +3507,7 @@ li {
   font-family: 'Bitter', serif;
   color: #222;
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 16px;
   color: #111;
 }
 
@@ -4011,7 +4011,7 @@ ol.top10 > li {
     background: none;
     border-bottom: none;
     font-size: 15px;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 5px;
     margin: 0px;
     transition: .5s;
   }
