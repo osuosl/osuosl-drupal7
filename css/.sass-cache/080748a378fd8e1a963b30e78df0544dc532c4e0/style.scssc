@@ -1,7 +1,7 @@
 3.2.12 (Media Mark)
-87e7579aa5b2bb61017eb282134a2c0788e73fd4
+893cd3486176ecdc15072a6e9d9d0e0fe8f685fe
 o:Sass::Tree::RootNode
-:@templateI"ž6// Global Foundation Settings
+:@templateI"¢6// Global Foundation Settings
 @import "settings";
 @import "normalize.scss";
 @import "drupal.scss";
@@ -475,7 +475,7 @@ p.lead {
 p,
 ul,
 li {
-	font-family:'Bitter', serif;
+	font-family:'Gudea', sans-serif;
 	color:#222;
 	line-height:1.6;
 	font-size:16px;
@@ -1996,7 +1996,7 @@ iÚ;!@¢;
 iÚ;!@¢;
 iÚ;@;	T;
 iÚ;"i ;[
-o;&;';(; [I"font-family;T;o;);I"'Bitter', serif;T;@;;*;@;
+o;&;';(; [I"font-family;T;o;);I"'Gudea', sans-serif;T;@;;*;@;
 iÛ;"i ;[ o;&;';(; [I"
 color;T;o;);I"	#222;T;@;;*;@;
 iÜ;"i ;[ o;&;';(; [I"line-height;T;o;);I"1.6;T;@;;*;@;
