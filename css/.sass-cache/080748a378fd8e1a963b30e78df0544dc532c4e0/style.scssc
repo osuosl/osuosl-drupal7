@@ -1,5 +1,5 @@
 3.2.12 (Media Mark)
-02a12b7f22fbb03232688f1ede7a519838279229
+1c99d949de79d8197e5ced2887a55d690bff9e20
 o:Sass::Tree::RootNode
 :@templateI"£6// Global Foundation Settings
 @import "settings";
@@ -232,7 +232,7 @@ li.active a {
 }
 
 .page-content .blog-post {
-	@extend .large-13, .columns;
+	@extend .large-16, .columns;
 }
 
 .page-content .blog-post img {
@@ -1482,7 +1482,7 @@ iç;!@~;
 iç;!@~;
 iç;@;	T;
 iç;"i ;[o;#
-;$[I".;TI"large-13;TI",;TI" ;TI".;TI"columns;T;%F;[ ;
+;$[I".;TI"large-16;TI",;TI" ;TI".;TI"columns;T;%F;[ ;
 iè;@o;;[I"!.page-content .blog-post img;T;o;;[o;;[o;
 ;o;;{ ;0;[o;;; [I"page-content;T;!I" ;T;
 ië;!@ž;

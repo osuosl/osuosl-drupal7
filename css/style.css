@@ -1169,7 +1169,7 @@ select {
   }
 
   /* line 158, ../../.rvm/gems/ruby-2.0.0-p247/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
-  .large-13, .page-content, .page-content .blog-post {
+  .large-13, .page-content {
     position: relative;
     width: 81.25%;
   }
@@ -1187,7 +1187,7 @@ select {
   }
 
   /* line 158, ../../.rvm/gems/ruby-2.0.0-p247/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
-  .large-16 {
+  .large-16, .page-content .blog-post {
     position: relative;
     width: 100%;
   }
@@ -3504,7 +3504,7 @@ p.lead {
 p,
 ul,
 li {
-  font-family: 'Gudea', sans-serif;
+  font-family: 'Bitter', sans-serif;
   color: #222;
   line-height: 1.6;
   font-size: 16px;
