@@ -236,8 +236,11 @@ li.active a {
 	display:block;
 }
 
+
+
 .page-content .sidebar {
 	@extend .large-4, .columns;
+	//background: #385e86;
 }
 
 .page-content .sidebar h3 {
@@ -253,13 +256,14 @@ li.active a {
 
 .page-content .sidebar ul {
 	margin:0px;
-	padding:5px 0 0 0;
+	padding:0;
 }
 
 .page-content .sidebar li {
 	color:#999;
 	font-size:12px;
 	margin:6px 20px;
+	
 }
 
 .leaf > a {
@@ -347,6 +351,27 @@ div.contentheader {
 p.lead {
 	color:#222;
 	font-size:18px;
+}
+
+/****
+3.1 Sidebar
+****/
+
+.sidebar{
+	background: #373737;
+}
+
+.sidebar ul li.leaf{
+	list-style-type: none !important;
+	margin: 0px !important;
+	font-size: 15px;
+	padding-top: 15px;
+}
+
+.sidebar ul {
+	border: medium none;
+	list-style: none outside none;
+	padding: 10px 5px 5px 5px;
 }
 
 /***
@@ -632,7 +657,7 @@ h4.subtitle {
 #footer-container li.expanded ul.menu li {
 	margin: 0 0 0 15px;
 	padding:0px;
-	list-style:none;
+	list-style: none;
 }
 
 #footer-container #column1 {

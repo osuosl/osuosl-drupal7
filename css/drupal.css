@@ -65,13 +65,11 @@
 /* line 55, sass/drupal.scss */
 ul li.expanded {
   list-style-image: none;
-  list-style-type: circle;
 }
 
 /* line 60, sass/drupal.scss */
 ul li.leaf {
   list-style-image: none;
-  list-style-type: circle;
 }
 
 /* line 65, sass/drupal.scss */
@@ -82,7 +80,6 @@ ul li.leaf {
 /* line 69, sass/drupal.scss */
 li.expanded ul.menu .leaf {
   list-style-image: none;
-  list-style-type: square;
   color: #ddd;
   margin-top: 0px;
 }
