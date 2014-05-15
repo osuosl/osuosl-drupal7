@@ -358,20 +358,40 @@ p.lead {
 ****/
 
 .sidebar{
-	background: #373737;
+	margin-top: 20px;
+	//background: #373737;
 }
 
 .sidebar ul li.leaf{
 	list-style-type: none !important;
-	margin: 0px !important;
-	font-size: 15px;
-	padding-top: 15px;
+	padding: 0px;
+	margin:0px;
+}
+
+.sidebar ul li a{
+	font-size: .94em;
+	display:block;
+	border-bottom: 1px solid #252525;
+	background: #373737;
+	padding: 10px 0px 10px 6px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+	background: #C34500;
 }
 
 .sidebar ul {
-	border: medium none;
+	//border: medium none;
 	list-style: none outside none;
-	padding: 10px 5px 5px 5px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.sidebar h5{
+	font-size: 1.3em;
+	padding-bottom: 5px;
 }
 
 /***

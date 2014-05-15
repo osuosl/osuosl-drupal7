@@ -5,8 +5,8 @@
 		</div>
 		
 		<div id="navcontainer">
-				<h5>Site Map</h5>
-				<hr class="decorative" />
+				<!--<h5>Site Map</h5>
+				<hr class="decorative" />-->
 			<div id="column2">
 				<?php print render($page['footer_column2']); ?>
 			</div>
