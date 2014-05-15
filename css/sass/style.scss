@@ -358,6 +358,7 @@ p.lead {
 ****/
 
 .sidebar{
+	margin-top: 20px;
 	//background: #373737;
 }
 
@@ -368,7 +369,7 @@ p.lead {
 }
 
 .sidebar ul li a{
-	font-size: 1em;
+	font-size: .94em;
 	display:block;
 	border-bottom: 1px solid #252525;
 	background: #373737;
@@ -386,6 +387,11 @@ p.lead {
 	list-style: none outside none;
 	padding: 0px;
 	margin: 0px;
+}
+
+.sidebar h5{
+	font-size: 1.3em;
+	padding-bottom: 5px;
 }
 
 /***
