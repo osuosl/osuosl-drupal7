@@ -5,7 +5,7 @@
     </div>
     
     <div id="logo">
-    <a href="/"><img src="/<?php print $directory;?>/images/logo-full.png" alt="<?php print render ($name);?> Logo" /></a>    
+    <a href="/"><img src="/<?php print $directory;?>/images/logo-full.png" alt="<?php print render ($orgname);?> Logo" /></a>    
     </div>
     
   <div id="navigation">

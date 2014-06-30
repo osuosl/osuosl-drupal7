@@ -41,27 +41,9 @@ include("includes/header.php");
       
       	
     	</div>
-    
-    <div class="right-block-container">
-	<div class="donate-block">
-    <a href="<?php print render($donateurl);?>">
-    <img src="/<?php print $directory;?>/images/donatetext.png" alt="Donate to the <?php print render($name);?>" border="0" />
-		</a></div>
-    	
-    	<div class="contact-block">
-			<?php print render($page['contact_block']); ?>
-		</div>
-		
-    	<div class="about-block">
-    		<?php print render($page['about_block']); ?>
-    	</div>
-	
-	<div class="sidebar">
-		<?php print render($page['sidebar_blog']); ?>
-	</div>		
-  
-    </div>
-    
+<?php
+include("includes/sidebar.php");
+?>
     <div class="clrfix"></div>
     <!--end #content-container below -->
 	</div>

@@ -26,25 +26,11 @@ include("includes/header.php");
       <?php print $feed_icons; ?>
       
     </div>
-    
-    <div class="right-block-container">
-    <a href="<?php print render($donateurl);?>">
-    	<div class="donate-block">
-        <img src="/<?php print $directory;?>/images/donatetext.png" alt="Donate to the <?php print render($name);?>" border="0" />
-    	</div>
-    	</a>
-    	
-    	<div class="contact-block">
-			<?php print render($page['contact_block']); ?>
-		</div>
-		
-    	<div class="about-block">
-    		<?php print render($page['about_block']); ?>
-    	</div>
+<?php
+include("includes/sidebar.php");
+?>
 
-    </div>
-    
-    <!--end #content-container below -->
+<!--end #content-container below -->
 	</div>
 
  
