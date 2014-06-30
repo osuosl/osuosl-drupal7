@@ -39,4 +39,8 @@ function osuosl_preprocess_image(&$variables) {
   }
 }
 
+function osuosl_preprocess(&$vars){
+        $vars['donateurl'] = "http://osuosl.org/donate";
+        $vars['name'] = "OSU Open Source Lab";
+
 ?>

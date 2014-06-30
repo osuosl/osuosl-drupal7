@@ -4,8 +4,8 @@
     	<a href="http://oregonstate.edu"><img src="/<?php print $directory;?>/images/osu-tag.png" alt="OSU Tag"/></a>
     </div>
     
-    <div id="osl-logo">
-    	<a href="/"><img src="/<?php print $directory;?>/images/logo-full.png" alt="OSU Open Source Lab Logo" /></a>    
+    <div id="logo">
+    <a href="/"><img src="/<?php print $directory;?>/images/logo-full.png" alt="<?php print render ($name);?> Logo" /></a>    
     </div>
     
   <div id="navigation">
