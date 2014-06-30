@@ -40,7 +40,7 @@ function osuosl_preprocess_image(&$variables) {
 }
 
 function osuosl_preprocess(&$vars){
-        $vars['donateurl'] = "http://osuosl.org/donate";
-        $vars['orgname'] = "OSU Open Source Lab";
-        $vars['donatepitch'] = "Donate to the OSU Open Source Lab";
+  $vars['donateurl'] = "http://osuosl.org/donate";
+  $vars['orgname'] = "OSU Open Source Lab";
+  $vars['donatepitch'] = "Donate to the OSU Open Source Lab";
 ?>
