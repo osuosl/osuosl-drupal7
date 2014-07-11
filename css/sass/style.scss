@@ -437,12 +437,12 @@ p.lead {
 	padding:20px 0 0 0;
 }
 
-.donate-block {
+.donate-block,.button.secondary{
 	background:#5D87A1;
 	padding:10px 15px;
 }
 
-.donate-block:hover {
+.donate-block:hover, .button.secondary:hover {
 	background:#7ba5bf;
 	padding:10px 15px;
 }
@@ -635,7 +635,7 @@ h4.subtitle {
 }
 
 #footer-container p {
-	font-family:"Bitter", serif;
+	font-family:"Open Sans", sans-serif;
 	font-weight:400;
 	color:#fff;
 } 
@@ -648,12 +648,12 @@ h4.subtitle {
 #footer-container a:link,
 #footer-container a:active,
 #footer-container a:visited {
-	color:#eeeeee;
-	font-size:12px;
+	color:#fff;
+	text-decoration: none;
 }
 
 #footer-container a:hover {
-	color:#fff;
+	color:#f37321;
 }
 
 #footer-container ul {
@@ -664,47 +664,64 @@ h4.subtitle {
 
 #footer-container p, #footer-container ul, #footer-container li {
 	color:#fff;
+	font-family: "Open Sans", sans-serif;
 }
 
 #footer-container li {
 	margin:0px auto;
 	padding:0px;
 	list-style:none;
-	font-family:"Bitter", serif;
-	font-weight:400;
+	font-family:"Open Sans", sans-serif;
 }
 
 #footer-container li.expanded ul.menu li {
-	margin: 0 0 0 15px;
+	//margin: 0 0 0 15px;
 	padding:0px;
 	list-style: none;
 }
 
-#footer-container #column1 {
+#footer-container #column1, #footer-container #column4 {
 	@extend .large-4, .columns;
+	width: 20%;
 }
 
 #footer-container #navcontainer {
 	@extend .large-8, .columns;
+	width: 60%;
 }
 
-#footer-container #column2,
-#footer-container #column3 {
-	@extend .large-8, .columns;
+#footer-container #column2 {
+	width: 100%;
 }
 
-#footer-container #column4 {
-	@extend .large-4, .columns;
+#footer-container #column2 ul li{
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+	width: 18%;
+}
+
+#footer-container ul li a{
+	font-size: 17px;
+	font-weight: 600;
+}
+
+#footer-container ul li ul li {
+	display: block !important;
+	width: 100% !important;
+}
+
+#footer-container ul li ul li a{
+	font-size: 16px;
+	font-weight: normal;
 }
 
 .mollom-privacy {
 	display:none;
 }
 
-p.footer-type {	
-	font-size:12px;
-	font-family:"Bitter", serif;
-	font-weight:400;
+#footer-container #column1 a{
+	color: #f37321 !important;
 }
 
 /****
