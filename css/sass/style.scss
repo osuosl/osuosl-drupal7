@@ -448,9 +448,10 @@ p.lead {
 }
 
 .about-block {
-	padding:20px 21px;
-	background:#ABAFA6; /*bfb7ae, #c9c1b8*/
-	margin-top:20px;
+	//padding:20px 21px;
+	//background:#ABAFA6; /*bfb7ae, #c9c1b8*/
+	margin-top: 10px;
+	text-align: center;
 }
 
 .about-block h5 {
@@ -471,6 +472,35 @@ p.lead {
 	color:#fff;
 	font-size:13px;
 	line-height:150%;
+}
+
+.about-block img{
+	background: #777;
+	height: auto;
+	display: inline-block;
+	padding: 5px;
+	margin: 10px 2px;
+}
+
+//Social media icon colors
+#twitter{
+	background: #00B0ED;
+}
+
+#facebook{
+	background: #3B5998;
+}
+
+#github{
+	background: #000;
+}
+
+#youtube{
+	background: #cd201f;
+}
+
+#google{
+	background: #dd4b39;
 }
 
 .blog-post {
