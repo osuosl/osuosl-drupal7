@@ -439,12 +439,15 @@ p.lead {
 
 .donate-block,.button.secondary{
 	background:#5D87A1;
-	padding:10px 15px;
+	text-align: center;
+}
+
+.donate-block a, img{
+	line-height: 70px;
 }
 
 .donate-block:hover, .button.secondary:hover {
 	background:#7ba5bf;
-	padding:10px 15px;
 }
 
 .about-block {
