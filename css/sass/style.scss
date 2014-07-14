@@ -236,8 +236,6 @@ li.active a {
 	display:block;
 }
 
-
-
 .page-content .sidebar {
 	@extend .large-4, .columns;
 	//background: #385e86;
@@ -510,6 +508,11 @@ p.lead {
 
 .blog-post img {
 	max-width:100%;
+}
+
+.field-items img{
+    display:block;
+    margin:auto;
 }
 
 .blog-post .field-item img {
