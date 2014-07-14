@@ -38,10 +38,9 @@ include("includes/header.php");
     </div>
 
     <div class="right-block-container">
-	<a href="http://osuosl.org/donate">
 	    <div class="donate-block">
-		<img src="/<?php print $directory;?>/images/donatetext.png" alt="Donate to the OSU Open Source Lab" border="0" />
-	    </div>
+		<?php print render($page['donate_block']); ?>    
+	</div>
 	</a>
 
 	<div class="contact-block">
