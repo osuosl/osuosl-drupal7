@@ -3403,8 +3403,8 @@ p.lead {
 
 /* line 513, sass/style.scss */
 .field-items img {
-  display: block;
-  margin: auto;
+  display: block !important;
+  margin: auto !important;
 }
 
 /* line 518, sass/style.scss */
