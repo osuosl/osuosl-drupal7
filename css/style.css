@@ -4062,20 +4062,12 @@ ol.top10 > li {
   #search-block-form .form-text {
     width: 100% !important;
   }
-}
-@media only screen and (max-width: 1220px) {
-  /* line 1097, sass/style.scss */
   #osu-tag {
     display: none !important;
   }
 
-  /* line 1101, sass/style.scss */
   #osu-tag img {
     display: none !important;
   }
 
-  /* line 1105, sass/style.scss */
-  .right-block-container {
-    padding-right: 0px;
-  }
 }
