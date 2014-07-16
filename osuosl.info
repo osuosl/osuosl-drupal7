@@ -8,15 +8,16 @@ regions[header] = Header
 regions[homepage_message] = Homepage Message
 regions[homepage_sidebar] = Homepage Sidebar
 regions[homepage_image] = Homepage Image
+regions[donate_block] = Donate Block
 regions[contact_block] = Contact Block
-regions[about_block] = About Block
+regions[eecs_block] = EECS Block
+regions[social_block] = Social Block
 regions[sidebar_blog] = Blog Sidebar
 regions[sidebar_hosted] = Hosted Communities Sidebar
 regions[content_header] = Content Header (Breadcrumb)
 regions[footer_column1] = Column 1 In Footer
 regions[footer_column2] = Column 2 In Footer
 regions[footer_column3] = Column 3 In Footer
-regions[footer_column4] = Column 4 In Footer
 regions[search] = Search
 regions[content] = Content
 
@@ -24,6 +25,6 @@ features[] = logo
 features[] = slogan
 features[] = favicon
 features[] = main_menu
-features[] = secondary_menu
+features[] = mobile_menu
 
 stylesheets[all][] = css/style.css

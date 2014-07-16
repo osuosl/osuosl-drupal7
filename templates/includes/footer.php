@@ -11,13 +11,10 @@
 				<?php print render($page['footer_column2']); ?>
 			</div>
 		
-			<div id="column3">
-				<?php print render($page['footer_column3']); ?>
-			</div>
 		</div>
 		
-		<div id="column4">
-			<?php print render($page['footer_column4']); ?>
+		<div id="column3">
+			<?php print render($page['footer_column3']); ?>
 		</div>
 		
 		<div class="clrfix"></div>
