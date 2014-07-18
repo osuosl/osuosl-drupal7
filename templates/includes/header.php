@@ -25,11 +25,7 @@
         </nav>  
     </div>
     
-    <div id="searchbar">
-    	<?php print render($page['search']); ?>
-    </div>
-    
-    <div class="clrfix"></div>
+    <!--<div class="clrfix"></div>-->
     
 <!-- End Header and Header Container Below -->
 </div>

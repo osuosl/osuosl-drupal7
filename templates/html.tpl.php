@@ -9,7 +9,7 @@
 <link href='https://fonts.googleapis.com/css?family=Gudea' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 
- <meta name="viewport" content="width=device-width">
+ <meta name="viewport" content="width=device-width, user-scalable=no">
 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

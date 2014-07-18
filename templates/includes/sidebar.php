@@ -1,5 +1,5 @@
     <div class="right-block-container">
-            <div class="donate-block sidebar-block">
+	<div class="donate-block sidebar-block">
         	<?php print render($page['donate_block']); ?>    
 	</div>
 
@@ -10,8 +10,12 @@
         <div class="eecs-block sidebar-block">
             <?php print render($page['eecs_block']); ?>
         </div>
-
-        <div class="social-block sidebar-block">
+	
+	<div id="searchbar" class="sidebar-block">
+		<?php print render($page['search']); ?>
+	</div>
+        
+	<div class="social-block sidebar-block">
             <?php print render($page['social_block']); ?>
         </div>
         <div class="sidebar">

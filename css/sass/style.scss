@@ -76,19 +76,12 @@ Table of Contents:
 
 #navigation {
 	@extend .large-9, .columns;
-	padding:24px 0;
-	margin:0px;
-	width: auto;
-}
-
-#searchbar {
-	@extend .large-2, .columns;
-	padding:0;
+	padding: 35px 15px;	
 	margin:0px;
 }
 
 #search-block-form .form-text{
-	padding:5px 0;
+	padding:5px;
 	width:100%;
 }
 
@@ -229,7 +222,7 @@ li.active a {
 #content-container {
 	@extend .row;
 	margin-top:40px;
-	padding:20px 20px 20px 10px;
+	padding:20px 0px;
 }
 
 .page-content {
@@ -440,7 +433,8 @@ p.lead {
 	opacity: .6;
 } 	
 
-.sidebar-block a {
+.sidebar-block a{
+	display: block;
 	color:#fff !important;
 	text-decoration: none !important;
 }
@@ -454,11 +448,11 @@ p.lead {
 }
 
 .donate-block,.button.secondary{
-	background:#5D87A1;
+	background-color:#5D87A1;
 }
 
 .donate-block:hover, .button.secondary:hover {
-	background:#7ba5bf;
+	background-color:#7ba5bf;
 }
 
 .social-block {
@@ -466,9 +460,14 @@ p.lead {
 	text-align: center;
 }
 
+.social-block:hover{
+	opacity: 1;
+}
+
 .social-block a {
 	color:#fff !important;
 	width: 30%;
+	display: inline-block;
 }
 
 .social-block p {
@@ -483,6 +482,10 @@ p.lead {
 	display: inline-block;
 	padding: 5px;
 	margin: 10px 2px;
+}
+
+.social-block img:hover{
+	opacity: .6;
 }
 
 //Social media icon colors
@@ -516,11 +519,7 @@ p.lead {
 
 .field-items img{
     display:block !important;
-    margin:auto !important;
-}
-
-.blog-post .field-item img {
-	margin:10px 0;
+    margin: auto;
 }
 
 .content-padding {
@@ -555,7 +554,7 @@ p.lead {
 p,
 ul,
 li {
-	font-family:'Montserrat', sans-serif;
+	font-family:'Open Sans', sans-serif;
 	color:#222;
 	line-height:1.6;
 	font-size:16px;
@@ -897,7 +896,7 @@ span.contentheader {
 
 .float-left-donor {
 	float:left;
-	margin: 5px 10px 10px 0;
+	margin: 5px 10px !important;
 }
 
 div.campaignWidget label {
@@ -992,17 +991,8 @@ ol.top10 > li {
 	margin-top:25px;
 }
 
-#navigation {
-	padding:35px 15px;
-	width: auto !important;
-}
-
 #searchbar {
-	width: 6.25%;
-	padding:25px 0;
-	position: absolute;
-	top: 0px;
-	right: 8%;
+	width: 100%;
 }
 
 #header-container {
@@ -1039,7 +1029,6 @@ ol.top10 > li {
     font-size: 15px;
     padding:0px 10px 0px 5px;
     margin:0px;
-	transition: .5s;
 }
 
 .flexnav li a:hover {
@@ -1098,10 +1087,6 @@ ol.top10 > li {
 	display: none;
 }
 
-#navigation{
-	width:100%;
-}
-
 .links{
 	padding-left: 0px;
 }
@@ -1117,10 +1102,6 @@ ol.top10 > li {
 
 #navigation li a:hover{
 	background: #F87A30;
-}
-
-#search-block-form .form-text {
-	width:100% !important;
 }
 
 #osu-tag {
@@ -1163,7 +1144,7 @@ ol.top10 > li {
 	background: #d85a1a;
 }
 
-#navcontainer ul li ul{
+#navcontainer ul li ul, #navcontainer ul li ul li a{
 	display: none;
 }
 
