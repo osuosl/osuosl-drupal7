@@ -37,4 +37,9 @@ function osuosl_preprocess_image(&$variables) {
   }
 }
 
+function osuosl_preprocess_page(&$variables) {
+    $menu_tree = menu_tree_all_data('main-menu');
+    $variables['main_menu'] = menu_tree_output($menu_tree);
+}
+
 ?>

@@ -38,6 +38,12 @@ Table of Contents:
 
 ===============
 **/
+//Define variables
+$primary: #333;
+$secondary: #D85A1A;
+$accent: #fff;
+$navheight: 90px;
+
 
 /***
 1. Header Styles
@@ -45,39 +51,116 @@ Table of Contents:
 
 #header-container {
 	@extend .row;
-	padding:0px 20px;
+    height: $navheight;
+    width: 80%;
 }
 
 #header {
-	background:#333 url('../images/texture.gif') repeat;
+	background:$primary; 
 	padding:0px;
 	margin:0px auto;
 	width:100%;
 	border-bottom:1px solid #373737;
-}
 
-#header img {
-	border:0;
-}
 
-#osu-tag {
-	@extend .large-2, .columns;
-}
+    span{
+        display: none;
+        }
 
-#osu-tag img {
-	z-index:99;
-}
+    #header img {
+        border:0;
+    }
 
-#osl-logo {
-	@extend .large-4, .columns;
-	text-align:center;
-	padding-top:32px;
-}
+    #osu-tag {
+        @extend .large-2, .columns;
+    }
 
-#navigation {
-	@extend .large-9, .columns;
-	padding: 35px 15px;	
-	margin:0px;
+    #osu-tag img {
+        z-index:99;
+    }
+
+    #osl-logo {
+        @extend .large-4, .columns;
+        text-align:center;
+        width: 133px;
+        margin: 0px;
+        padding: 0px;
+        line-height: $navheight;
+        veritcal-align: middle;
+    }
+
+    #navigation {
+        @extend .large-9, .columns;
+        margin:0px;
+        padding: 0px;
+        height: $navheight;
+        float: right;
+        display: inline-block;
+        width: auto;
+
+        ul {
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none outside none;
+        }
+
+        /*ul.show {
+            max-height: 2000px;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s; 
+        }*/
+
+        ul li {
+            display: inline-block;
+            padding: 0px 2px;
+            margin: 0px;
+        }
+
+        ul li a {
+            position: relative;
+            display: block;
+            color: $accent;
+            background: #000;
+            text-decoration: none;
+            padding: 0px;
+            margin: 40px 0px 0px;
+            width: 120px;
+            text-align: center;
+            line-height: $navheight - 40px;
+            vertical-align: middle;
+        }
+ 
+        ul li ul {
+            position: absolute;
+            top: $navheight;
+            display: none;
+            list-style: none outside none;
+            width: 100px;
+        }
+
+        ul li:hover ul {
+            display: block;
+            z-index: 200;
+        }
+        
+        ul li ul li {
+            font-size: 100%;
+            background: #000;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul li ul li a {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+            border-top: 1px solid white;
+            line-height: 35px;
+            padding: 5px 0px;
+        }
+    }
 }
 
 #search-block-form .form-text{
@@ -92,91 +175,10 @@ Table of Contents:
 /***
 2. Navigation
 ****/
-.links {
-	padding-left: 6.25%;
-}
-
-.flexnav {
-	*zoom: 1;
-	-webkit-transition: .5s;
-	-moz-transition: .5s;
-	-o-transition: .5s;
-	transition: .5s;
-	-webkit-transform-style: preserve-3d;
-	overflow: hidden;
-	margin: 0 auto;
-	width: 100%;
-	max-height: 0; }
-
-.flexnav:after {
-	content: "";
-    display: table;
-    clear: both; 
-}
-
-.flexnav.show {
-	max-height: 2000px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s; 
-}
-
-ul.flexnav {
-	padding:0px;
-	margin:0px;
-}
-
-.flexnav li {
-    font-size: 100%;
-    position: relative;
-    overflow: hidden; 
-}
-
-.flexnav li a {
-    position: relative;
-    display: block;
-    padding: .96em;
-    z-index: 2;
-    overflow: hidden;
-    color: #abafa6;
-    background: darken($success-color, 13%);
-    border-bottom: 1px solid darken($success-color, 17%); 
-    text-decoration:none;
-    font-family:"Open Sans", Helvetica, Arial;
-}
- 
-.flexnav li ul {
-    width: 100%; 
-}
-
-.flexnav li ul li {
-    font-size: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.flexnav li ul.show li {
-    overflow: visible; 
-}
-
-.flexnav li ul li a {
-    display: block;
-    background: #b2b2af; 
- }
-
- .flexnav ul li ul li a {
-    background: #bfbfbc; 
- }
-
-.flexnav ul li ul li ul li a {
-    background: #cbcbc9; 
-}
-
 .menu-button {
 	@extend .button;
 	position: relative;
-	display: block;
+	display: none;
 	padding: 1em;
 	cursor: pointer;
 	margin:0px;
@@ -199,7 +201,7 @@ ul.flexnav {
     right: 0;
     width: 50px;
     height: 50px;
-    display: inline-block;
+    display: none;
     text-align: center; 
 }
 
@@ -210,11 +212,6 @@ ul.flexnav {
     color: #fff;
 }
 
-li.active a {
-	font-weight:normal;
-	text-decoration:underline;
-}
-
 /***
 3. Content
 ****/
@@ -223,47 +220,47 @@ li.active a {
 	@extend .row;
 	margin-top:40px;
 	padding:20px 0px;
+    width: 80%;
 }
 
 .page-content {
 	@extend .large-12, .columns;
 	z-index:99;
-}
+    
+    .blog-post {
+        @extend .large-16, .columns;
+    }
 
-.page-content .blog-post {
-	@extend .large-16, .columns;
-}
+    .blog-post img {
+        display:block;
+    }
 
-.page-content .blog-post img {
-	display:block;
-}
+    .sidebar {
+        @extend .large-4, .columns;
+        //background: #385e86;
+    }
 
-.page-content .sidebar {
-	@extend .large-4, .columns;
-	//background: #385e86;
-}
+    .sidebar h3 {
+        font-weight:normal;
+        font-family: "Bitter", serif;
+        font-weight:400;
+        font-style:normal;
+        font-size:16px;
+        color:#373737;
+        padding:0px;
+        margin:0px;
+    }
 
-.page-content .sidebar h3 {
-	font-weight:normal;
-	font-family: "Bitter", serif;
-	font-weight:400;
-	font-style:normal;
-	font-size:16px;
-	color:#373737;
-	padding:0px;
-	margin:0px;
-}
+    .sidebar ul {
+        margin:0px;
+        padding:0;
+    }
 
-.page-content .sidebar ul {
-	margin:0px;
-	padding:0;
-}
-
-.page-content .sidebar li {
-	color:#999;
-	font-size:12px;
-	margin:6px 20px;
-	
+    .sidebar li {
+        color:#999;
+        font-size:12px;
+        margin:6px 20px;
+    }	
 }
 
 .leaf > a {
@@ -402,6 +399,8 @@ p.lead {
 	@extend .large-3, .columns;
 	margin-top: -20px;
 	min-width: 160px;
+    padding: 0px;
+    float: right;
 }
 
 .sidebar-block{
@@ -661,7 +660,7 @@ h4.subtitle {
 #footer {
 	width:100%;
 	padding:32px 0;
-	background:#333 url('../images/texture.gif') repeat;
+	background:$primary; 
 	clear:both;
 	margin:0px auto;
 }
@@ -983,20 +982,8 @@ ol.top10 > li {
 }
 
 @media only screen and (min-width: 768px) {
-
-#osl-logo {
-	width:133px;
-	float:left;
-	padding:0px;
-	margin-top:25px;
-}
-
 #searchbar {
 	width: 100%;
-}
-
-#header-container {
-	height:90px;
 }
 
 .page-content .blog-post {
@@ -1006,75 +993,6 @@ ol.top10 > li {
 .page-content .sidebar {
 	padding-right:0px;
 }
-
-/* Flexnav Styles */
-
-.flexnav {
-	overflow: visible; 
-	padding:0px 0px 0px 20px;
-	margin:0px;
-}
-
-.flexnav li {
-    position: relative;
-    list-style: none;
-    display: inline-block;
-    overflow: visible; 
-}
-
-.flexnav li a {
-	color:#fff;
-	background:none;
-    border-bottom: none; 
-    font-size: 15px;
-    padding:0px 10px 0px 5px;
-    margin:0px;
-}
-
-.flexnav li a:hover {
-	/*text-decoration:underline;*/
-	color:#f37321
-}
-
-.flexnav li > ul {
-    position: absolute;
-    top: auto;
-    left: 0;
-    display: block; }
-
-.flexnav li > ul li {
-    width: 100%; 
- }
-    
-.flexnav li ul li > ul {
-    margin-left: 100%;
-    top: 0; 
-}
-
-.flexnav li ul li a {
-    border-bottom: none; 
-}
-
-.flexnav li ul.open {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    z-index: 1; 
-}
-
-.flexnav li ul.open li {
-    overflow: visible;
-    max-height: 100px; 
-}
-
-.flexnav li ul.open ul.open {
-    margin-left: 100%;
-    top: 0; 
-}
-
-.menu-button {
-    display: none; 
-    } 
 
 }
 
@@ -1087,7 +1005,7 @@ ol.top10 > li {
 	display: none;
 }
 
-.links{
+.menu{
 	padding-left: 0px;
 }
 
