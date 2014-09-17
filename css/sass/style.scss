@@ -79,10 +79,10 @@ $navheight: 90px;
         z-index:99;
     }
 
-    #osl-logo {
+    #logo {
         @extend .large-4, .columns;
         text-align:center;
-        width: 133px;
+        width: 120px;
         margin: 0px;
         padding: 0px;
         line-height: $navheight;
@@ -123,6 +123,7 @@ $navheight: 90px;
             display: block;
             color: $accent;
             background: #000;
+            border-radius: 5px 5px 0px 0px;
             text-decoration: none;
             padding: 0px;
             margin: 40px 0px 0px;
@@ -734,7 +735,7 @@ h4.subtitle {
 	display: inline-block;
 	vertical-align: top;
 	padding: 5px;
-	width: 18%;
+	width: 24%;
 }
 
 #footer-container ul li a{
@@ -1071,3 +1072,10 @@ ol.top10 > li {
 }
 
 }
+
+
+@media only screen and (max-width: 1120){
+    .first{
+        display: none;
+        }
+        }
