@@ -2,7 +2,7 @@
 @import "settings";
 @import "normalize.scss";
 @import "drupal.scss";
-
+@import url(https://fonts.googleapis.com/css?family=Gudea|Bitter|Open+Sans);
 
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
@@ -39,9 +39,17 @@ Table of Contents:
 ===============
 **/
 //Define variables
-$primary: #333;
-$secondary: #D85A1A;
-$accent: #fff;
+$primary: #373737;
+$accent: #f5f2ed;
+$orange: #C34500;
+$blue: #5D87A1;
+$brown: #615042;
+$gray: #ACAFA6;
+$light-blue: #a7c4c9;
+$yellow: #EFB112;
+$circles: #000;
+$serif: 'Bitter', serif;
+$sans: 'Open Sans', sans-serif;
 $navheight: 90px;
 
 
@@ -52,7 +60,7 @@ $navheight: 90px;
 #header-container {
 	@extend .row;
     height: $navheight;
-    width: 80%;
+    width: 90%;
 }
 
 #header {
@@ -94,7 +102,6 @@ $navheight: 90px;
         margin:0px;
         padding: 0px;
         height: $navheight;
-        float: right;
         display: inline-block;
         width: auto;
 
@@ -122,15 +129,16 @@ $navheight: 90px;
             position: relative;
             display: block;
             color: $accent;
-            background: #000;
+            background: $orange;
             border-radius: 5px 5px 0px 0px;
             text-decoration: none;
             padding: 0px;
-            margin: 40px 0px 0px;
+            margin: 50px 0px 0px;
             width: 120px;
             text-align: center;
-            line-height: $navheight - 40px;
+            line-height: $navheight - 50px;
             vertical-align: middle;
+            font-weight: 600;
         }
  
         ul li ul {
@@ -140,6 +148,11 @@ $navheight: 90px;
             list-style: none outside none;
             width: 100px;
         }
+
+        ul li a:hover{
+            background: $accent;
+            color: $primary;
+            }
 
         ul li:hover ul {
             display: block;
@@ -158,6 +171,7 @@ $navheight: 90px;
             margin: 0px;
             padding: 0px;
             border-top: 1px solid white;
+            border-radius: 0px 0px 0px 0px;
             line-height: 35px;
             padding: 5px 0px;
         }
@@ -185,7 +199,7 @@ $navheight: 90px;
 	margin:0px;
 	text-align:left;
 	background: #d85a1a;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $sans;
 	font-size: 18px;
 	font-weight: 600;
 }
@@ -222,46 +236,109 @@ $navheight: 90px;
 	margin-top:40px;
 	padding:20px 0px;
     width: 80%;
+
+    .page-content {
+        @extend .large-12, .columns;
+        z-index:99;
+        width: 100%;
+        
+        h2{
+            text-align: center;
+            font-family: $serif;
+        }
+
+        .color-block{
+            width: 100%;
+            display: block;
+            height: auto;
+            text-align: center;
+            color: $accent;
+            border-radius: 10px 10px 10px 10px;
+            padding: 20px;
+            margin: 0px;
+            position: relative;
+
+            h3, h4, h5, p{
+                color: $accent;
+                display: block;
+                line-height: 1em;
+            }
+
+            p{
+                display: none;
+                text-align: left;
+                font-size: 18px;
+                line-height: 1.6em;
+            }
+        }
+
+        .orange{
+        background: $orange;
+        }
+
+        .blue{
+        background: $blue;
+        }
+
+        .brown{
+        background: $brown;
+        }
+
+        .gray{
+        background: $gray;
+        }
+
+        .light-blue{
+        background: $light-blue;
+        }
+
+        .yellow{
+        background: $yellow;
+        }
+        
+        .plus{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            background: $circles;
+
+            img{
+                height: 40px;
+                margin-top: 5px
+                }
+            
+            img:hover, img:focus{
+                cursor: pointer;
+            }
+        }
+
+        .blog-post {
+            @extend .large-16, .columns;
+        }
+
+        .blog-post img {
+            display:block;
+        }
+
+    }
 }
 
-.page-content {
-	@extend .large-12, .columns;
-	z-index:99;
-    
-    .blog-post {
-        @extend .large-16, .columns;
-    }
+.plus{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background: $circles;
 
-    .blog-post img {
-        display:block;
-    }
-
-    .sidebar {
-        @extend .large-4, .columns;
-        //background: #385e86;
-    }
-
-    .sidebar h3 {
-        font-weight:normal;
-        font-family: "Bitter", serif;
-        font-weight:400;
-        font-style:normal;
-        font-size:16px;
-        color:#373737;
-        padding:0px;
-        margin:0px;
-    }
-
-    .sidebar ul {
-        margin:0px;
-        padding:0;
-    }
-
-    .sidebar li {
-        color:#999;
-        font-size:12px;
-        margin:6px 20px;
-    }	
+    img{
+        height: 40px;
+        margin-top: 5px
+        }
 }
 
 .leaf > a {
@@ -307,37 +384,6 @@ img.float-right {
 	font-weight:400;
 }
 
-div.contentheader {
-	width:100%;
-	padding:0 0 0px 0;
-	margin:-10px 0 0 0;
-	font-family: "Bitter", serif;
-	font-size:14px;
-}
-
-.contentheader h2 {
-	text-decoration:none;
-	font-family: "Bitter", serif;
-	font-weight:700;
-	font-style:normal;
-	margin:0px;
-	padding:0px;
-	text-decoration:none;
-	font-size:16px;
-}
-
-.contentheader a:link,
-.contentheader a:visited,
-.contentheader a:active {
-	text-decoration:none;
-	color:#666;
-}
-
-.contentheader a:hover {
-	text-decoration:none;
-	color:#d85a1a;
-}
-
 .content-main-home img {
 	max-width:100%;
 }
@@ -377,7 +423,7 @@ p.lead {
 }
 
 .sidebar ul li a:hover{
-	background: #C34500;
+	background: $orange;
 }
 
 .sidebar ul {
@@ -402,6 +448,7 @@ p.lead {
 	min-width: 160px;
     padding: 0px;
     float: right;
+    display: none;
 }
 
 .sidebar-block{
@@ -414,7 +461,7 @@ p.lead {
 
 .sidebar-block p {
 	color:#fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $sans;
 	font-size:14px;
 }
 
@@ -422,7 +469,7 @@ p.lead {
 	color:#fff;
 	padding:0px;
 	margin:0px;
-	font-family: "Bitter", sans-serif;
+	font-family: $serif;
 	font-weight:400;
 	font-style:normal;
 	font-size:2em;
@@ -447,11 +494,11 @@ p.lead {
 	padding:20px 0 0 0;
 }
 
-.donate-block,.button.secondary{
-	background-color:#5D87A1;
+.donate-block,.button.orange{
+	background-color:$blue;
 }
 
-.donate-block:hover, .button.secondary:hover {
+.donate-block:hover, .button.orange:hover {
 	background-color:#7ba5bf;
 }
 
@@ -551,19 +598,37 @@ p.lead {
 /****
 7. Typography
 ****/
-p,
-ul,
-li {
-	font-family:'Open Sans', sans-serif;
-	color:#222;
+h1, h2, h3, h4, h5, p, ul, li {
+	font-family:$sans;
+	color: #222;
 	line-height:1.6;
-	font-size:16px;
-	color:#111;
+}
+
+h1{
+font-size: 48px;
+}
+
+h2{
+    font-size: 42px;
+}
+h3{
+    font-size: 36px;
+}
+h4{
+    font-size: 30px;
+}
+
+h5{
+    font-size: 24px;
+}
+
+p, ul, li{
+    font-size: 16px;
 }
 
 a:link, a:active, a:visited {
-	color:#d85a1a;
 	font-weight:normal;
+    color: $primary
 }
 
 a:hover {
@@ -573,41 +638,12 @@ a:hover {
 }
 
 .byline {
-	font-family: "Bitter", serif;
+	font-family: $serif;
 	font-weight:400;
 	font-size:14px;
 	color:#666;
 	padding:3px 0;
 	display:block;
-}
-
-h1.small {
-	font-size:14px;
-	font-weight:normal;
-}
-
-h1.small a:link,
-h1.small a:active,
-h1.small a:visited {
-	text-decoration:underline;
-}
-
-h2.headline {
-	padding:0px;
-	margin:0px;
-}
-
-h2.headline a:link,
-h2.headline a:active,
-h2.headline a:visited {
-	font-family: "Bitter", sans-serif;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-}
-
-h2.headline a:hover {
-	color:#000;
 }
 
 ul.inline li {
@@ -671,8 +707,8 @@ h4.subtitle {
 	color:#fff;
 }
 
-#footer-container p {
-	font-family:"Open Sans", sans-serif;
+#footer-container p, #footer-container h5{
+	font-family:$sans;
 	font-weight:400;
 	color:#fff;
 } 
@@ -701,14 +737,14 @@ h4.subtitle {
 
 #footer-container p, #footer-container ul, #footer-container li {
 	color:#fff;
-	font-family: "Open Sans", sans-serif;
+	font-family: $sans;
 }
 
 #footer-container li {
 	margin:0px auto;
 	padding:0px;
 	list-style:none;
-	font-family:"Open Sans", sans-serif;
+	font-family:$sans;
 }
 
 #footer-container li.expanded ul.menu li {
@@ -810,7 +846,7 @@ hr.decorative {
 #search-block-form .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family:"Bitter", serif;
+  font-family:$serif;
   font-weight:400;
   font-size: 13px;
   font-weight: normal;
@@ -873,7 +909,7 @@ Hosted Communities
 ***/
 
 span.contentheader {
-	font-family:"Bitter", serif;
+	font-family:$serif;
   	font-size:18px;
   	font-weight:700;
   	padding:5px 0 0 0;
@@ -881,7 +917,7 @@ span.contentheader {
 }
 
 .sub-contentheader {
-	font-family:"Bitter", serif;
+	font-family:$serif;
   	font-size:16px;
   	font-weight:normal;
   	padding:5px 0 0 0;
@@ -964,7 +1000,7 @@ ol.top10 {
 ol.top10 > li:before {
 	content:counter(li,decimal);
 	counter-increment: li;
-	font-family: "Open Sans", Helvetica Neue, Sans-serif;
+	font-family: $sans; 
 	size:16px;
 	left:-1.7em;
 	padding:0;
@@ -1012,7 +1048,7 @@ ol.top10 > li {
 
 #navigation li a{
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $sans;
 	font-size: 16px;
 	font-weight: 600;
 	background: #d85a1a;

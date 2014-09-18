@@ -9,12 +9,11 @@ function osuosl_form_system_theme_settings_alter(&$form, $form_state){
                 'file_validate_extensions' => array('git png jpg jpeg')
                 )
             );
-    $form['theme_settings']['org_name'] = array(
-            '#type' => 'textarea',
-            '#title' => t('org_name'),
-            '#default_value' => theme_get_setting('org_name')
+    $form['theme_settings']['site_name'] = array(
+            '#type' => 'textfield',
+            '#title' => t('site_name'),
+            '#default_value' => theme_get_setting('site_name')
             'required' => TRUE,
             );
-    $form['#submit'][] = 'osuosl_form_systme_theme_settings_alter';
 }
 ?>

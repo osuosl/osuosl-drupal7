@@ -22,6 +22,7 @@ regions[search] = Search
 regions[content] = Content
 
 features[] = logo
+features[] = org_name
 features[] = slogan
 features[] = favicon
 features[] = main_menu
@@ -29,5 +30,7 @@ features[] = mobile_menu
 
 stylesheets[all][] = css/style.css
 
-settings[org_logo] = images/logo-full.png
-settings[org_name] = OSU Open Source Lab
+scripts[all][] = js/expand.js
+
+settings[logo] = images/logo-full.png
+settings[site_name] = OSU Open Source Lab

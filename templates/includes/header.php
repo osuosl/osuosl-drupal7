@@ -5,7 +5,7 @@
 </div>
 
 <div id="logo">
-<a href="/"><img src="<?php print theme_get_setting('logo'); ?>" alt="<?php print (theme_get_setting('org_name'));?>" /></a>    
+<a href="/"><img src="<?php print theme_get_setting('logo'); ?>" alt="<?php print (theme_get_setting('site_name'));?>" /></a>    
 </div>
 
 <div id="navigation">

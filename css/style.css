@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Gudea|Bitter|Open+Sans);
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -740,18 +741,14 @@ select {
 #header .collapse#header-container > #navigation,
 #header .collapse#content-container > #navigation,
 #header .collapse#footer-container > #navigation,
-.row.collapse > .page-content,
-.collapse#header-container > .page-content,
+#content-container .row.collapse > .page-content,
+#content-container .collapse#header-container > .page-content,
 .collapse#content-container > .page-content,
-.collapse#footer-container > .page-content,
-.page-content .row.collapse > .blog-post,
-.page-content .collapse#header-container > .blog-post,
-.page-content .collapse#content-container > .blog-post,
-.page-content .collapse#footer-container > .blog-post,
-.page-content .row.collapse > .sidebar,
-.page-content .collapse#header-container > .sidebar,
-.page-content .collapse#content-container > .sidebar,
-.page-content .collapse#footer-container > .sidebar,
+#content-container .collapse#footer-container > .page-content,
+#content-container .page-content .row.collapse > .blog-post,
+#content-container .page-content .collapse#header-container > .blog-post,
+#content-container .page-content .collapse#content-container > .blog-post,
+#content-container .page-content .collapse#footer-container > .blog-post,
 .row.collapse > .right-block-container,
 .collapse#header-container > .right-block-container,
 .collapse#content-container > .right-block-container,
@@ -820,9 +817,8 @@ select {
 #header #osu-tag,
 #header #logo,
 #header #navigation,
-.page-content,
-.page-content .blog-post,
-.page-content .sidebar,
+#content-container .page-content,
+#content-container .page-content .blog-post,
 .right-block-container,
 #footer-container #column1,
 #footer-container #column3,
@@ -841,9 +837,8 @@ select {
   #header #osu-tag,
   #header #logo,
   #header #navigation,
-  .page-content,
-  .page-content .blog-post,
-  .page-content .sidebar,
+  #content-container .page-content,
+  #content-container .page-content .blog-post,
   .right-block-container,
   #footer-container #column1,
   #footer-container #column3,
@@ -1056,9 +1051,8 @@ select {
   #header .small-centered#osu-tag,
   #header .small-centered#logo,
   #header .small-centered#navigation,
-  .small-centered.page-content,
-  .page-content .small-centered.blog-post,
-  .page-content .small-centered.sidebar,
+  #content-container .small-centered.page-content,
+  #content-container .page-content .small-centered.blog-post,
   .small-centered.right-block-container,
   #footer-container .small-centered#column1,
   #footer-container .small-centered#column3,
@@ -1090,7 +1084,7 @@ select {
   }
 
   /* line 158, ../../../../../../../../../../usr/lib/ruby/gems/1.8/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
-  .large-4, #header #logo, .page-content .sidebar, #footer-container #column1, #footer-container #column3 {
+  .large-4, #header #logo, #footer-container #column1, #footer-container #column3 {
     position: relative;
     width: 25%;
   }
@@ -1138,7 +1132,7 @@ select {
   }
 
   /* line 158, ../../../../../../../../../../usr/lib/ruby/gems/1.8/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
-  .large-12, .page-content {
+  .large-12, #content-container .page-content {
     position: relative;
     width: 75%;
   }
@@ -1162,7 +1156,7 @@ select {
   }
 
   /* line 158, ../../../../../../../../../../usr/lib/ruby/gems/1.8/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
-  .large-16, .page-content .blog-post {
+  .large-16, #content-container .page-content .blog-post {
     position: relative;
     width: 100%;
   }
@@ -1479,9 +1473,8 @@ select {
   #header .large-centered#osu-tag,
   #header .large-centered#logo,
   #header .large-centered#navigation,
-  .large-centered.page-content,
-  .page-content .large-centered.blog-post,
-  .page-content .large-centered.sidebar,
+  #content-container .large-centered.page-content,
+  #content-container .page-content .large-centered.blog-post,
   .large-centered.right-block-container,
   #footer-container .large-centered#column1,
   #footer-container .large-centered#column3,
@@ -1498,9 +1491,8 @@ select {
   #header .large-uncentered#osu-tag,
   #header .large-uncentered#logo,
   #header .large-uncentered#navigation,
-  .large-uncentered.page-content,
-  .page-content .large-uncentered.blog-post,
-  .page-content .large-uncentered.sidebar,
+  #content-container .large-uncentered.page-content,
+  #content-container .page-content .large-uncentered.blog-post,
   .large-uncentered.right-block-container,
   #footer-container .large-uncentered#column1,
   #footer-container .large-uncentered#column3,
@@ -1516,9 +1508,8 @@ select {
   #header .large-uncentered.opposite#osu-tag,
   #header .large-uncentered.opposite#logo,
   #header .large-uncentered.opposite#navigation,
-  .large-uncentered.opposite.page-content,
-  .page-content .large-uncentered.opposite.blog-post,
-  .page-content .large-uncentered.opposite.sidebar,
+  #content-container .large-uncentered.opposite.page-content,
+  #content-container .page-content .large-uncentered.opposite.blog-post,
   .large-uncentered.opposite.right-block-container,
   #footer-container .large-uncentered.opposite#column1,
   #footer-container .large-uncentered.opposite#column3,
@@ -1908,86 +1899,60 @@ form #content-container #footer-container #header #navigation,
 #header form #content-container #footer-container #navigation,
 form #footer-container #footer-container #header #navigation,
 #header form #footer-container #footer-container #navigation,
-form .row .row .page-content,
-form #header-container .row .page-content,
+form .row .row #content-container .page-content,
+#content-container form .row .row .page-content,
+form #header-container .row #content-container .page-content,
+#content-container form #header-container .row .page-content,
 form #content-container .row .page-content,
-form #footer-container .row .page-content,
-form .row #header-container .page-content,
-form #header-container #header-container .page-content,
+form #footer-container .row #content-container .page-content,
+#content-container form #footer-container .row .page-content,
+form .row #header-container #content-container .page-content,
+#content-container form .row #header-container .page-content,
+form #header-container #header-container #content-container .page-content,
+#content-container form #header-container #header-container .page-content,
 form #content-container #header-container .page-content,
-form #footer-container #header-container .page-content,
+form #footer-container #header-container #content-container .page-content,
+#content-container form #footer-container #header-container .page-content,
 form .row #content-container .page-content,
 form #header-container #content-container .page-content,
 form #content-container #content-container .page-content,
 form #footer-container #content-container .page-content,
-form .row #footer-container .page-content,
-form #header-container #footer-container .page-content,
+form .row #footer-container #content-container .page-content,
+#content-container form .row #footer-container .page-content,
+form #header-container #footer-container #content-container .page-content,
+#content-container form #header-container #footer-container .page-content,
 form #content-container #footer-container .page-content,
-form #footer-container #footer-container .page-content,
-form .row .row .page-content .blog-post,
-.page-content form .row .row .blog-post,
-form #header-container .row .page-content .blog-post,
-.page-content form #header-container .row .blog-post,
+form #footer-container #footer-container #content-container .page-content,
+#content-container form #footer-container #footer-container .page-content,
+form .row .row #content-container .page-content .blog-post,
+#content-container .page-content form .row .row .blog-post,
+form #header-container .row #content-container .page-content .blog-post,
+#content-container .page-content form #header-container .row .blog-post,
 form #content-container .row .page-content .blog-post,
-.page-content form #content-container .row .blog-post,
-form #footer-container .row .page-content .blog-post,
-.page-content form #footer-container .row .blog-post,
-form .row #header-container .page-content .blog-post,
-.page-content form .row #header-container .blog-post,
-form #header-container #header-container .page-content .blog-post,
-.page-content form #header-container #header-container .blog-post,
+form #content-container .page-content .row .blog-post,
+form #footer-container .row #content-container .page-content .blog-post,
+#content-container .page-content form #footer-container .row .blog-post,
+form .row #header-container #content-container .page-content .blog-post,
+#content-container .page-content form .row #header-container .blog-post,
+form #header-container #header-container #content-container .page-content .blog-post,
+#content-container .page-content form #header-container #header-container .blog-post,
 form #content-container #header-container .page-content .blog-post,
-.page-content form #content-container #header-container .blog-post,
-form #footer-container #header-container .page-content .blog-post,
-.page-content form #footer-container #header-container .blog-post,
+form #content-container .page-content #header-container .blog-post,
+form #footer-container #header-container #content-container .page-content .blog-post,
+#content-container .page-content form #footer-container #header-container .blog-post,
 form .row #content-container .page-content .blog-post,
-.page-content form .row #content-container .blog-post,
 form #header-container #content-container .page-content .blog-post,
-.page-content form #header-container #content-container .blog-post,
 form #content-container #content-container .page-content .blog-post,
-.page-content form #content-container #content-container .blog-post,
+form #content-container .page-content #content-container .blog-post,
 form #footer-container #content-container .page-content .blog-post,
-.page-content form #footer-container #content-container .blog-post,
-form .row #footer-container .page-content .blog-post,
-.page-content form .row #footer-container .blog-post,
-form #header-container #footer-container .page-content .blog-post,
-.page-content form #header-container #footer-container .blog-post,
+form .row #footer-container #content-container .page-content .blog-post,
+#content-container .page-content form .row #footer-container .blog-post,
+form #header-container #footer-container #content-container .page-content .blog-post,
+#content-container .page-content form #header-container #footer-container .blog-post,
 form #content-container #footer-container .page-content .blog-post,
-.page-content form #content-container #footer-container .blog-post,
-form #footer-container #footer-container .page-content .blog-post,
-.page-content form #footer-container #footer-container .blog-post,
-form .row .row .page-content .sidebar,
-.page-content form .row .row .sidebar,
-form #header-container .row .page-content .sidebar,
-.page-content form #header-container .row .sidebar,
-form #content-container .row .page-content .sidebar,
-.page-content form #content-container .row .sidebar,
-form #footer-container .row .page-content .sidebar,
-.page-content form #footer-container .row .sidebar,
-form .row #header-container .page-content .sidebar,
-.page-content form .row #header-container .sidebar,
-form #header-container #header-container .page-content .sidebar,
-.page-content form #header-container #header-container .sidebar,
-form #content-container #header-container .page-content .sidebar,
-.page-content form #content-container #header-container .sidebar,
-form #footer-container #header-container .page-content .sidebar,
-.page-content form #footer-container #header-container .sidebar,
-form .row #content-container .page-content .sidebar,
-.page-content form .row #content-container .sidebar,
-form #header-container #content-container .page-content .sidebar,
-.page-content form #header-container #content-container .sidebar,
-form #content-container #content-container .page-content .sidebar,
-.page-content form #content-container #content-container .sidebar,
-form #footer-container #content-container .page-content .sidebar,
-.page-content form #footer-container #content-container .sidebar,
-form .row #footer-container .page-content .sidebar,
-.page-content form .row #footer-container .sidebar,
-form #header-container #footer-container .page-content .sidebar,
-.page-content form #header-container #footer-container .sidebar,
-form #content-container #footer-container .page-content .sidebar,
-.page-content form #content-container #footer-container .sidebar,
-form #footer-container #footer-container .page-content .sidebar,
-.page-content form #footer-container #footer-container .sidebar,
+form #content-container .page-content #footer-container .blog-post,
+form #footer-container #footer-container #content-container .page-content .blog-post,
+#content-container .page-content form #footer-container #footer-container .blog-post,
 form .row .row .right-block-container,
 form #header-container .row .right-block-container,
 form #content-container .row .right-block-container,
@@ -2199,86 +2164,60 @@ form #content-container .collapse#footer-container #header #navigation,
 #header form #content-container .collapse#footer-container #navigation,
 form #footer-container .collapse#footer-container #header #navigation,
 #header form #footer-container .collapse#footer-container #navigation,
-form .row .row.collapse .page-content,
-form #header-container .row.collapse .page-content,
+form .row .row.collapse #content-container .page-content,
+#content-container form .row .row.collapse .page-content,
+form #header-container .row.collapse #content-container .page-content,
+#content-container form #header-container .row.collapse .page-content,
 form #content-container .row.collapse .page-content,
-form #footer-container .row.collapse .page-content,
-form .row .collapse#header-container .page-content,
-form #header-container .collapse#header-container .page-content,
+form #footer-container .row.collapse #content-container .page-content,
+#content-container form #footer-container .row.collapse .page-content,
+form .row .collapse#header-container #content-container .page-content,
+#content-container form .row .collapse#header-container .page-content,
+form #header-container .collapse#header-container #content-container .page-content,
+#content-container form #header-container .collapse#header-container .page-content,
 form #content-container .collapse#header-container .page-content,
-form #footer-container .collapse#header-container .page-content,
+form #footer-container .collapse#header-container #content-container .page-content,
+#content-container form #footer-container .collapse#header-container .page-content,
 form .row .collapse#content-container .page-content,
 form #header-container .collapse#content-container .page-content,
-form #content-container .collapse#content-container .page-content,
+form .collapse#content-container .collapse#content-container .page-content,
 form #footer-container .collapse#content-container .page-content,
-form .row .collapse#footer-container .page-content,
-form #header-container .collapse#footer-container .page-content,
+form .row .collapse#footer-container #content-container .page-content,
+#content-container form .row .collapse#footer-container .page-content,
+form #header-container .collapse#footer-container #content-container .page-content,
+#content-container form #header-container .collapse#footer-container .page-content,
 form #content-container .collapse#footer-container .page-content,
-form #footer-container .collapse#footer-container .page-content,
-form .row .row.collapse .page-content .blog-post,
-.page-content form .row .row.collapse .blog-post,
-form #header-container .row.collapse .page-content .blog-post,
-.page-content form #header-container .row.collapse .blog-post,
+form #footer-container .collapse#footer-container #content-container .page-content,
+#content-container form #footer-container .collapse#footer-container .page-content,
+form .row .row.collapse #content-container .page-content .blog-post,
+#content-container .page-content form .row .row.collapse .blog-post,
+form #header-container .row.collapse #content-container .page-content .blog-post,
+#content-container .page-content form #header-container .row.collapse .blog-post,
 form #content-container .row.collapse .page-content .blog-post,
-.page-content form #content-container .row.collapse .blog-post,
-form #footer-container .row.collapse .page-content .blog-post,
-.page-content form #footer-container .row.collapse .blog-post,
-form .row .collapse#header-container .page-content .blog-post,
-.page-content form .row .collapse#header-container .blog-post,
-form #header-container .collapse#header-container .page-content .blog-post,
-.page-content form #header-container .collapse#header-container .blog-post,
+form #content-container .page-content .row.collapse .blog-post,
+form #footer-container .row.collapse #content-container .page-content .blog-post,
+#content-container .page-content form #footer-container .row.collapse .blog-post,
+form .row .collapse#header-container #content-container .page-content .blog-post,
+#content-container .page-content form .row .collapse#header-container .blog-post,
+form #header-container .collapse#header-container #content-container .page-content .blog-post,
+#content-container .page-content form #header-container .collapse#header-container .blog-post,
 form #content-container .collapse#header-container .page-content .blog-post,
-.page-content form #content-container .collapse#header-container .blog-post,
-form #footer-container .collapse#header-container .page-content .blog-post,
-.page-content form #footer-container .collapse#header-container .blog-post,
+form #content-container .page-content .collapse#header-container .blog-post,
+form #footer-container .collapse#header-container #content-container .page-content .blog-post,
+#content-container .page-content form #footer-container .collapse#header-container .blog-post,
 form .row .collapse#content-container .page-content .blog-post,
-.page-content form .row .collapse#content-container .blog-post,
 form #header-container .collapse#content-container .page-content .blog-post,
-.page-content form #header-container .collapse#content-container .blog-post,
-form #content-container .collapse#content-container .page-content .blog-post,
-.page-content form #content-container .collapse#content-container .blog-post,
+form .collapse#content-container .collapse#content-container .page-content .blog-post,
+form .collapse#content-container .page-content .collapse#content-container .blog-post,
 form #footer-container .collapse#content-container .page-content .blog-post,
-.page-content form #footer-container .collapse#content-container .blog-post,
-form .row .collapse#footer-container .page-content .blog-post,
-.page-content form .row .collapse#footer-container .blog-post,
-form #header-container .collapse#footer-container .page-content .blog-post,
-.page-content form #header-container .collapse#footer-container .blog-post,
+form .row .collapse#footer-container #content-container .page-content .blog-post,
+#content-container .page-content form .row .collapse#footer-container .blog-post,
+form #header-container .collapse#footer-container #content-container .page-content .blog-post,
+#content-container .page-content form #header-container .collapse#footer-container .blog-post,
 form #content-container .collapse#footer-container .page-content .blog-post,
-.page-content form #content-container .collapse#footer-container .blog-post,
-form #footer-container .collapse#footer-container .page-content .blog-post,
-.page-content form #footer-container .collapse#footer-container .blog-post,
-form .row .row.collapse .page-content .sidebar,
-.page-content form .row .row.collapse .sidebar,
-form #header-container .row.collapse .page-content .sidebar,
-.page-content form #header-container .row.collapse .sidebar,
-form #content-container .row.collapse .page-content .sidebar,
-.page-content form #content-container .row.collapse .sidebar,
-form #footer-container .row.collapse .page-content .sidebar,
-.page-content form #footer-container .row.collapse .sidebar,
-form .row .collapse#header-container .page-content .sidebar,
-.page-content form .row .collapse#header-container .sidebar,
-form #header-container .collapse#header-container .page-content .sidebar,
-.page-content form #header-container .collapse#header-container .sidebar,
-form #content-container .collapse#header-container .page-content .sidebar,
-.page-content form #content-container .collapse#header-container .sidebar,
-form #footer-container .collapse#header-container .page-content .sidebar,
-.page-content form #footer-container .collapse#header-container .sidebar,
-form .row .collapse#content-container .page-content .sidebar,
-.page-content form .row .collapse#content-container .sidebar,
-form #header-container .collapse#content-container .page-content .sidebar,
-.page-content form #header-container .collapse#content-container .sidebar,
-form #content-container .collapse#content-container .page-content .sidebar,
-.page-content form #content-container .collapse#content-container .sidebar,
-form #footer-container .collapse#content-container .page-content .sidebar,
-.page-content form #footer-container .collapse#content-container .sidebar,
-form .row .collapse#footer-container .page-content .sidebar,
-.page-content form .row .collapse#footer-container .sidebar,
-form #header-container .collapse#footer-container .page-content .sidebar,
-.page-content form #header-container .collapse#footer-container .sidebar,
-form #content-container .collapse#footer-container .page-content .sidebar,
-.page-content form #content-container .collapse#footer-container .sidebar,
-form #footer-container .collapse#footer-container .page-content .sidebar,
-.page-content form #footer-container .collapse#footer-container .sidebar,
+form #content-container .page-content .collapse#footer-container .blog-post,
+form #footer-container .collapse#footer-container #content-container .page-content .blog-post,
+#content-container .page-content form #footer-container .collapse#footer-container .blog-post,
 form .row .row.collapse .right-block-container,
 form #header-container .row.collapse .right-block-container,
 form #content-container .row.collapse .right-block-container,
@@ -2409,26 +2348,14 @@ form #content-container #header input#navigation,
 #header form #content-container input#navigation,
 form #footer-container #header input#navigation,
 #header form #footer-container input#navigation,
-form .row input.page-content,
-form #header-container input.page-content,
+#content-container form .row input.page-content,
+#content-container form #header-container input.page-content,
 form #content-container input.page-content,
-form #footer-container input.page-content,
-form .row .page-content input.blog-post,
-.page-content form .row input.blog-post,
-form #header-container .page-content input.blog-post,
-.page-content form #header-container input.blog-post,
+#content-container form #footer-container input.page-content,
+#content-container .page-content form .row input.blog-post,
+#content-container .page-content form #header-container input.blog-post,
 form #content-container .page-content input.blog-post,
-.page-content form #content-container input.blog-post,
-form #footer-container .page-content input.blog-post,
-.page-content form #footer-container input.blog-post,
-form .row .page-content input.sidebar,
-.page-content form .row input.sidebar,
-form #header-container .page-content input.sidebar,
-.page-content form #header-container input.sidebar,
-form #content-container .page-content input.sidebar,
-.page-content form #content-container input.sidebar,
-form #footer-container .page-content input.sidebar,
-.page-content form #footer-container input.sidebar,
+#content-container .page-content form #footer-container input.blog-post,
 form .row input.right-block-container,
 form #header-container input.right-block-container,
 form #content-container input.right-block-container,
@@ -2477,26 +2404,14 @@ form #content-container #header textarea#navigation,
 #header form #content-container textarea#navigation,
 form #footer-container #header textarea#navigation,
 #header form #footer-container textarea#navigation,
-form .row textarea.page-content,
-form #header-container textarea.page-content,
+#content-container form .row textarea.page-content,
+#content-container form #header-container textarea.page-content,
 form #content-container textarea.page-content,
-form #footer-container textarea.page-content,
-form .row .page-content textarea.blog-post,
-.page-content form .row textarea.blog-post,
-form #header-container .page-content textarea.blog-post,
-.page-content form #header-container textarea.blog-post,
+#content-container form #footer-container textarea.page-content,
+#content-container .page-content form .row textarea.blog-post,
+#content-container .page-content form #header-container textarea.blog-post,
 form #content-container .page-content textarea.blog-post,
-.page-content form #content-container textarea.blog-post,
-form #footer-container .page-content textarea.blog-post,
-.page-content form #footer-container textarea.blog-post,
-form .row .page-content textarea.sidebar,
-.page-content form .row textarea.sidebar,
-form #header-container .page-content textarea.sidebar,
-.page-content form #header-container textarea.sidebar,
-form #content-container .page-content textarea.sidebar,
-.page-content form #content-container textarea.sidebar,
-form #footer-container .page-content textarea.sidebar,
-.page-content form #footer-container textarea.sidebar,
+#content-container .page-content form #footer-container textarea.blog-post,
 form .row textarea.right-block-container,
 form #header-container textarea.right-block-container,
 form #content-container textarea.right-block-container,
@@ -2959,33 +2874,33 @@ Table of Contents:
 /***
 1. Header Styles
 ****/
-/* line 52, sass/style.scss */
+/* line 60, sass/style.scss */
 #header-container {
   height: 90px;
-  width: 80%;
+  width: 90%;
 }
 
-/* line 58, sass/style.scss */
+/* line 66, sass/style.scss */
 #header {
-  background: #333333;
+  background: #373737;
   padding: 0px;
   margin: 0px auto;
   width: 100%;
   border-bottom: 1px solid #373737;
 }
-/* line 66, sass/style.scss */
+/* line 74, sass/style.scss */
 #header span {
   display: none;
 }
-/* line 70, sass/style.scss */
+/* line 78, sass/style.scss */
 #header #header img {
   border: 0;
 }
-/* line 78, sass/style.scss */
+/* line 86, sass/style.scss */
 #header #osu-tag img {
   z-index: 99;
 }
-/* line 82, sass/style.scss */
+/* line 90, sass/style.scss */
 #header #logo {
   text-align: center;
   width: 120px;
@@ -2994,12 +2909,11 @@ Table of Contents:
   line-height: 90px;
   veritcal-align: middle;
 }
-/* line 92, sass/style.scss */
+/* line 100, sass/style.scss */
 #header #navigation {
   margin: 0px;
   padding: 0px;
   height: 90px;
-  float: right;
   display: inline-block;
   width: auto;
   /*ul.show {
@@ -3010,34 +2924,35 @@ Table of Contents:
       transition: 1s; 
   }*/
 }
-/* line 101, sass/style.scss */
+/* line 108, sass/style.scss */
 #header #navigation ul {
   padding: 0px;
   margin: 0px;
   list-style-type: none outside none;
 }
-/* line 115, sass/style.scss */
+/* line 122, sass/style.scss */
 #header #navigation ul li {
   display: inline-block;
   padding: 0px 2px;
   margin: 0px;
 }
-/* line 121, sass/style.scss */
+/* line 128, sass/style.scss */
 #header #navigation ul li a {
   position: relative;
   display: block;
-  color: white;
-  background: #000;
+  color: #f5f2ed;
+  background: #c34500;
   border-radius: 5px 5px 0px 0px;
   text-decoration: none;
   padding: 0px;
-  margin: 40px 0px 0px;
+  margin: 50px 0px 0px;
   width: 120px;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   vertical-align: middle;
+  font-weight: 600;
 }
-/* line 136, sass/style.scss */
+/* line 144, sass/style.scss */
 #header #navigation ul li ul {
   position: absolute;
   top: 90px;
@@ -3045,35 +2960,41 @@ Table of Contents:
   list-style: none outside none;
   width: 100px;
 }
-/* line 144, sass/style.scss */
+/* line 152, sass/style.scss */
+#header #navigation ul li a:hover {
+  background: #f5f2ed;
+  color: #373737;
+}
+/* line 157, sass/style.scss */
 #header #navigation ul li:hover ul {
   display: block;
   z-index: 200;
 }
-/* line 149, sass/style.scss */
+/* line 162, sass/style.scss */
 #header #navigation ul li ul li {
   font-size: 100%;
   background: #000;
   margin: 0px;
   padding: 0px;
 }
-/* line 156, sass/style.scss */
+/* line 169, sass/style.scss */
 #header #navigation ul li ul li a {
   display: block;
   margin: 0px;
   padding: 0px;
   border-top: 1px solid white;
+  border-radius: 0px 0px 0px 0px;
   line-height: 35px;
   padding: 5px 0px;
 }
 
-/* line 167, sass/style.scss */
+/* line 181, sass/style.scss */
 #search-block-form .form-text {
   padding: 5px;
   width: 100%;
 }
 
-/* line 172, sass/style.scss */
+/* line 186, sass/style.scss */
 #searchbar .form-submit {
   display: none;
 }
@@ -3081,7 +3002,7 @@ Table of Contents:
 /***
 2. Navigation
 ****/
-/* line 179, sass/style.scss */
+/* line 193, sass/style.scss */
 .menu-button {
   position: relative;
   display: none;
@@ -3090,17 +3011,17 @@ Table of Contents:
   margin: 0px;
   text-align: left;
   background: #d85a1a;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 600;
 }
 
-/* line 193, sass/style.scss */
+/* line 207, sass/style.scss */
 .menu-button:hover {
   background: #F87A30;
 }
 
-/* line 197, sass/style.scss */
+/* line 211, sass/style.scss */
 .menu-button .touch-button {
   background: transparent;
   position: absolute;
@@ -3113,7 +3034,7 @@ Table of Contents:
   text-align: center;
 }
 
-/* line 209, sass/style.scss */
+/* line 223, sass/style.scss */
 .menu-button .touch-button .navicon {
   font-size: 14px;
   position: relative;
@@ -3124,140 +3045,172 @@ Table of Contents:
 /***
 3. Content
 ****/
-/* line 220, sass/style.scss */
+/* line 234, sass/style.scss */
 #content-container {
   margin-top: 40px;
   padding: 20px 0px;
   width: 80%;
 }
-
-/* line 227, sass/style.scss */
-.page-content {
+/* line 240, sass/style.scss */
+#content-container .page-content {
   z-index: 99;
+  width: 100%;
 }
-/* line 235, sass/style.scss */
-.page-content .blog-post img {
+/* line 245, sass/style.scss */
+#content-container .page-content h2 {
+  text-align: center;
+  font-family: "Bitter", serif;
+}
+/* line 250, sass/style.scss */
+#content-container .page-content .color-block {
+  width: 100%;
+  display: block;
+  height: auto;
+  text-align: center;
+  color: #f5f2ed;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+  margin: 0px;
+  position: relative;
+}
+/* line 261, sass/style.scss */
+#content-container .page-content .color-block h3, #content-container .page-content .color-block h4, #content-container .page-content .color-block h5, #content-container .page-content .color-block p {
+  color: #f5f2ed;
+  display: block;
+  line-height: 1em;
+}
+/* line 267, sass/style.scss */
+#content-container .page-content .color-block p {
+  display: none;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+/* line 275, sass/style.scss */
+#content-container .page-content .orange {
+  background: #c34500;
+}
+/* line 279, sass/style.scss */
+#content-container .page-content .blue {
+  background: #5d87a1;
+}
+/* line 283, sass/style.scss */
+#content-container .page-content .brown {
+  background: #615042;
+}
+/* line 287, sass/style.scss */
+#content-container .page-content .gray {
+  background: #acafa6;
+}
+/* line 291, sass/style.scss */
+#content-container .page-content .light-blue {
+  background: #a7c4c9;
+}
+/* line 295, sass/style.scss */
+#content-container .page-content .yellow {
+  background: #efb112;
+}
+/* line 299, sass/style.scss */
+#content-container .page-content .plus {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background: black;
+}
+/* line 308, sass/style.scss */
+#content-container .page-content .plus img {
+  height: 40px;
+  margin-top: 5px;
+}
+/* line 313, sass/style.scss */
+#content-container .page-content .plus img:hover, #content-container .page-content .plus img:focus {
+  cursor: pointer;
+}
+/* line 322, sass/style.scss */
+#content-container .page-content .blog-post img {
   display: block;
 }
-/* line 244, sass/style.scss */
-.page-content .sidebar h3 {
-  font-weight: normal;
-  font-family: "Bitter", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  color: #373737;
-  padding: 0px;
-  margin: 0px;
+
+/* line 329, sass/style.scss */
+.plus {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background: black;
 }
-/* line 255, sass/style.scss */
-.page-content .sidebar ul {
-  margin: 0px;
-  padding: 0;
-}
-/* line 260, sass/style.scss */
-.page-content .sidebar li {
-  color: #999;
-  font-size: 12px;
-  margin: 6px 20px;
+/* line 338, sass/style.scss */
+.plus img {
+  height: 40px;
+  margin-top: 5px;
 }
 
-/* line 267, sass/style.scss */
+/* line 344, sass/style.scss */
 .leaf > a {
   margin: 6px 0;
   padding: 6px 0;
 }
 
-/* line 272, sass/style.scss */
+/* line 349, sass/style.scss */
 .more-link {
   padding: 5px;
   border: 1px solid #eaeaea;
   float: right;
 }
 
-/* line 278, sass/style.scss */
+/* line 355, sass/style.scss */
 .more-link:hover {
   padding: 5px;
   border: 1px solid #ddd;
   float: right;
 }
 
-/* line 284, sass/style.scss */
+/* line 361, sass/style.scss */
 img.float-right {
   float: right;
   margin: 0 0 5px 10px !important;
 }
 
-/* line 290, sass/style.scss */
+/* line 367, sass/style.scss */
 #feat-image {
   margin: 0 0 20px 0;
 }
 
-/* line 294, sass/style.scss */
+/* line 371, sass/style.scss */
 #feat-image img {
   width: 100%;
   text-align: center;
 }
 
-/* line 299, sass/style.scss */
+/* line 376, sass/style.scss */
 #homepage-message h2 {
   margin: 0px;
   padding: 0px;
   font-size: 26px;
 }
 
-/* line 305, sass/style.scss */
+/* line 382, sass/style.scss */
 #homepage-message h4.subtitle {
   font-size: 18px;
   font-weight: 400;
 }
 
-/* line 310, sass/style.scss */
-div.contentheader {
-  width: 100%;
-  padding: 0 0 0px 0;
-  margin: -10px 0 0 0;
-  font-family: "Bitter", serif;
-  font-size: 14px;
-}
-
-/* line 318, sass/style.scss */
-.contentheader h2 {
-  text-decoration: none;
-  font-family: "Bitter", serif;
-  font-weight: 700;
-  font-style: normal;
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-/* line 331, sass/style.scss */
-.contentheader a:link,
-.contentheader a:visited,
-.contentheader a:active {
-  text-decoration: none;
-  color: #666;
-}
-
-/* line 336, sass/style.scss */
-.contentheader a:hover {
-  text-decoration: none;
-  color: #d85a1a;
-}
-
-/* line 341, sass/style.scss */
+/* line 387, sass/style.scss */
 .content-main-home img {
   max-width: 100%;
 }
 
-/* line 345, sass/style.scss */
+/* line 391, sass/style.scss */
 .content-main-home p {
   font-size: 13px;
 }
 
-/* line 349, sass/style.scss */
+/* line 395, sass/style.scss */
 p.lead {
   color: #222;
   font-size: 18px;
@@ -3266,19 +3219,19 @@ p.lead {
 /****
 3.1 Sidebar
 ****/
-/* line 358, sass/style.scss */
+/* line 404, sass/style.scss */
 .sidebar {
   margin-top: 20px;
 }
 
-/* line 363, sass/style.scss */
+/* line 409, sass/style.scss */
 .sidebar ul li.leaf {
   list-style-type: none !important;
   padding: 0px;
   margin: 0px;
 }
 
-/* line 369, sass/style.scss */
+/* line 415, sass/style.scss */
 .sidebar ul li a {
   font-size: .94em;
   display: block;
@@ -3289,19 +3242,19 @@ p.lead {
   text-decoration: none;
 }
 
-/* line 379, sass/style.scss */
+/* line 425, sass/style.scss */
 .sidebar ul li a:hover {
-  background: #C34500;
+  background: #c34500;
 }
 
-/* line 383, sass/style.scss */
+/* line 429, sass/style.scss */
 .sidebar ul {
   list-style: none outside none;
   padding: 0px;
   margin: 0px;
 }
 
-/* line 390, sass/style.scss */
+/* line 436, sass/style.scss */
 .sidebar h5 {
   font-size: 1.3em;
   padding-bottom: 5px;
@@ -3310,101 +3263,102 @@ p.lead {
 /***
 4. Sidebars
 ****/
-/* line 399, sass/style.scss */
+/* line 445, sass/style.scss */
 .right-block-container {
   margin-top: -20px;
   min-width: 160px;
   padding: 0px;
   float: right;
+  display: none;
 }
 
-/* line 407, sass/style.scss */
+/* line 454, sass/style.scss */
 .sidebar-block {
   margin: 20px 0 0 0;
 }
 
-/* line 411, sass/style.scss */
+/* line 458, sass/style.scss */
 .eecs-block {
   background: #d85a1a;
 }
 
-/* line 415, sass/style.scss */
+/* line 462, sass/style.scss */
 .sidebar-block p {
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
 
-/* line 421, sass/style.scss */
+/* line 468, sass/style.scss */
 .sidebar-block h5 {
   color: #fff;
   padding: 0px;
   margin: 0px;
-  font-family: "Bitter", sans-serif;
+  font-family: "Bitter", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2em;
   text-align: center;
 }
 
-/* line 432, sass/style.scss */
+/* line 479, sass/style.scss */
 .sidebar-block:hover {
   opacity: .6;
 }
 
-/* line 436, sass/style.scss */
+/* line 483, sass/style.scss */
 .sidebar-block a {
   display: block;
   color: #fff !important;
   text-decoration: none !important;
 }
 
-/* line 442, sass/style.scss */
+/* line 489, sass/style.scss */
 .contact-block {
   background: #ACAFA6;
 }
 
-/* line 446, sass/style.scss */
+/* line 493, sass/style.scss */
 .vertical-padding {
   padding: 20px 0 0 0;
 }
 
-/* line 450, sass/style.scss */
-.donate-block, .button.secondary, .secondary.menu-button, .secondary.form-submit {
-  background-color: #5D87A1;
+/* line 497, sass/style.scss */
+.donate-block, .button.orange, .orange.menu-button, .orange.form-submit {
+  background-color: #5d87a1;
 }
 
-/* line 454, sass/style.scss */
-.donate-block:hover, .button.secondary:hover, .secondary.menu-button:hover, .secondary.form-submit:hover {
+/* line 501, sass/style.scss */
+.donate-block:hover, .button.orange:hover, .orange.menu-button:hover, .orange.form-submit:hover {
   background-color: #7ba5bf;
 }
 
-/* line 458, sass/style.scss */
+/* line 505, sass/style.scss */
 .social-block {
   margin-top: 20px;
   text-align: center;
 }
 
-/* line 463, sass/style.scss */
+/* line 510, sass/style.scss */
 .social-block:hover {
   opacity: 1;
 }
 
-/* line 467, sass/style.scss */
+/* line 514, sass/style.scss */
 .social-block a {
   color: #fff !important;
   width: 30%;
   display: inline-block;
 }
 
-/* line 473, sass/style.scss */
+/* line 520, sass/style.scss */
 .social-block p {
   color: #fff;
   font-size: 13px;
   line-height: 150%;
 }
 
-/* line 479, sass/style.scss */
+/* line 526, sass/style.scss */
 .social-block img {
   background: #777;
   height: auto;
@@ -3413,53 +3367,53 @@ p.lead {
   margin: 10px 2px;
 }
 
-/* line 487, sass/style.scss */
+/* line 534, sass/style.scss */
 .social-block img:hover {
   opacity: .6;
 }
 
-/* line 492, sass/style.scss */
+/* line 539, sass/style.scss */
 #twitter {
   background: #00B0ED;
 }
 
-/* line 496, sass/style.scss */
+/* line 543, sass/style.scss */
 #facebook {
   background: #3B5998;
 }
 
-/* line 500, sass/style.scss */
+/* line 547, sass/style.scss */
 #github {
   background: #000;
 }
 
-/* line 504, sass/style.scss */
+/* line 551, sass/style.scss */
 #youtube {
   background: #cd201f;
 }
 
-/* line 508, sass/style.scss */
+/* line 555, sass/style.scss */
 #google {
   background: #dd4b39;
 }
 
-/* line 512, sass/style.scss */
+/* line 559, sass/style.scss */
 .blog-post {
   padding: 0px 0px 20px 0;
 }
 
-/* line 516, sass/style.scss */
+/* line 563, sass/style.scss */
 .blog-post img {
   max-width: 100%;
 }
 
-/* line 520, sass/style.scss */
+/* line 567, sass/style.scss */
 .field-items img {
   display: block !important;
   margin: auto;
 }
 
-/* line 525, sass/style.scss */
+/* line 572, sass/style.scss */
 .content-padding {
   padding: 0px 0 20px 0;
 }
@@ -3467,7 +3421,7 @@ p.lead {
 /****
 5. Donate
 ****/
-/* line 533, sass/style.scss */
+/* line 580, sass/style.scss */
 .campaignWidget {
   width: 100%;
   padding: 40px;
@@ -3477,12 +3431,12 @@ p.lead {
 /****
 6. Hosted Communities
 ****/
-/* line 542, sass/style.scss */
+/* line 589, sass/style.scss */
 #communities-panel {
   position: fixed;
 }
 
-/* line 546, sass/style.scss */
+/* line 593, sass/style.scss */
 #communities-panel a:active {
   color: #000;
 }
@@ -3490,31 +3444,57 @@ p.lead {
 /****
 7. Typography
 ****/
-/* line 556, sass/style.scss */
-p,
-ul,
-li {
-  font-family: 'Open Sans', sans-serif;
+/* line 601, sass/style.scss */
+h1, h2, h3, h4, h5, p, ul, li {
+  font-family: "Open Sans", sans-serif;
   color: #222;
   line-height: 1.6;
+}
+
+/* line 607, sass/style.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 611, sass/style.scss */
+h2 {
+  font-size: 42px;
+}
+
+/* line 614, sass/style.scss */
+h3 {
+  font-size: 36px;
+}
+
+/* line 617, sass/style.scss */
+h4 {
+  font-size: 30px;
+}
+
+/* line 621, sass/style.scss */
+h5 {
+  font-size: 24px;
+}
+
+/* line 625, sass/style.scss */
+p, ul, li {
   font-size: 16px;
-  color: #111;
 }
 
-/* line 564, sass/style.scss */
+/* line 629, sass/style.scss */
 a:link, a:active, a:visited {
-  color: #d85a1a;
   font-weight: normal;
+  color: #373737;
 }
 
-/* line 569, sass/style.scss */
+/* line 634, sass/style.scss */
 a:hover {
   text-decoration: underline;
   color: #373737;
   font-weight: normal;
 }
 
-/* line 575, sass/style.scss */
+/* line 640, sass/style.scss */
 .byline {
   font-family: "Bitter", serif;
   font-weight: 400;
@@ -3524,62 +3504,26 @@ a:hover {
   display: block;
 }
 
-/* line 584, sass/style.scss */
-h1.small, h1.form-submit {
-  font-size: 14px;
-  font-weight: normal;
-}
-
-/* line 591, sass/style.scss */
-h1.small a:link, h1.form-submit a:link,
-h1.small a:active,
-h1.form-submit a:active,
-h1.small a:visited,
-h1.form-submit a:visited {
-  text-decoration: underline;
-}
-
-/* line 595, sass/style.scss */
-h2.headline {
-  padding: 0px;
-  margin: 0px;
-}
-
-/* line 602, sass/style.scss */
-h2.headline a:link,
-h2.headline a:active,
-h2.headline a:visited {
-  font-family: "Bitter", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  text-decoration: none;
-}
-
-/* line 609, sass/style.scss */
-h2.headline a:hover {
-  color: #000;
-}
-
-/* line 613, sass/style.scss */
+/* line 649, sass/style.scss */
 ul.inline li {
   float: right;
   padding: 5px;
   border: 1px solid #ddd;
 }
 
-/* line 619, sass/style.scss */
+/* line 655, sass/style.scss */
 ul.inline li:hover {
   border: 1px solid #999;
 }
 
-/* line 623, sass/style.scss */
+/* line 659, sass/style.scss */
 h4.subtitle {
   color: #615042;
   margin: 4px 0 10px 0;
   font-weight: normal;
 }
 
-/* line 629, sass/style.scss */
+/* line 665, sass/style.scss */
 .caption {
   color: #666;
   font-size: 12px;
@@ -3589,19 +3533,19 @@ h4.subtitle {
 /***
 8. Staff
 ***/
-/* line 639, sass/style.scss */
+/* line 675, sass/style.scss */
 .staff-profile {
   padding: 0 0 10px 0;
   margin: 20px 0 0 0;
   border-bottom: 1px dotted #ddd;
 }
 
-/* line 645, sass/style.scss */
+/* line 681, sass/style.scss */
 .view-staff {
   margin: -20px 0 0 0;
 }
 
-/* line 649, sass/style.scss */
+/* line 685, sass/style.scss */
 .staff-picture {
   width: 120px;
   height: 160px;
@@ -3612,34 +3556,34 @@ h4.subtitle {
 /**
 9. Footer
 ***/
-/* line 661, sass/style.scss */
+/* line 697, sass/style.scss */
 #footer {
   width: 100%;
   padding: 32px 0;
-  background: #333333;
+  background: #373737;
   clear: both;
   margin: 0px auto;
 }
 
-/* line 669, sass/style.scss */
+/* line 705, sass/style.scss */
 #footer-container {
   color: #fff;
 }
 
-/* line 674, sass/style.scss */
-#footer-container p {
+/* line 710, sass/style.scss */
+#footer-container p, #footer-container h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #fff;
 }
 
-/* line 680, sass/style.scss */
+/* line 716, sass/style.scss */
 #footer .content {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 687, sass/style.scss */
+/* line 723, sass/style.scss */
 #footer-container a:link,
 #footer-container a:active,
 #footer-container a:visited {
@@ -3647,25 +3591,25 @@ h4.subtitle {
   text-decoration: none;
 }
 
-/* line 692, sass/style.scss */
+/* line 728, sass/style.scss */
 #footer-container a:hover {
   color: #f37321;
 }
 
-/* line 696, sass/style.scss */
+/* line 732, sass/style.scss */
 #footer-container ul {
   margin: 0px auto;
   padding: 0px;
   list-style: none;
 }
 
-/* line 702, sass/style.scss */
+/* line 738, sass/style.scss */
 #footer-container p, #footer-container ul, #footer-container li {
   color: #fff;
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 707, sass/style.scss */
+/* line 743, sass/style.scss */
 #footer-container li {
   margin: 0px auto;
   padding: 0px;
@@ -3673,28 +3617,28 @@ h4.subtitle {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 714, sass/style.scss */
+/* line 750, sass/style.scss */
 #footer-container li.expanded ul.menu li {
   padding: 0px;
   list-style: none;
 }
 
-/* line 720, sass/style.scss */
+/* line 756, sass/style.scss */
 #footer-container #column1, #footer-container #column3 {
   width: 20%;
 }
 
-/* line 725, sass/style.scss */
+/* line 761, sass/style.scss */
 #footer-container #navcontainer {
   width: 60%;
 }
 
-/* line 730, sass/style.scss */
+/* line 766, sass/style.scss */
 #footer-container #column2 {
   width: 100%;
 }
 
-/* line 734, sass/style.scss */
+/* line 770, sass/style.scss */
 #footer-container #column2 ul li {
   display: inline-block;
   vertical-align: top;
@@ -3702,30 +3646,30 @@ h4.subtitle {
   width: 24%;
 }
 
-/* line 741, sass/style.scss */
+/* line 777, sass/style.scss */
 #footer-container ul li a {
   font-size: 17px;
   font-weight: 600;
 }
 
-/* line 746, sass/style.scss */
+/* line 782, sass/style.scss */
 #footer-container ul li ul li {
   display: block !important;
   width: 100% !important;
 }
 
-/* line 751, sass/style.scss */
+/* line 787, sass/style.scss */
 #footer-container ul li ul li a {
   font-size: 16px;
   font-weight: normal;
 }
 
-/* line 756, sass/style.scss */
+/* line 792, sass/style.scss */
 .mollom-privacy {
   display: none;
 }
 
-/* line 760, sass/style.scss */
+/* line 796, sass/style.scss */
 #footer-container #column1 a {
   color: #f37321 !important;
 }
@@ -3733,19 +3677,19 @@ h4.subtitle {
 /****
 10. Etc
 ****/
-/* line 768, sass/style.scss */
+/* line 804, sass/style.scss */
 .field-item.even {
   font-size: 15px;
   line-height: 130%;
   color: #222;
 }
 
-/* line 774, sass/style.scss */
+/* line 810, sass/style.scss */
 .clrfix {
   clear: both;
 }
 
-/* line 778, sass/style.scss */
+/* line 814, sass/style.scss */
 hr.decorative {
   border: 0;
   margin: 10px 0;
@@ -3754,7 +3698,7 @@ hr.decorative {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 786, sass/style.scss */
+/* line 822, sass/style.scss */
 .hr {
   width: 100%;
   margin: 10px 0;
@@ -3762,7 +3706,7 @@ hr.decorative {
   height: 0;
 }
 
-/* line 793, sass/style.scss */
+/* line 829, sass/style.scss */
 .hr-light {
   width: 100%;
   margin: 10px 0;
@@ -3770,19 +3714,19 @@ hr.decorative {
   height: 0;
 }
 
-/* line 800, sass/style.scss */
+/* line 836, sass/style.scss */
 #search-block-form {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 0;
 }
 
-/* line 806, sass/style.scss */
+/* line 842, sass/style.scss */
 #search-block-form input {
   padding: 0 3px;
 }
 
-/* line 810, sass/style.scss */
+/* line 846, sass/style.scss */
 #search-block-form .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
@@ -3796,7 +3740,7 @@ hr.decorative {
   border-radius: 15px;
 }
 
-/* line 823, sass/style.scss */
+/* line 859, sass/style.scss */
 .form-submit {
   float: right;
 }
@@ -3804,23 +3748,23 @@ hr.decorative {
 /* * * *
 10.1 Calendar
 * * * */
-/* line 831, sass/style.scss */
+/* line 867, sass/style.scss */
 .calendar {
   font-family: Georgia, Times New Roman, serif;
 }
 
-/* line 835, sass/style.scss */
+/* line 871, sass/style.scss */
 .calendar small {
   color: #666;
 }
 
-/* line 839, sass/style.scss */
+/* line 875, sass/style.scss */
 .calendar p {
   padding: 5px 0 0 0;
   margin: 0px;
 }
 
-/* line 844, sass/style.scss */
+/* line 880, sass/style.scss */
 .calendar h4 {
   margin: 5px 0 0 0;
   padding: 0px;
@@ -3829,7 +3773,7 @@ hr.decorative {
 /* * * *
 10.2 Build The Future
 * * * */
-/* line 852, sass/style.scss */
+/* line 888, sass/style.scss */
 .third {
   width: 30%;
   float: left;
@@ -3840,12 +3784,12 @@ hr.decorative {
 Hosted Communities
 * Styles for Hosted Communities Page
 **/
-/* line 862, sass/style.scss */
+/* line 898, sass/style.scss */
 .community-container {
   padding: 0 0 26px 0px;
 }
 
-/* line 866, sass/style.scss */
+/* line 902, sass/style.scss */
 .node-picture {
   float: right;
   margin: 0 0 10px 10px;
@@ -3854,7 +3798,7 @@ Hosted Communities
 /***
 10.3 Old Site CSS
 ***/
-/* line 875, sass/style.scss */
+/* line 911, sass/style.scss */
 span.contentheader {
   font-family: "Bitter", serif;
   font-size: 18px;
@@ -3863,7 +3807,7 @@ span.contentheader {
   color: #332E2C;
 }
 
-/* line 883, sass/style.scss */
+/* line 919, sass/style.scss */
 .sub-contentheader {
   font-family: "Bitter", serif;
   font-size: 16px;
@@ -3872,20 +3816,20 @@ span.contentheader {
   color: #998d88;
 }
 
-/* line 891, sass/style.scss */
+/* line 927, sass/style.scss */
 .donation-benefits li {
   font-family: 'Georgia', Times New Roman, serif;
   font-size: 14px;
   line-height: 160%;
 }
 
-/* line 897, sass/style.scss */
+/* line 933, sass/style.scss */
 .float-left-donor {
   float: left;
   margin: 5px 10px !important;
 }
 
-/* line 902, sass/style.scss */
+/* line 938, sass/style.scss */
 div.campaignWidget label {
   display: block;
   float: left;
@@ -3895,37 +3839,37 @@ div.campaignWidget label {
   width: 70px;
 }
 
-/* line 911, sass/style.scss */
+/* line 947, sass/style.scss */
 div.campaignWidget input.radio {
   margin: 0;
   padding: 0;
   width: 15px;
 }
 
-/* line 917, sass/style.scss */
+/* line 953, sass/style.scss */
 div.campaignWidget div.submit-img {
   clear: both;
   margin: 15px 0 0 18px;
   padding: 15px 0 0;
 }
 
-/* line 923, sass/style.scss */
+/* line 959, sass/style.scss */
 div.campaignWidget div.foot {
   margin: 5px 0 10px;
   padding: 10px 0;
 }
 
-/* line 928, sass/style.scss */
+/* line 964, sass/style.scss */
 div.badge-container {
   margin: 20px 10px 20px 100px;
 }
 
-/* line 931, sass/style.scss */
+/* line 967, sass/style.scss */
 div.badge-spacer {
   clear: both;
 }
 
-/* line 934, sass/style.scss */
+/* line 970, sass/style.scss */
 img.badge-image {
   float: left;
   margin: 10px 10px 10px 25px;
@@ -3934,7 +3878,7 @@ img.badge-image {
 /***
 10.4 Front Page
 ***/
-/* line 943, sass/style.scss */
+/* line 979, sass/style.scss */
 #featured-button {
   left: 75%;
   padding: 10px 15px;
@@ -3942,7 +3886,7 @@ img.badge-image {
   top: 65%;
 }
 
-/* line 950, sass/style.scss */
+/* line 986, sass/style.scss */
 #merger-announcement {
   padding: 40px 0 120px 0;
   position: relative;
@@ -3951,18 +3895,18 @@ img.badge-image {
 /***
 10.5 Feature Articles
 ***/
-/* line 959, sass/style.scss */
+/* line 995, sass/style.scss */
 ol.top10 {
   counter-reset: li;
   margin-left: 0;
   padding-left: 0;
 }
 
-/* line 964, sass/style.scss */
+/* line 1000, sass/style.scss */
 ol.top10 > li:before {
   content: counter(li,decimal);
   counter-increment: li;
-  font-family: "Open Sans", Helvetica Neue, Sans-serif;
+  font-family: "Open Sans", sans-serif;
   size: 16px;
   left: -1.7em;
   padding: 0;
@@ -3973,7 +3917,7 @@ ol.top10 > li:before {
   color: #c34500;
 }
 
-/* line 978, sass/style.scss */
+/* line 1014, sass/style.scss */
 ol.top10 > li {
   list-style: none;
   margin: 0 0 6px 2em;
@@ -3982,111 +3926,111 @@ ol.top10 > li {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 986, sass/style.scss */
+  /* line 1022, sass/style.scss */
   #searchbar {
     width: 100%;
   }
 
-  /* line 990, sass/style.scss */
+  /* line 1026, sass/style.scss */
   .page-content .blog-post {
     padding-left: 0px;
   }
 
-  /* line 994, sass/style.scss */
+  /* line 1030, sass/style.scss */
   .page-content .sidebar {
     padding-right: 0px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 1001, sass/style.scss */
+  /* line 1037, sass/style.scss */
   .right-block-container {
     display: none !important;
   }
 
-  /* line 1005, sass/style.scss */
+  /* line 1041, sass/style.scss */
   #feat-image {
     display: none;
   }
 
-  /* line 1009, sass/style.scss */
+  /* line 1045, sass/style.scss */
   .menu {
     padding-left: 0px;
   }
 
-  /* line 1013, sass/style.scss */
+  /* line 1049, sass/style.scss */
   #navigation li a {
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
     background: #d85a1a;
     text-decoration: none;
   }
 
-  /* line 1022, sass/style.scss */
+  /* line 1058, sass/style.scss */
   #navigation li a:hover {
     background: #F87A30;
   }
 
-  /* line 1026, sass/style.scss */
+  /* line 1062, sass/style.scss */
   #osu-tag {
     display: none !important;
   }
 
-  /* line 1030, sass/style.scss */
+  /* line 1066, sass/style.scss */
   #osu-tag img {
     display: none !important;
   }
 
-  /* line 1036, sass/style.scss */
+  /* line 1072, sass/style.scss */
   #column1 {
     display: none;
   }
 
-  /* line 1040, sass/style.scss */
+  /* line 1076, sass/style.scss */
   #navcontainer, #column3 {
     width: 100% !important;
     display: block !important;
   }
 
-  /* line 1045, sass/style.scss */
+  /* line 1081, sass/style.scss */
   #navcontainer {
     padding: 0px !important;
   }
 
-  /* line 1049, sass/style.scss */
+  /* line 1085, sass/style.scss */
   #navcontainer ul li {
     display: block !important;
     width: 100% !important;
   }
 
-  /* line 1054, sass/style.scss */
+  /* line 1090, sass/style.scss */
   #navcontainer ul li a {
     padding-left: 30px;
   }
 
-  /* line 1058, sass/style.scss */
+  /* line 1094, sass/style.scss */
   #navcontainer ul li a:hover {
     color: #fff;
   }
 
-  /* line 1062, sass/style.scss */
+  /* line 1098, sass/style.scss */
   #navcontainer ul li:hover {
     background: #d85a1a;
   }
 
-  /* line 1066, sass/style.scss */
+  /* line 1102, sass/style.scss */
   #navcontainer ul li ul, #navcontainer ul li ul li a {
     display: none;
   }
 
-  /* line 1070, sass/style.scss */
+  /* line 1106, sass/style.scss */
   #column3 {
     margin-top: 20px;
   }
 }
 @media only screen and (max-width: 1120) {
-  /* line 1078, sass/style.scss */
+  /* line 1114, sass/style.scss */
   .first {
     display: none;
   }

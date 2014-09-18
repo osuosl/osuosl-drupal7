@@ -20,6 +20,7 @@
     <script src="https://code.jquery.com/jquery-1.9.0.min.js" type="text/javascript"></script>
     <script src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/js/jquery.flexnav.min.js" type="text/javascript"></script>
 
+  <script type='text/javascript' src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/js/expand.js">
     <script type="text/javascript">
       $(".flexnav").flexNav();
     </script>
