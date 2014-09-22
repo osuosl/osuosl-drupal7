@@ -28,3 +28,6 @@ features[] = main_menu
 features[] = mobile_menu
 
 stylesheets[all][] = css/style.css
+
+settings[logo] = images/logo-full.png
+settings[site_name] = OSU Open Source Lab
